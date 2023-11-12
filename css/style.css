@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5 {
+  font-weight: 700; }
+
+body ul {
+  margin: 0;
+  padding: 0; }
+  body ul li {
+    list-style-type: none; }
+    body ul li a {
+      text-decoration: none; }
+      body ul li a:hover {
+        text-decoration: none; }
+      body ul li a:focus {
+        outline: 0; }
+      body ul li a:focus-visible {
+        outline: 0; }
+
+body .form-control:focus {
+  box-shadow: none; }

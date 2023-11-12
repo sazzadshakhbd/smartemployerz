@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style-type: none;
+      a {
+        text-decoration: none;
+        &:hover {
+          text-decoration: none;
+        }
+        &:focus {
+          outline: 0;
+        }
+        &:focus-visible {
+          outline: 0;
+        }
+      }
+    }
+  }
+  .form-control:focus {
+    box-shadow: none;
+  }
+  section {
+    
+  }
+}
