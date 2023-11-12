@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,26 +8,119 @@
 html {
   scroll-behavior: smooth; }
 
-body h1,
-body h2,
-body h3,
-body h4,
-body h5 {
-  font-weight: 700; }
-
-body ul {
-  margin: 0;
-  padding: 0; }
-  body ul li {
-    list-style-type: none; }
-    body ul li a {
-      text-decoration: none; }
-      body ul li a:hover {
+body {
+  /* scrollbar */ }
+  body ul {
+    margin: 0;
+    padding: 0; }
+    body ul li {
+      list-style-type: none; }
+      body ul li a {
         text-decoration: none; }
-      body ul li a:focus {
-        outline: 0; }
-      body ul li a:focus-visible {
-        outline: 0; }
+        body ul li a:hover {
+          text-decoration: none; }
+        body ul li a:focus {
+          outline: 0; }
+        body ul li a:focus-visible {
+          outline: 0; }
+  body .form-control:focus {
+    box-shadow: none; }
+  body ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px; }
+  body ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px; }
+  body ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #00756a;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
+  body ::-webkit-scrollbar-thumb:window-inactive {
+    background: #00756a; }
 
-body .form-control:focus {
-  box-shadow: none; }
+.login-wrapper {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; }
+  @media screen and (max-width: 991.98px) {
+    .login-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 50px; } }
+  .login-wrapper .login-card {
+    padding-left: 140px; }
+    @media screen and (max-width: 991.98px) {
+      .login-wrapper .login-card {
+        padding-left: 0;
+        width: 75%;
+        padding: 1rem; } }
+    @media screen and (max-width: 575.98px) {
+      .login-wrapper .login-card {
+        width: 100%; } }
+    .login-wrapper .login-card .card-header {
+      margin-bottom: 78px;
+      margin-top: 40px; }
+      @media screen and (max-width: 991.98px) {
+        .login-wrapper .login-card .card-header {
+          text-align: center; } }
+    .login-wrapper .login-card .card-body .form-title {
+      margin-bottom: 40px; }
+      .login-wrapper .login-card .card-body .form-title h2 {
+        color: #030a16;
+        font-family: "Inter", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 0.48px; }
+      .login-wrapper .login-card .card-body .form-title p {
+        color: #030a16;
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.28px;
+        opacity: 0.5; }
+    .login-wrapper .login-card .card-body form .form-group {
+      margin-bottom: 1.5rem; }
+      .login-wrapper .login-card .card-body form .form-group label {
+        color: #344054;
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        margin-bottom: 0.5rem; }
+      .login-wrapper .login-card .card-body form .form-group input {
+        background: #fff;
+        padding: 1rem;
+        border-radius: 0;
+        height: 44px; }
+      .login-wrapper .login-card .card-body form .form-group i {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        color: #858585; }
+      .login-wrapper .login-card .card-body form .form-group button {
+        margin-top: 1rem;
+        background: #00756A; }
+    .login-wrapper .login-card .card-body form p {
+      color: #344054;
+      font-family: "Work Sans", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px; }
+      .login-wrapper .login-card .card-body form p a {
+        color: #00756A;
+        font-weight: 500; }
+  .login-wrapper .login-image {
+    background-image: url("../img/auth/login-image.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover; }
+    @media screen and (max-width: 991.98px) {
+      .login-wrapper .login-image {
+        display: none; } }

@@ -13,7 +13,6 @@ body {
   h3,
   h4,
   h5 {
-    
   }
   ul {
     margin: 0;
@@ -37,7 +36,26 @@ body {
   .form-control:focus {
     box-shadow: none;
   }
-  section {
-    
+  /* scrollbar */
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #00756a;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  }
+
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background: #00756a;
   }
 }
