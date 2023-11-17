@@ -54,37 +54,8 @@
           }
         }
       }
-      form {
-        .form-group {
-          margin-bottom: 1.5rem;
-          label {
-            color: $gray;
-            font-family: $inter;
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 20px;
-            margin-bottom: 0.5rem;
-          }
-          input {
-            background: $white;
-            padding: 1rem;
-            border: 1px solid $gray2;
-            box-shadow: 0px 2px 1px 0px rgba(16, 24, 40, 0.05);
-            height: 44px;
-            border-radius: 4px;
-          }
-          i {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            color: $gray1;
-          }
-          button {
-            margin-top: 1rem;
-            background: $teal;
-          }
-        }
-        p {
+      p {
+        &.form-footer {
           color: $gray;
           font-family: $workSans;
           font-size: 16px;
@@ -101,5 +72,44 @@
   .login-image {
     flex-basis: 60%;
     flex-grow: 1;
+  }
+}
+.custom-select2 {
+  position: relative;
+  svg {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    z-index: 1;
+    color: #343a40;
+  }
+  .select2-container--default {
+    .select2-search--dropdown {
+      .select2-search__field {
+        border: 1px solid $gray1;
+      }
+    }
+  }
+  .select2-container {
+    .selection {
+      .select2-selection {
+        border: 1px solid $gray2;
+        height: 44px;
+        transition: all 0.3s ease;
+        &:focus {
+          border-color: #00756a;
+        }
+        .select2-selection__rendered {
+          line-height: 44px;
+          color: $gray1;
+          padding-left: 1rem;
+          font-family: $inter;
+        }
+        .select2-selection__arrow {
+          height: 44px;
+          display: none;
+        }
+      }
+    }
   }
 }

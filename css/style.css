@@ -21,10 +21,6 @@ body {
           text-decoration: none; }
         body ul li a:focus {
           outline: 0; }
-        body ul li a:focus-visible {
-          outline: 0; }
-  body .form-control:focus {
-    box-shadow: none; }
   body ::-webkit-scrollbar {
     width: 5px;
     height: 5px; }
@@ -88,39 +84,139 @@ body {
         border-radius: 4px; }
         .login-wrapper .login-card .card-body .social-links a img {
           margin-right: 8px; }
-    .login-wrapper .login-card .card-body form .form-group {
-      margin-bottom: 1.5rem; }
-      .login-wrapper .login-card .card-body form .form-group label {
-        color: #344054;
-        font-family: "Inter", sans-serif;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 20px;
-        margin-bottom: 0.5rem; }
-      .login-wrapper .login-card .card-body form .form-group input {
-        background: #ffffff;
-        padding: 1rem;
-        border: 1px solid #D0D5DD;
-        box-shadow: 0px 2px 1px 0px rgba(16, 24, 40, 0.05);
-        height: 44px;
-        border-radius: 4px; }
-      .login-wrapper .login-card .card-body form .form-group i {
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-        color: #858585; }
-      .login-wrapper .login-card .card-body form .form-group button {
-        margin-top: 1rem;
-        background: #00756A; }
-    .login-wrapper .login-card .card-body form p {
+    .login-wrapper .login-card .card-body p.form-footer {
       color: #344054;
       font-family: "Work Sans", sans-serif;
       font-size: 16px;
       font-weight: 400;
       line-height: 24px; }
-      .login-wrapper .login-card .card-body form p a {
+      .login-wrapper .login-card .card-body p.form-footer a {
         color: #00756A;
         font-weight: 500; }
   .login-wrapper .login-image {
     flex-basis: 60%;
     flex-grow: 1; }
+
+.custom-select2 {
+  position: relative; }
+  .custom-select2 svg {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    z-index: 1;
+    color: #343a40; }
+  .custom-select2 .select2-container--default .select2-search--dropdown .select2-search__field {
+    border: 1px solid #858585; }
+  .custom-select2 .select2-container .selection .select2-selection {
+    border: 1px solid #D0D5DD;
+    height: 44px;
+    transition: all 0.3s ease; }
+    .custom-select2 .select2-container .selection .select2-selection:focus {
+      border-color: #00756a; }
+    .custom-select2 .select2-container .selection .select2-selection .select2-selection__rendered {
+      line-height: 44px;
+      color: #858585;
+      padding-left: 1rem;
+      font-family: "Inter", sans-serif; }
+    .custom-select2 .select2-container .selection .select2-selection .select2-selection__arrow {
+      height: 44px;
+      display: none; }
+
+form .form-group {
+  margin-bottom: 1.5rem; }
+  form .form-group .form-check label {
+    margin-bottom: 0;
+    color: #344054;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 3px; }
+    form .form-group .form-check label a {
+      color: #00756a;
+      text-decoration-line: underline; }
+  form .form-group .form-check .form-check-input:focus {
+    box-shadow: none; }
+  form .form-group .form-check .form-check-input:checked {
+    background-color: #00756A;
+    border-color: #00756A; }
+  form .form-group label {
+    color: #344054;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 0.5rem; }
+  form .form-group input[type="text"],
+  form .form-group input[type="email"],
+  form .form-group input[type="password"] {
+    background: #ffffff;
+    padding: 1rem;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 2px 1px 0px rgba(16, 24, 40, 0.05);
+    height: 44px;
+    border-radius: 4px;
+    transition: all 0.3s ease; }
+    form .form-group input[type="text"]:focus,
+    form .form-group input[type="email"]:focus,
+    form .form-group input[type="password"]:focus {
+      border-color: #00756a; }
+  form .form-group .form-select {
+    padding: 0 1rem;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 2px 1px 0px rgba(16, 24, 40, 0.05);
+    height: 44px;
+    border-radius: 4px;
+    color: #858585;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    transition: all 0.3s ease; }
+    form .form-group .form-select:focus {
+      border-color: #00756a; }
+  form .form-group i.slash-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #858585; }
+  form .form-group button {
+    margin-top: 1rem;
+    background: #00756A; }
+
+.form-control:focus {
+  box-shadow: none; }
+
+input:focus-visible {
+  outline: 0; }
+
+input:focus-visible {
+  outline: 0; }
+
+:focus-visible {
+  outline: 0; }
+
+.custom-select2 {
+  position: relative; }
+  .custom-select2 svg {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    z-index: 1;
+    color: #343a40; }
+  .custom-select2 .select2-container--default .select2-search--dropdown .select2-search__field {
+    border: 1px solid #858585; }
+  .custom-select2 .select2-container .selection .select2-selection {
+    border: 1px solid #D0D5DD;
+    height: 44px;
+    transition: all 0.3s ease; }
+    .custom-select2 .select2-container .selection .select2-selection:focus {
+      border-color: #00756a; }
+    .custom-select2 .select2-container .selection .select2-selection .select2-selection__rendered {
+      line-height: 44px;
+      color: #858585;
+      padding-left: 1rem;
+      font-family: "Inter", sans-serif; }
+    .custom-select2 .select2-container .selection .select2-selection .select2-selection__arrow {
+      height: 44px;
+      display: none; }

@@ -46,7 +46,7 @@
                                                 class="form-control" required />
                                             <div class="input-group-addon">
                                                 <a href="javascript:void(0)">
-                                                    <i class="far fa-eye-slash" aria-hidden="true"></i>
+                                                    <i class="far slash-icon fa-eye-slash" aria-hidden="true"></i>
                                                 </a>
                                             </div>
                                         </div>
@@ -58,9 +58,10 @@
                                                 in</button>
                                         </div>
                                     </div>
-                                    <p class="text-center">If You Don’t Have Any Account, Click <a href="#">Sign Up</a>
-                                    </p>
+                                    
                                 </form>
+                                <p class="text-center form-footer">If You Don’t Have Any Account, Click <a href="./signin.php">Sign Up</a>
+                                    </p>
                             </div>
                         </div>
                         <div class="login-image">

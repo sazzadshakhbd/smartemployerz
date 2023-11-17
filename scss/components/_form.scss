@@ -1,0 +1,96 @@
+form {
+  .form-group {
+    margin-bottom: 1.5rem;
+    .form-check {
+      label {
+        margin-bottom: 0;
+        color: #344054;
+        font-family: $inter;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        margin-top: 3px;
+        a {
+          color: #00756a;
+          text-decoration-line: underline;
+        }
+      }
+      .form-check-input {
+        &:focus {
+          box-shadow: none;
+        }
+        &:checked {
+          background-color: $teal;
+          border-color: $teal;
+        }
+      }
+    }
+    label {
+      color: $gray;
+      font-family: $inter;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      margin-bottom: 0.5rem;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      background: $white;
+      padding: 1rem;
+      border: 1px solid $gray2;
+      box-shadow: 0px 2px 1px 0px rgba(16, 24, 40, 0.05);
+      height: 44px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      &:focus {
+        border-color: #00756a;
+      }
+    }
+    .form-select {
+      padding: 0 1rem;
+      border: 1px solid $gray2;
+      box-shadow: 0px 2px 1px 0px rgba(16, 24, 40, 0.05);
+      height: 44px;
+      border-radius: 4px;
+      color: $gray1;
+      font-family: $inter;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      transition: all 0.3s ease;
+      &:focus {
+        border-color: #00756a;
+      }
+    }
+    i {
+      &.slash-icon {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        color: $gray1;
+      }
+    }
+    button {
+      margin-top: 1rem;
+      background: $teal;
+    }
+    
+  }
+}
+.form-control:focus {
+  box-shadow: none;
+}
+input:focus-visible {
+  outline: 0;
+}
+input:focus-visible {
+  outline: 0;
+}
+:focus-visible {
+  outline: 0;
+}
+
+
+
+

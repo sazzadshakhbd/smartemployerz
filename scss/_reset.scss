@@ -27,15 +27,10 @@ body {
         &:focus {
           outline: 0;
         }
-        &:focus-visible {
-          outline: 0;
-        }
       }
     }
   }
-  .form-control:focus {
-    box-shadow: none;
-  }
+  
   /* scrollbar */
   ::-webkit-scrollbar {
     width: 5px;
