@@ -60,7 +60,7 @@
                                     </div>
                                     
                                 </form>
-                                <p class="text-center form-footer">If You Don’t Have Any Account, Click <a href="./signin.php">Sign Up</a>
+                                <p class="text-center form-footer">If You Don’t Have Any Account, Click <a href="./registration.php">Sign Up</a>
                                     </p>
                             </div>
                         </div>
