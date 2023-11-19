@@ -8,7 +8,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xxl-12">
-                    <div class="login-wrapper">
+                    <div class="login-wrapper d-flex">
                         <div class="card login-card border-0 bg-transparent">
                             <div class="card-header bg-transparent border-0 p-0">
                                 <img src="./img/logo/logo.png" alt="logo" class="img-fluid" />
@@ -19,20 +19,20 @@
                                     <p class="mb-0">Here is today’s report and performances</p>
                                 </div>
                                 <div class="social-links">
-                                    <a href="#" target="_blank">
+                                    <a href="#" class="text-center d-flex align-items-center justify-content-center text-decoration-none mb-3" target="_blank">
                                         <img src="./img/auth/gmail.png" alt="gmail-logo" />
                                         Login With Google
                                     </a>
-                                    <a href="#" target="_blank">
+                                    <a href="#" class="text-center d-flex align-items-center justify-content-center text-decoration-none mb-3" target="_blank">
                                         <img src="./img/auth/microsoft.png" alt="microsoft-logo" />
                                         Login With Microsoft
                                     </a>
-                                    <a href="#" target="_blank">
+                                    <a href="#" class="text-center d-flex align-items-center justify-content-center text-decoration-none mb-3" target="_blank">
                                         <img src="./img/auth/linkedin.png" alt="linkedin-logo" />
                                         Login With Linkedin
                                     </a>
                                 </div>
-                                <form method="post" action="/form" autocomplete="off">
+                                <form method="get" autocomplete="off">
                                     <div class="form-group">
                                         <label class="form-label" for="email">Email</label>
                                         <input class="form-control" type="email" id="email" autocomplete="off"

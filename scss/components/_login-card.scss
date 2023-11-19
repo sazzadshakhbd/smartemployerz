@@ -1,34 +1,43 @@
 .login-wrapper {
-  display: flex;
   height: calc(100vh - 100px);
   gap: 80px;
+  @media(max-width: 991.98px) {
+    height: auto;
+    gap: 0;
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
+  }
   .login-card {
     flex-basis: 40%;
     flex-grow: 1;
     .card-header {
       margin-bottom: 70px;
       margin-top: 40px;
-      @media screen and (max-width: 991.98px) {
-        text-align: center;
+      @media(min-width: 992px) and (max-width:1199.98px) {
+        margin-bottom: 30px;
       }
     }
     .card-body {
       .form-title {
         margin-bottom: 40px;
+        @media(min-width: 992px) and (max-width:1199.98px) {
+          display: none;
+        }
         h2 {
           color: $dark;
           font-family: $inter;
-          font-size: 1.5rem;
-          font-weight: 700;
+          font-size: $fontLarge;
+          font-weight: $bold;
           letter-spacing: 0.48px;
         }
         p {
           color: $dark;
           font-family: $inter;
-          font-size: 14px;
-          font-weight: 400;
+          font-size: $fontSmall;
+          font-weight: $normal;
           letter-spacing: 0.28px;
-          opacity: 0.5;
+          opacity: $half;
         }
       }
       .social-links {
@@ -36,21 +45,15 @@
         a {
           color: $gray;
           font-family: $workSans;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 1.5rem;
-          text-align: center;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          font-size: $fontNormal;
+          font-weight: $normal;
+          line-height: $fontLarge;
           height: 48px;
-          text-decoration: none;
-          margin-bottom: 1rem;
           border: 1px solid $gray2;
           box-shadow: 0px 2px 1px 0px rgba(16, 24, 40, 0.05);
-          border-radius: 4px;
+          border-radius: $radiusSmall;
           img {
-            margin-right: 8px;
+            margin-right: 0.5rem;
           }
         }
       }
@@ -58,9 +61,9 @@
         &.form-footer {
           color: $gray;
           font-family: $workSans;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 24px;
+          font-size: $fontNormal;
+          font-weight: $normal;
+          line-height: 1.8rem;
           a {
             color: $teal;
             font-weight: 500;
@@ -72,8 +75,13 @@
   .login-image {
     flex-basis: 60%;
     flex-grow: 1;
+    @media screen and (max-width: 991.98px) {
+      display: none;
+    }
   }
 }
+
+// Customize Select2 Field CSS
 .custom-select2 {
   position: relative;
   svg {
@@ -81,7 +89,7 @@
     top: 45px;
     right: 10px;
     z-index: 1;
-    color: #343a40;
+    color: $dark1;
   }
   .select2-container--default {
     .select2-search--dropdown {
@@ -91,13 +99,14 @@
     }
   }
   .select2-container {
+    width: 100% !important;
     .selection {
       .select2-selection {
         border: 1px solid $gray2;
         height: 44px;
-        transition: all 0.3s ease;
+        transition: $transitionNormal;
         &:focus {
-          border-color: #00756a;
+          border-color: $teal;
         }
         .select2-selection__rendered {
           line-height: 44px;
@@ -109,6 +118,40 @@
           height: 44px;
           display: none;
         }
+      }
+    }
+  }
+}
+
+// Stepper CSS
+input.invalid {
+  border-color: $red !important;
+}
+
+.tab {
+  display: none;
+}
+
+// Customize intelInput CSS
+.iti {
+  display: block;
+  .iti__flag-container {
+    .iti__selected-flag {
+      background-color: transparent;
+      padding-left: 1rem;
+      border-right: 1px solid $gray2;
+      padding-right: 1rem;
+      &:hover {
+        background-color: transparent;
+      }
+      .iti__selected-dial-code {
+        color: $dark;
+        font-family: $inter;
+        font-size: $fontSmall;
+        font-weight: $normal;
+        line-height: normal;
+        letter-spacing: 0.28px;
+        opacity: $half;
       }
     }
   }

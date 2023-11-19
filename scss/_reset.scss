@@ -30,7 +30,10 @@ body {
       }
     }
   }
-  
+  .btn-check:focus+.btn, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
   /* scrollbar */
   ::-webkit-scrollbar {
     width: 5px;

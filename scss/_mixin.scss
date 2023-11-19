@@ -1,0 +1,10 @@
+@mixin btn-theme {
+  background-color: $teal;
+  padding: 12px 16px;
+  border-radius: 4px;
+  color: $white;
+  font-family: $workSans;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+}

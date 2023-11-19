@@ -28,23 +28,25 @@ form {
     label {
       color: $gray;
       font-family: $inter;
-      font-size: 14px;
+      font-size: $fontSmall;
       font-weight: 500;
       line-height: 20px;
       margin-bottom: 0.5rem;
     }
     input[type="text"],
     input[type="email"],
+    input[type="number"],
     input[type="password"] {
       background: $white;
       padding: 1rem;
       border: 1px solid $gray2;
       box-shadow: 0px 2px 1px 0px rgba(16, 24, 40, 0.05);
       height: 44px;
-      border-radius: 4px;
-      transition: all 0.3s ease;
+      border-radius: $radiusSmall;
+      transition: $transitionNormal;
+      width: 100%;
       &:focus {
-        border-color: #00756a;
+        border-color: $teal;
       }
     }
     .form-select {
@@ -52,15 +54,15 @@ form {
       border: 1px solid $gray2;
       box-shadow: 0px 2px 1px 0px rgba(16, 24, 40, 0.05);
       height: 44px;
-      border-radius: 4px;
+      border-radius: $radiusSmall;
       color: $gray1;
       font-family: $inter;
-      font-size: 16px;
-      font-weight: 400;
+      font-size: $fontNormal;
+      font-weight: $normal;
       line-height: 24px;
-      transition: all 0.3s ease;
+      transition: $transitionNormal;
       &:focus {
-        border-color: #00756a;
+        border-color: $teal;
       }
     }
     i {
@@ -73,7 +75,7 @@ form {
     }
     button {
       margin-top: 1rem;
-      background: $teal;
+     @include btn-theme;
     }
     
   }

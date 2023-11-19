@@ -1,10 +1,31 @@
+// Color
 $dark: #030a16;
+$dark1: #343a40; 
 $gray: #344054;
 $gray1: #858585;
 $gray2: #D0D5DD;
 $teal: #00756A;
 $white: #ffffff;
+$red: #bf0808;
 
-
+// Font Family
 $inter: 'Inter', sans-serif;
 $workSans: 'Work Sans', sans-serif;
+
+// Font Size
+$fontLarge: 1.5rem;
+$fontSmall: 14px;
+$fontNormal: 16px;
+
+// Font Weight
+$normal: 400;
+$bold: 700;
+
+// Opacity
+$half: 0.5;
+
+// Border Radius
+$radiusSmall: 4px;
+
+// Animate
+$transitionNormal: all 0.3s ease;
