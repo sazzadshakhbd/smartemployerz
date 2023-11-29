@@ -262,14 +262,15 @@ input:focus-visible {
       color: #fff; } }
   @media (min-width: 1200px) and (max-width: 1399.98px) {
     .sidenav {
-      width: 17%; } }
+      width: 20%;
+      max-width: 100%; } }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     .sidenav {
-      width: 22%;
+      width: 24%;
       max-width: 100%; } }
   @media (min-width: 768px) and (max-width: 991.98px) {
     .sidenav {
-      width: 28%;
+      width: 32%;
       max-width: 100%; } }
   @media (max-width: 767.98px) {
     .sidenav {
@@ -284,15 +285,9 @@ input:focus-visible {
       padding: 0;
       max-width: none; } }
   .sidenav .sidebar-wrapper {
-    padding-left: 6px;
-    padding-right: 2px;
-    padding-top: 45px; }
-    @media (max-width: 1199.98px) {
-      .sidenav .sidebar-wrapper {
-        padding-top: 16px; } }
-    @media (max-width: 767.98px) {
-      .sidenav .sidebar-wrapper {
-        padding-top: 20px; } }
+    padding-left: 10px;
+    padding-right: 6px;
+    padding-top: 20px; }
     .sidenav .sidebar-wrapper .logo {
       margin-bottom: 18px; }
       @media (max-width: 767.98px) {
@@ -335,7 +330,29 @@ input:focus-visible {
         opacity: 0.5; }
       .sidenav .sidebar-wrapper ul li {
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        transition: all 0.3s ease;
+        margin-bottom: 5px; }
+        .sidenav .sidebar-wrapper ul li.active {
+          background: #00756A;
+          border-radius: 4px; }
+          .sidenav .sidebar-wrapper ul li.active svg {
+            opacity: 1; }
+          .sidenav .sidebar-wrapper ul li.active span {
+            opacity: 1; }
+            .sidenav .sidebar-wrapper ul li.active span.badge {
+              background: #ffffff;
+              color: #00756A; }
+        .sidenav .sidebar-wrapper ul li:hover a {
+          background: #00756A;
+          border-radius: 4px; }
+          .sidenav .sidebar-wrapper ul li:hover a svg {
+            opacity: 1; }
+          .sidenav .sidebar-wrapper ul li:hover a span {
+            opacity: 1; }
+            .sidenav .sidebar-wrapper ul li:hover a span.badge {
+              background: #ffffff;
+              color: #00756A; }
         .sidenav .sidebar-wrapper ul li a,
         .sidenav .sidebar-wrapper ul li button {
           color: #ffffff;
@@ -343,7 +360,9 @@ input:focus-visible {
           font-size: 16px;
           font-weight: 400;
           letter-spacing: 0.16px;
-          padding: 12px 0; }
+          padding: 12px 8px;
+          transition: all 0.3s ease;
+          background: transparent; }
           .sidenav .sidebar-wrapper ul li a svg,
           .sidenav .sidebar-wrapper ul li button svg {
             margin-right: 1rem;
@@ -351,6 +370,16 @@ input:focus-visible {
           .sidenav .sidebar-wrapper ul li a span,
           .sidenav .sidebar-wrapper ul li button span {
             opacity: 0.5; }
+            .sidenav .sidebar-wrapper ul li a span.badge,
+            .sidenav .sidebar-wrapper ul li button span.badge {
+              opacity: 1;
+              background: #00756A;
+              display: inline-block;
+              color: #ffffff;
+              font-family: "Inter", sans-serif;
+              font-size: 12px;
+              font-weight: 400;
+              margin-left: 8px; }
         .sidenav .sidebar-wrapper ul li button {
           background: transparent;
           border: 0;
@@ -374,13 +403,13 @@ input:focus-visible {
       cursor: pointer; } }
   @media (min-width: 1200px) and (max-width: 1399.98px) {
     .main-wrapper {
-      width: 83%; } }
+      width: 80%; } }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     .main-wrapper {
-      width: 78%; } }
+      width: 76%; } }
   @media (min-width: 768px) and (max-width: 991.98px) {
     .main-wrapper {
-      width: 72%; } }
+      width: 68%; } }
   @media (max-width: 767.98px) {
     .main-wrapper {
       width: 100%; } }

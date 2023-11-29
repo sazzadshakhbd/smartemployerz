@@ -17,14 +17,15 @@
     }
   }
   @media (min-width: 1200px) and (max-width: 1399.98px) {
-    width: 17%;
+    width: 20%;
+    max-width: 100%;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    width: 22%;
+    width: 24%;
     max-width: 100%;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    width: 28%;
+    width: 32%;
     max-width: 100%;
   }
   @media (max-width: 767.98px) {
@@ -40,19 +41,13 @@
     max-width: none;
   }
   .sidebar-wrapper {
-    padding-left: 6px;
-    padding-right: 2px;
-    padding-top: 45px;
-    @media(max-width: 1199.98px) {
-      padding-top: 16px;
-    }
-    @media(max-width: 767.98px) {
-      padding-top: 20px;
-    }
+    padding-left: 10px;
+    padding-right: 6px;
+    padding-top: 20px;
     .logo {
       margin-bottom: 18px;
       img {
-        @media(max-width: 767.98px) {
+        @media (max-width: 767.98px) {
           max-width: 160px;
         }
       }
@@ -102,6 +97,38 @@
       li {
         display: flex;
         flex-direction: column;
+        transition: $transitionNormal;
+        margin-bottom: 5px;
+        &.active {
+          background: $teal;
+          border-radius: $radiusSmall;
+          svg {
+            opacity: 1;
+          }
+          span {
+            opacity: 1;
+            &.badge {
+              background: $white;
+              color: $teal;
+            }
+          }
+        }
+        &:hover {
+          a {
+            background: $teal;
+            border-radius: $radiusSmall;
+            svg {
+              opacity: 1;
+            }
+            span {
+              opacity: 1;
+              &.badge {
+                background: $white;
+                color: $teal;
+              }
+            }
+          }
+        }
         a,
         button {
           color: $white;
@@ -109,13 +136,25 @@
           font-size: $fontNormal;
           font-weight: $normal;
           letter-spacing: 0.16px;
-          padding: 12px 0;
+          padding: 12px 8px;
+          transition: $transitionNormal;
+          background: transparent;
           svg {
             margin-right: 1rem;
             opacity: $half;
           }
           span {
             opacity: $half;
+            &.badge {
+              opacity: 1;
+              background: $teal;
+              display: inline-block;
+              color: $white;
+              font-family: $inter;
+              font-size: 12px;
+              font-weight: 400;
+              margin-left: 8px;
+            }
           }
         }
         button {
@@ -143,23 +182,23 @@
   width: 83%;
   span {
     &.humburger {
-      @media(min-width: 768px) {
+      @media (min-width: 768px) {
         display: none;
       }
-      @media(max-width: 767.98px) {
-        font-size: 30px; 
-        cursor: pointer
+      @media (max-width: 767.98px) {
+        font-size: 30px;
+        cursor: pointer;
       }
     }
   }
   @media (min-width: 1200px) and (max-width: 1399.98px) {
-    width: 83%;
+    width: 80%;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    width: 78%;
+    width: 76%;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    width: 72%; 
+    width: 68%;
   }
   @media (max-width: 767.98px) {
     width: 100%;
