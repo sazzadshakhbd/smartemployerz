@@ -1,3 +1,11 @@
+// Sidebar JS
+function openNav() {
+  document.getElementById("mySidenav").style.width = "242px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
 //   Onclick show password
 $(document).ready(function () {
     $("#show_hide_password a").on("click", function (event) {

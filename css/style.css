@@ -39,6 +39,9 @@ body {
   body ::-webkit-scrollbar-thumb:window-inactive {
     background: #00756a; }
 
+.custom-width {
+  max-width: 1440px; }
+
 .login-wrapper {
   height: calc(100vh - 100px);
   gap: 80px; }
@@ -240,3 +243,144 @@ input:focus-visible {
 
 :focus-visible {
   outline: 0; }
+
+.sidenav {
+  border-right: 1px solid #d6d8dc;
+  background: #001815;
+  max-width: 242px;
+  width: 17%; }
+  @media (min-width: 768px) {
+    .sidenav .closebtn {
+      display: none; } }
+  @media (max-width: 767.98px) {
+    .sidenav .closebtn {
+      position: absolute;
+      top: -10px;
+      right: 16px;
+      font-size: 36px;
+      margin-left: 50px;
+      color: #fff; } }
+  @media (min-width: 1200px) and (max-width: 1399.98px) {
+    .sidenav {
+      width: 17%; } }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .sidenav {
+      width: 22%;
+      max-width: 100%; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .sidenav {
+      width: 28%;
+      max-width: 100%; } }
+  @media (max-width: 767.98px) {
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding: 0;
+      max-width: none; } }
+  .sidenav .sidebar-wrapper {
+    padding-left: 6px;
+    padding-right: 2px;
+    padding-top: 45px; }
+    @media (max-width: 1199.98px) {
+      .sidenav .sidebar-wrapper {
+        padding-top: 16px; } }
+    @media (max-width: 767.98px) {
+      .sidenav .sidebar-wrapper {
+        padding-top: 20px; } }
+    .sidenav .sidebar-wrapper .logo {
+      margin-bottom: 18px; }
+      @media (max-width: 767.98px) {
+        .sidenav .sidebar-wrapper .logo img {
+          max-width: 160px; } }
+    .sidenav .sidebar-wrapper .company-name {
+      border-radius: 4px;
+      border: 1px solid rgba(214, 216, 220, 0.2);
+      padding: 8px 0 8px 12px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px; }
+      .sidenav .sidebar-wrapper .company-name img {
+        margin-right: 12px;
+        width: 32px;
+        background: #fff;
+        padding: 5px;
+        border-radius: 4px; }
+      .sidenav .sidebar-wrapper .company-name .content h3,
+      .sidenav .sidebar-wrapper .company-name .content span {
+        color: #ffffff;
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 3px;
+        line-height: normal; }
+      .sidenav .sidebar-wrapper .company-name .content span {
+        letter-spacing: 0.12px;
+        font-size: 12px;
+        font-weight: 400;
+        opacity: 0.5; }
+    .sidenav .sidebar-wrapper ul {
+      margin-bottom: 36px; }
+      .sidenav .sidebar-wrapper ul p {
+        color: #ffffff;
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.14px;
+        opacity: 0.5; }
+      .sidenav .sidebar-wrapper ul li {
+        display: flex;
+        flex-direction: column; }
+        .sidenav .sidebar-wrapper ul li a,
+        .sidenav .sidebar-wrapper ul li button {
+          color: #ffffff;
+          font-family: "Inter", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          letter-spacing: 0.16px;
+          padding: 12px 0; }
+          .sidenav .sidebar-wrapper ul li a svg,
+          .sidenav .sidebar-wrapper ul li button svg {
+            margin-right: 1rem;
+            opacity: 0.5; }
+          .sidenav .sidebar-wrapper ul li a span,
+          .sidenav .sidebar-wrapper ul li button span {
+            opacity: 0.5; }
+        .sidenav .sidebar-wrapper ul li button {
+          background: transparent;
+          border: 0;
+          text-align: left; }
+          .sidenav .sidebar-wrapper ul li button svg.btn-icon {
+            margin-right: 1rem; }
+          .sidenav .sidebar-wrapper ul li button svg.dropdown-icon {
+            float: right;
+            position: relative;
+            top: 14px; }
+
+.main-wrapper {
+  background: red;
+  width: 83%; }
+  @media (min-width: 768px) {
+    .main-wrapper span.humburger {
+      display: none; } }
+  @media (max-width: 767.98px) {
+    .main-wrapper span.humburger {
+      font-size: 30px;
+      cursor: pointer; } }
+  @media (min-width: 1200px) and (max-width: 1399.98px) {
+    .main-wrapper {
+      width: 83%; } }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .main-wrapper {
+      width: 78%; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .main-wrapper {
+      width: 72%; } }
+  @media (max-width: 767.98px) {
+    .main-wrapper {
+      width: 100%; } }
