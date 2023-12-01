@@ -42,6 +42,9 @@ body {
 .custom-width {
   max-width: 1440px; }
 
+.custom-space {
+  padding: 1rem; }
+
 .login-wrapper {
   height: calc(100vh - 100px);
   gap: 80px; }
@@ -413,3 +416,80 @@ input:focus-visible {
   @media (max-width: 767.98px) {
     .main-wrapper {
       width: 100%; } }
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  height: 106px; }
+  .top-bar .content .company-intro h3 {
+    color: #030a16;
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.48px;
+    margin-bottom: 12px; }
+  .top-bar .content .company-intro p {
+    margin-bottom: 0;
+    color: #030a16;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.28px; }
+  .top-bar .top-bar-options {
+    display: flex;
+    align-items: center;
+    gap: 1rem; }
+    .top-bar .top-bar-options .create-job-links a {
+      background-color: #00756A;
+      padding: 12px 16px;
+      border-radius: 4px;
+      color: #ffffff;
+      font-family: "Work Sans", sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 24px;
+      text-decoration: none;
+      display: inline-block; }
+    .top-bar .top-bar-options .notifications .dropdown button {
+      height: 48px;
+      width: 48px;
+      border-radius: 100px;
+      border: 1px solid #d6d8dc;
+      background-color: #fff; }
+      .top-bar .top-bar-options .notifications .dropdown button::after {
+        display: none; }
+      .top-bar .top-bar-options .notifications .dropdown button span i {
+        font-size: 18px; }
+      .top-bar .top-bar-options .notifications .dropdown button span .badge {
+        width: 14px;
+        height: 14px;
+        border-radius: 100%;
+        background-color: #E7502C;
+        position: absolute;
+        top: 10px;
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 7px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.08px;
+        right: 11px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+    .top-bar .top-bar-options .profile-info .dropdown button {
+      height: 48px;
+      width: 48px;
+      border-radius: 100px;
+      border: 1px solid #d6d8dc;
+      background-color: #fff; }
+      .top-bar .top-bar-options .profile-info .dropdown button::after {
+        display: none; }
+      .top-bar .top-bar-options .profile-info .dropdown button img {
+        width: 48px;
+        height: 48px; }
