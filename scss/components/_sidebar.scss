@@ -44,6 +44,8 @@
     padding-left: 10px;
     padding-right: 6px;
     padding-top: 20px;
+    // height: calc(100vh - 10px);
+    // overflow-y: scroll;
     .logo {
       margin-bottom: 18px;
       img {
@@ -178,8 +180,9 @@
 }
 
 .main-wrapper {
-  background: red;
+  // background: red;
   width: 83%;
+  position: relative;
   span {
     &.humburger {
       @media (min-width: 768px) {

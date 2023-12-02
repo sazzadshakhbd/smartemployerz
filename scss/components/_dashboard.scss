@@ -1,0 +1,378 @@
+.dashboard {
+  // Job Info CSS
+  .job-info {
+    margin-bottom: 40px;
+    .card-body {
+      padding: 0;
+      border-radius: 4px;
+      height: 92px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &.bg-active {
+        background: #e7f8ea;
+      }
+      &.bg-pending {
+        background: #e8eff9;
+      }
+      &.bg-expired {
+        background: #ffefe7;
+      }
+      &.bg-draft {
+        background: #f3f3f3;
+      }
+      svg {
+        margin-right: 1.5rem;
+      }
+      .content {
+        h3 {
+          color: $dark;
+          font-family: $inter;
+          font-size: $fontLarge;
+          font-weight: $bold;
+          letter-spacing: 0.24px;
+          margin-bottom: 0;
+        }
+        span {
+          display: inline-block;
+          color: $dark;
+          font-family: $inter;
+          letter-spacing: 0.14px;
+          opacity: 0.8;
+          font-size: $fontSmall;
+          font-weight: $normal;
+        }
+      }
+    }
+  }
+  // Applicants CSS
+  .applicants-info {
+    margin-bottom: 17px;
+    .applicants-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      h3 {
+        margin: 0;
+        font-family: $inter;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+        color: $dark2;
+        display: flex;
+        align-items: center;
+        span {
+          display: inline-block;
+          margin-left: 8px;
+          width: 38px;
+          height: 22px;
+          background: #f9f5ff;
+          display: flex;
+          padding: 2px 8px;
+          justify-content: center;
+          align-items: center;
+          border-radius: 16px;
+          color: #eb8701;
+          font-family: Inter;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 18px;
+        }
+      }
+      a {
+        display: inline-block;
+        width: 102px;
+        height: 36px;
+        border-radius: 3px;
+        border-radius: 3px;
+        border: 1px solid #d0d5dd;
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #344054;
+        font-family: $inter;
+        font-size: $fontSmall;
+        font-weight: 500;
+        line-height: 20px;
+        svg {
+          margin-left: 8px;
+        }
+      }
+    }
+    .all-applicants {
+      .applicants-wrapper {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 20px;
+        .card {
+          border-radius: 4px;
+          border: 1px solid #d9d9d9;
+          background: #f2f2f2;
+          padding: 24px 46px;
+          text-align: center;
+          .card-body {
+            padding: 0;
+            .applicants-image {
+              width: 93px;
+              height: 93px;
+              border-radius: 100%;
+              background-color: rgba(119, 137, 254, 0.1);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              img {
+                width: 75px;
+                height: 75px;
+                border-radius: 100%;
+              }
+            }
+            .details {
+              h3 {
+                color: $dark3;
+                font-family: $inter;
+                font-size: 18px;
+                font-weight: $bold;
+                line-height: 150%;
+                margin-bottom: 0;
+              }
+              span {
+                color: $dark3;
+                font-family: $inter;
+                font-size: $fontNormal;
+                font-weight: $normal;
+                line-height: 150%;
+                opacity: 0.8;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // All Plans Tabs
+  .all-plans {
+    border: 1px solid #eaecf0;
+    padding: 20px 24px 16px 24px;
+    border-radius: 2px;
+    margin-bottom: 40px;
+    .all-tabs {
+      position: relative;
+      .see-all-links {
+        position: absolute;
+        right: 0;
+        top: 0;
+        a {
+          display: inline-block;
+          width: 102px;
+          height: 36px;
+          border-radius: 3px;
+          border-radius: 3px;
+          border: 1px solid #d0d5dd;
+          box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #344054;
+          font-family: $inter;
+          font-size: $fontSmall;
+          font-weight: 500;
+          line-height: 20px;
+          svg {
+            margin-left: 8px;
+          }
+        }
+      }
+      ul {
+        li {
+          button {
+            color: #98a2b3;
+            font-family: $inter;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+            display: flex;
+            align-items: center;
+            span {
+              &.badge {
+                margin-left: 8px;
+                width: 38px;
+                height: 22px;
+                background: #f9f5ff;
+                display: flex;
+                padding: 2px 8px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 16px;
+                color: #eb8701;
+                font-family: Inter;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 18px;
+              }
+            }
+            &.active {
+              color: #101828;
+              background-color: transparent;
+              border-bottom: 3px solid #00756a;
+              border-radius: 0;
+            }
+          }
+        }
+      }
+      .tab-content {
+        margin-top: 26px;
+        .tab-pane {
+          .table-responsive {
+            table {
+              thead {
+                border-bottom: 1px solid #eaecf0;
+                background: #f9fafb;
+                tr {
+                  th {
+                    color: #667085;
+                    font-family: Inter;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 18px;
+                    padding: 13px 5px;
+                  }
+                }
+              }
+              tbody {
+                border-top: 0;
+                tr {
+                  &:last-child {
+                    td {
+                      border-bottom: 0;
+                      padding-bottom: 0;
+                    }
+                  }
+                  td {
+                    color: #667085;
+                    font-family: $inter;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    margin-bottom: 0;
+                    vertical-align: middle;
+                    padding: 22px 5px;
+                    .title {
+                      display: flex;
+                      align-items: center;
+                      h3 {
+                        color: #101828;
+                        font-family: $inter;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 20px;
+                        margin-bottom: 3px;
+                        max-width: 160px;
+                      }
+                      span {
+                        line-height: 0;
+                      }
+                    }
+                    p {
+                      color: #667085;
+                      font-family: $inter;
+                      font-size: 14px;
+                      font-weight: 400;
+                      line-height: 20px;
+                      margin-bottom: 0;
+                    }
+                    ul {
+                      &.tags {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        li {
+                          color: #030a16;
+                          text-align: center;
+                          font-family: $inter;
+                          font-size: 12px;
+                          font-weight: 500;
+                          line-height: 18px;
+                          padding: 4px 5px;
+                          border-radius: 4px;
+                          &.bg-shortlist {
+                            background: #ffedd5;
+                          }
+                          &.bg-interview {
+                            background: #dbeafe;
+                          }
+                          &.bg-hired {
+                            background: #dcfce7;
+                          }
+                          &.bg-offered {
+                            background: #f3e8ff;
+                          }
+                        }
+                      }
+                      &.links {
+                        display: flex;
+                        align-items: center;
+                        gap: 16px;
+                        a {
+                          &.modal-pointer {
+                            cursor: pointer;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Features
+  .features {
+    .features-bar {
+      margin-bottom: 40px;
+      h3 {
+        margin: 0;
+        font-family: $inter;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+        color: $dark2;
+        display: flex;
+        align-items: center;
+      }
+    }
+    .card {
+      border-radius: 4px;
+      border: 1px solid #d9d9d9;
+      background: #f2f2f2;
+      padding: 24px 32px;
+      h4 {
+        color: $dark3;
+        font-family: $inter;
+        font-size: 18px;
+        font-weight: $bold;
+        line-height: 150%;
+        margin: 0 0 8px 0;
+      }
+      p {
+        margin-bottom: 1rem;
+        color: $dark3;
+        font-family: $inter;
+        font-size: $fontNormal;
+        font-weight: $normal;
+        line-height: 150%;
+      }
+      a {
+        @include btn-theme;
+        text-decoration: none;
+        max-width: 200px;
+        text-align: center;
+      }
+    }
+  }
+}

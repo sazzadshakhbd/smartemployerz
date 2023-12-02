@@ -62,4 +62,10 @@ body {
 }
 .custom-space {
   padding: 1rem;
+  margin-bottom: 71px;
+  
+}
+.responsive-height {
+  height: calc(100% - 0px);
+  overflow-y: scroll;
 }

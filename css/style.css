@@ -43,7 +43,12 @@ body {
   max-width: 1440px; }
 
 .custom-space {
-  padding: 1rem; }
+  padding: 1rem;
+  margin-bottom: 71px; }
+
+.responsive-height {
+  height: calc(100% - 0px);
+  overflow-y: scroll; }
 
 .login-wrapper {
   height: calc(100vh - 100px);
@@ -395,8 +400,8 @@ input:focus-visible {
             top: 14px; }
 
 .main-wrapper {
-  background: red;
-  width: 83%; }
+  width: 83%;
+  position: relative; }
   @media (min-width: 768px) {
     .main-wrapper span.humburger {
       display: none; } }
@@ -422,7 +427,8 @@ input:focus-visible {
   align-items: center;
   justify-content: space-between;
   background-color: #ffffff;
-  height: 106px; }
+  height: 106px;
+  margin-bottom: 40px; }
   .top-bar .content .company-intro h3 {
     color: #030a16;
     font-family: "Inter", sans-serif;
@@ -493,3 +499,313 @@ input:focus-visible {
       .top-bar .top-bar-options .profile-info .dropdown button img {
         width: 48px;
         height: 48px; }
+
+footer {
+  background: #e7f8ea;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 70px; }
+  footer p {
+    margin-bottom: 0;
+    padding: 13px 30px; }
+
+.dashboard .job-info {
+  margin-bottom: 40px; }
+  .dashboard .job-info .card-body {
+    padding: 0;
+    border-radius: 4px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .dashboard .job-info .card-body.bg-active {
+      background: #e7f8ea; }
+    .dashboard .job-info .card-body.bg-pending {
+      background: #e8eff9; }
+    .dashboard .job-info .card-body.bg-expired {
+      background: #ffefe7; }
+    .dashboard .job-info .card-body.bg-draft {
+      background: #f3f3f3; }
+    .dashboard .job-info .card-body svg {
+      margin-right: 1.5rem; }
+    .dashboard .job-info .card-body .content h3 {
+      color: #030a16;
+      font-family: "Inter", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.24px;
+      margin-bottom: 0; }
+    .dashboard .job-info .card-body .content span {
+      display: inline-block;
+      color: #030a16;
+      font-family: "Inter", sans-serif;
+      letter-spacing: 0.14px;
+      opacity: 0.8;
+      font-size: 14px;
+      font-weight: 400; }
+
+.dashboard .applicants-info {
+  margin-bottom: 17px; }
+  .dashboard .applicants-info .applicants-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px; }
+    .dashboard .applicants-info .applicants-bar h3 {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 28px;
+      color: #101828;
+      display: flex;
+      align-items: center; }
+      .dashboard .applicants-info .applicants-bar h3 span {
+        display: inline-block;
+        margin-left: 8px;
+        width: 38px;
+        height: 22px;
+        background: #f9f5ff;
+        display: flex;
+        padding: 2px 8px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+        color: #eb8701;
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px; }
+    .dashboard .applicants-info .applicants-bar a {
+      display: inline-block;
+      width: 102px;
+      height: 36px;
+      border-radius: 3px;
+      border-radius: 3px;
+      border: 1px solid #d0d5dd;
+      box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #344054;
+      font-family: "Inter", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px; }
+      .dashboard .applicants-info .applicants-bar a svg {
+        margin-left: 8px; }
+  .dashboard .applicants-info .all-applicants .applicants-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px; }
+    .dashboard .applicants-info .all-applicants .applicants-wrapper .card {
+      border-radius: 4px;
+      border: 1px solid #d9d9d9;
+      background: #f2f2f2;
+      padding: 24px 46px;
+      text-align: center; }
+      .dashboard .applicants-info .all-applicants .applicants-wrapper .card .card-body {
+        padding: 0; }
+        .dashboard .applicants-info .all-applicants .applicants-wrapper .card .card-body .applicants-image {
+          width: 93px;
+          height: 93px;
+          border-radius: 100%;
+          background-color: rgba(119, 137, 254, 0.1);
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .dashboard .applicants-info .all-applicants .applicants-wrapper .card .card-body .applicants-image img {
+            width: 75px;
+            height: 75px;
+            border-radius: 100%; }
+        .dashboard .applicants-info .all-applicants .applicants-wrapper .card .card-body .details h3 {
+          color: #353c44;
+          font-family: "Inter", sans-serif;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 150%;
+          margin-bottom: 0; }
+        .dashboard .applicants-info .all-applicants .applicants-wrapper .card .card-body .details span {
+          color: #353c44;
+          font-family: "Inter", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 150%;
+          opacity: 0.8; }
+
+.dashboard .all-plans {
+  border: 1px solid #eaecf0;
+  padding: 20px 24px 16px 24px;
+  border-radius: 2px;
+  margin-bottom: 40px; }
+  .dashboard .all-plans .all-tabs {
+    position: relative; }
+    .dashboard .all-plans .all-tabs .see-all-links {
+      position: absolute;
+      right: 0;
+      top: 0; }
+      .dashboard .all-plans .all-tabs .see-all-links a {
+        display: inline-block;
+        width: 102px;
+        height: 36px;
+        border-radius: 3px;
+        border-radius: 3px;
+        border: 1px solid #d0d5dd;
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #344054;
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px; }
+        .dashboard .all-plans .all-tabs .see-all-links a svg {
+          margin-left: 8px; }
+    .dashboard .all-plans .all-tabs ul li button {
+      color: #98a2b3;
+      font-family: "Inter", sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 28px;
+      display: flex;
+      align-items: center; }
+      .dashboard .all-plans .all-tabs ul li button span.badge {
+        margin-left: 8px;
+        width: 38px;
+        height: 22px;
+        background: #f9f5ff;
+        display: flex;
+        padding: 2px 8px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+        color: #eb8701;
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px; }
+      .dashboard .all-plans .all-tabs ul li button.active {
+        color: #101828;
+        background-color: transparent;
+        border-bottom: 3px solid #00756a;
+        border-radius: 0; }
+    .dashboard .all-plans .all-tabs .tab-content {
+      margin-top: 26px; }
+      .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table thead {
+        border-bottom: 1px solid #eaecf0;
+        background: #f9fafb; }
+        .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table thead tr th {
+          color: #667085;
+          font-family: Inter;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 18px;
+          padding: 13px 5px; }
+      .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody {
+        border-top: 0; }
+        .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr:last-child td {
+          border-bottom: 0;
+          padding-bottom: 0; }
+        .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td {
+          color: #667085;
+          font-family: "Inter", sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          margin-bottom: 0;
+          vertical-align: middle;
+          padding: 22px 5px; }
+          .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td .title {
+            display: flex;
+            align-items: center; }
+            .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td .title h3 {
+              color: #101828;
+              font-family: "Inter", sans-serif;
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 20px;
+              margin-bottom: 3px;
+              max-width: 160px; }
+            .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td .title span {
+              line-height: 0; }
+          .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td p {
+            color: #667085;
+            font-family: "Inter", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            margin-bottom: 0; }
+          .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td ul.tags {
+            display: flex;
+            align-items: center;
+            gap: 8px; }
+            .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td ul.tags li {
+              color: #030a16;
+              text-align: center;
+              font-family: "Inter", sans-serif;
+              font-size: 12px;
+              font-weight: 500;
+              line-height: 18px;
+              padding: 4px 5px;
+              border-radius: 4px; }
+              .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td ul.tags li.bg-shortlist {
+                background: #ffedd5; }
+              .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td ul.tags li.bg-interview {
+                background: #dbeafe; }
+              .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td ul.tags li.bg-hired {
+                background: #dcfce7; }
+              .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td ul.tags li.bg-offered {
+                background: #f3e8ff; }
+          .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td ul.links {
+            display: flex;
+            align-items: center;
+            gap: 16px; }
+            .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td ul.links a.modal-pointer {
+              cursor: pointer; }
+
+.dashboard .features .features-bar {
+  margin-bottom: 40px; }
+  .dashboard .features .features-bar h3 {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #101828;
+    display: flex;
+    align-items: center; }
+
+.dashboard .features .card {
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+  background: #f2f2f2;
+  padding: 24px 32px; }
+  .dashboard .features .card h4 {
+    color: #353c44;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+    margin: 0 0 8px 0; }
+  .dashboard .features .card p {
+    margin-bottom: 1rem;
+    color: #353c44;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; }
+  .dashboard .features .card a {
+    background-color: #00756A;
+    padding: 12px 16px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: none;
+    max-width: 200px;
+    text-align: center; }

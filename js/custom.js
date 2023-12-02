@@ -38,6 +38,10 @@ $(document).ready(function () {
       }
     });
 });
+// For Tooltip
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
 
 // For Country Flag JS
 function format(item, state) {
