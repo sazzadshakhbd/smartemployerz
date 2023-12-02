@@ -46,6 +46,10 @@ body {
   padding: 1rem;
   margin-bottom: 71px; }
 
+.responsive-height {
+  height: calc(100vh - 0px);
+  overflow-y: scroll; }
+
 .login-wrapper {
   height: calc(100vh - 100px);
   gap: 80px; }
@@ -498,11 +502,9 @@ input:focus-visible {
 
 footer {
   background: #e7f8ea;
-  position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
-  margin-top: 70px; }
+  width: 100%; }
   footer p {
     margin-bottom: 0;
     padding: 13px 30px; }
