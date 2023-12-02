@@ -8,7 +8,10 @@
       height: 92px;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: start; 
+      @media(min-width: 768px)and(max-width: 991.98px) {
+        margin-bottom: 1rem;
+      }
       &.bg-active {
         background: #e7f8ea;
       }
@@ -23,8 +26,14 @@
       }
       svg {
         margin-right: 1.5rem;
+        margin-left: 1.5rem;
+        @media(min-width: 992px)and(max-width: 1199.98px) {
+          margin-right: 0.8rem;
+          margin-left: 0.8rem;
+        }
       }
       .content {
+        
         h3 {
           color: $dark;
           font-family: $inter;
@@ -105,13 +114,22 @@
       .applicants-wrapper {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-gap: 20px;
+        grid-gap: 16px;
+        @media(min-width: 992px)and(max-width: 1199.98px) {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        @media(min-width: 768px)and(max-width: 991.98px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
         .card {
           border-radius: 4px;
           border: 1px solid #d9d9d9;
           background: #f2f2f2;
           padding: 24px 46px;
           text-align: center;
+          @media(min-width: 1200px)and(max-width: 1399.98px) {
+            padding: 20px; 
+          }
           .card-body {
             padding: 0;
             .applicants-image {
@@ -122,6 +140,8 @@
               display: flex;
               align-items: center;
               justify-content: center;
+              margin: 0 auto;
+              
               img {
                 width: 75px;
                 height: 75px;
@@ -226,6 +246,9 @@
         .tab-pane {
           .table-responsive {
             table {
+              @media(min-width: 992px)and(max-width: 1199.98px) {
+                width: 135%;
+              }
               thead {
                 border-bottom: 1px solid #eaecf0;
                 background: #f9fafb;
@@ -236,7 +259,7 @@
                     font-size: 12px;
                     font-weight: 500;
                     line-height: 18px;
-                    padding: 13px 5px;
+                    padding: 13px 10px;
                   }
                 }
               }
@@ -257,7 +280,7 @@
                     line-height: 20px;
                     margin-bottom: 0;
                     vertical-align: middle;
-                    padding: 22px 5px;
+                    padding: 22px 10px;
                     .title {
                       display: flex;
                       align-items: center;
@@ -351,6 +374,12 @@
       border: 1px solid #d9d9d9;
       background: #f2f2f2;
       padding: 24px 32px;
+      @media(min-width: 1200px)and(max-width: 1399.98px) {
+        padding: 20px; 
+      }
+      @media(min-width: 992px)and(max-width: 1199.98px) {
+        margin-bottom: 1rem;
+      }
       h4 {
         color: $dark3;
         font-family: $inter;

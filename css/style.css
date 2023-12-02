@@ -429,6 +429,9 @@ input:focus-visible {
   background-color: #ffffff;
   height: 106px;
   margin-bottom: 40px; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .top-bar .content {
+      display: none; } }
   .top-bar .content .company-intro h3 {
     color: #030a16;
     font-family: "Inter", sans-serif;
@@ -447,6 +450,10 @@ input:focus-visible {
     display: flex;
     align-items: center;
     gap: 1rem; }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .top-bar .top-bar-options {
+        justify-content: space-evenly;
+        width: 100%; } }
     .top-bar .top-bar-options .create-job-links a {
       background-color: #00756A;
       padding: 12px 16px;
@@ -517,7 +524,10 @@ footer {
     height: 92px;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: start; }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .dashboard .job-info .card-body {
+        margin-bottom: 1rem; } }
     .dashboard .job-info .card-body.bg-active {
       background: #e7f8ea; }
     .dashboard .job-info .card-body.bg-pending {
@@ -527,7 +537,12 @@ footer {
     .dashboard .job-info .card-body.bg-draft {
       background: #f3f3f3; }
     .dashboard .job-info .card-body svg {
-      margin-right: 1.5rem; }
+      margin-right: 1.5rem;
+      margin-left: 1.5rem; }
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        .dashboard .job-info .card-body svg {
+          margin-right: 0.8rem;
+          margin-left: 0.8rem; } }
     .dashboard .job-info .card-body .content h3 {
       color: #030a16;
       font-family: "Inter", sans-serif;
@@ -597,13 +612,22 @@ footer {
   .dashboard .applicants-info .all-applicants .applicants-wrapper {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 20px; }
+    grid-gap: 16px; }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .dashboard .applicants-info .all-applicants .applicants-wrapper {
+        grid-template-columns: repeat(3, 1fr); } }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .dashboard .applicants-info .all-applicants .applicants-wrapper {
+        grid-template-columns: repeat(2, 1fr); } }
     .dashboard .applicants-info .all-applicants .applicants-wrapper .card {
       border-radius: 4px;
       border: 1px solid #d9d9d9;
       background: #f2f2f2;
       padding: 24px 46px;
       text-align: center; }
+      @media (min-width: 1200px) and (max-width: 1399.98px) {
+        .dashboard .applicants-info .all-applicants .applicants-wrapper .card {
+          padding: 20px; } }
       .dashboard .applicants-info .all-applicants .applicants-wrapper .card .card-body {
         padding: 0; }
         .dashboard .applicants-info .all-applicants .applicants-wrapper .card .card-body .applicants-image {
@@ -613,7 +637,8 @@ footer {
           background-color: rgba(119, 137, 254, 0.1);
           display: flex;
           align-items: center;
-          justify-content: center; }
+          justify-content: center;
+          margin: 0 auto; }
           .dashboard .applicants-info .all-applicants .applicants-wrapper .card .card-body .applicants-image img {
             width: 75px;
             height: 75px;
@@ -692,6 +717,9 @@ footer {
         border-radius: 0; }
     .dashboard .all-plans .all-tabs .tab-content {
       margin-top: 26px; }
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table {
+          width: 135%; } }
       .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table thead {
         border-bottom: 1px solid #eaecf0;
         background: #f9fafb; }
@@ -701,7 +729,7 @@ footer {
           font-size: 12px;
           font-weight: 500;
           line-height: 18px;
-          padding: 13px 5px; }
+          padding: 13px 10px; }
       .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody {
         border-top: 0; }
         .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr:last-child td {
@@ -715,7 +743,7 @@ footer {
           line-height: 20px;
           margin-bottom: 0;
           vertical-align: middle;
-          padding: 22px 5px; }
+          padding: 22px 10px; }
           .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td .title {
             display: flex;
             align-items: center; }
@@ -781,6 +809,12 @@ footer {
   border: 1px solid #d9d9d9;
   background: #f2f2f2;
   padding: 24px 32px; }
+  @media (min-width: 1200px) and (max-width: 1399.98px) {
+    .dashboard .features .card {
+      padding: 20px; } }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .dashboard .features .card {
+      margin-bottom: 1rem; } }
   .dashboard .features .card h4 {
     color: #353c44;
     font-family: "Inter", sans-serif;

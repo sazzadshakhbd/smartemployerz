@@ -6,6 +6,9 @@
   height: 106px;
   margin-bottom: 40px;   
   .content {
+    @media(min-width: 768px)and(max-width: 991.98px) {
+      display: none;
+    }
     .company-intro {
       h3 {
         color: $dark;
@@ -33,6 +36,10 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+    @media(min-width: 768px)and(max-width: 991.98px) {
+      justify-content: space-evenly;
+      width: 100%;
+    }
     .create-job-links {
       a {
         @include btn-theme;
