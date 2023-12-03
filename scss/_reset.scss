@@ -49,21 +49,24 @@ body {
   ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: #00756a;
+    background: #001815;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
   }
 
   ::-webkit-scrollbar-thumb:window-inactive {
-    background: #00756a;
+    background: #001815;
   }
-}
+} 
 .custom-width {
   max-width: 1440px;
 }
 .custom-space {
   padding: 1rem;
-  margin-bottom: 71px;
-  
+  margin-bottom: 40px;
+  @media(max-width: 1199.98px) {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 }
 .responsive-height {
   height: calc(100vh - 0px);

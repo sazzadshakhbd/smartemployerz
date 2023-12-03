@@ -34,17 +34,21 @@ body {
   body ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: #00756a;
+    background: #001815;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
   body ::-webkit-scrollbar-thumb:window-inactive {
-    background: #00756a; }
+    background: #001815; }
 
 .custom-width {
   max-width: 1440px; }
 
 .custom-space {
   padding: 1rem;
-  margin-bottom: 71px; }
+  margin-bottom: 40px; }
+  @media (max-width: 1199.98px) {
+    .custom-space {
+      margin-bottom: 0;
+      padding-bottom: 0; } }
 
 .responsive-height {
   height: calc(100vh - 0px);
@@ -238,7 +242,13 @@ form .form-group {
     font-family: "Work Sans", sans-serif;
     font-size: 1rem;
     font-weight: 500;
-    line-height: 24px; }
+    line-height: 24px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease; }
+    form .form-group button:hover {
+      background-color: #ffffff;
+      color: #00756A;
+      border-color: #00756A; }
 
 .form-control:focus {
   box-shadow: none; }
@@ -408,7 +418,10 @@ input:focus-visible {
   @media (max-width: 767.98px) {
     .main-wrapper span.humburger {
       font-size: 30px;
-      cursor: pointer; } }
+      cursor: pointer;
+      position: absolute;
+      left: 13px;
+      top: 15px; } }
   @media (min-width: 1200px) and (max-width: 1399.98px) {
     .main-wrapper {
       width: 80%; } }
@@ -429,7 +442,13 @@ input:focus-visible {
   background-color: #ffffff;
   height: 106px;
   margin-bottom: 40px; }
-  @media (min-width: 768px) and (max-width: 991.98px) {
+  @media (max-width: 767.98px) {
+    .top-bar {
+      height: auto; } }
+  @media (max-width: 575.98px) {
+    .top-bar {
+      margin-bottom: 1rem; } }
+  @media (max-width: 991.98px) {
     .top-bar .content {
       display: none; } }
   .top-bar .content .company-intro h3 {
@@ -454,6 +473,11 @@ input:focus-visible {
       .top-bar .top-bar-options {
         justify-content: space-evenly;
         width: 100%; } }
+    @media (max-width: 767.98px) {
+      .top-bar .top-bar-options {
+        justify-content: end;
+        width: 100%;
+        gap: 10px; } }
     .top-bar .top-bar-options .create-job-links a {
       background-color: #00756A;
       padding: 12px 16px;
@@ -463,8 +487,18 @@ input:focus-visible {
       font-size: 1rem;
       font-weight: 500;
       line-height: 24px;
+      border: 1px solid transparent;
+      transition: all 0.3s ease;
       text-decoration: none;
       display: inline-block; }
+      .top-bar .top-bar-options .create-job-links a:hover {
+        background-color: #ffffff;
+        color: #00756A;
+        border-color: #00756A; }
+      @media (max-width: 575.98px) {
+        .top-bar .top-bar-options .create-job-links a {
+          padding: 5px 10px;
+          font-size: 12px; } }
     .top-bar .top-bar-options .notifications .dropdown button {
       height: 48px;
       width: 48px;
@@ -515,9 +549,17 @@ footer {
   footer p {
     margin-bottom: 0;
     padding: 13px 30px; }
+    @media (max-width: 1199.98px) {
+      footer p {
+        padding: 7px 5px;
+        font-size: 14px;
+        text-align: center; } }
 
 .dashboard .job-info {
   margin-bottom: 40px; }
+  @media (max-width: 575.98px) {
+    .dashboard .job-info {
+      margin-bottom: 0; } }
   .dashboard .job-info .card-body {
     padding: 0;
     border-radius: 4px;
@@ -525,7 +567,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: start; }
-    @media (min-width: 768px) and (max-width: 991.98px) {
+    @media (max-width: 991.98px) {
       .dashboard .job-info .card-body {
         margin-bottom: 1rem; } }
     .dashboard .job-info .card-body.bg-active {
@@ -566,6 +608,9 @@ footer {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 40px; }
+    @media (max-width: 575.98px) {
+      .dashboard .applicants-info .applicants-bar {
+        margin-bottom: 1rem; } }
     .dashboard .applicants-info .applicants-bar h3 {
       margin: 0;
       font-family: "Inter", sans-serif;
@@ -575,6 +620,9 @@ footer {
       color: #101828;
       display: flex;
       align-items: center; }
+      @media (max-width: 575.98px) {
+        .dashboard .applicants-info .applicants-bar h3 {
+          font-size: 15px; } }
       .dashboard .applicants-info .applicants-bar h3 span {
         display: inline-block;
         margin-left: 8px;
@@ -616,9 +664,12 @@ footer {
     @media (min-width: 992px) and (max-width: 1199.98px) {
       .dashboard .applicants-info .all-applicants .applicants-wrapper {
         grid-template-columns: repeat(3, 1fr); } }
-    @media (min-width: 768px) and (max-width: 991.98px) {
+    @media (min-width: 576px) and (max-width: 991.98px) {
       .dashboard .applicants-info .all-applicants .applicants-wrapper {
         grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 575.98px) {
+      .dashboard .applicants-info .all-applicants .applicants-wrapper {
+        grid-template-columns: repeat(1, 1fr); } }
     .dashboard .applicants-info .all-applicants .applicants-wrapper .card {
       border-radius: 4px;
       border: 1px solid #d9d9d9;
@@ -663,12 +714,28 @@ footer {
   padding: 20px 24px 16px 24px;
   border-radius: 2px;
   margin-bottom: 40px; }
+  @media (max-width: 575.98px) {
+    .dashboard .all-plans {
+      padding: 16px 10px 16px 10px;
+      margin-bottom: 1rem; } }
   .dashboard .all-plans .all-tabs {
     position: relative; }
     .dashboard .all-plans .all-tabs .see-all-links {
       position: absolute;
       right: 0;
       top: 0; }
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        .dashboard .all-plans .all-tabs .see-all-links {
+          top: 10px;
+          right: -10px; } }
+      @media (min-width: 576px) and (max-width: 767.98px) {
+        .dashboard .all-plans .all-tabs .see-all-links {
+          top: 5px; } }
+      @media (max-width: 575.98px) {
+        .dashboard .all-plans .all-tabs .see-all-links {
+          position: relative;
+          top: 8px;
+          float: right; } }
       .dashboard .all-plans .all-tabs .see-all-links a {
         display: inline-block;
         width: 102px;
@@ -695,6 +762,15 @@ footer {
       line-height: 28px;
       display: flex;
       align-items: center; }
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        .dashboard .all-plans .all-tabs ul li button {
+          padding-left: 10px;
+          padding-right: 10px; } }
+      @media (max-width: 575.98px) {
+        .dashboard .all-plans .all-tabs ul li button {
+          padding-left: 10px;
+          padding-right: 10px;
+          font-size: 14px; } }
       .dashboard .all-plans .all-tabs ul li button span.badge {
         margin-left: 8px;
         width: 38px;
@@ -794,6 +870,9 @@ footer {
 
 .dashboard .features .features-bar {
   margin-bottom: 40px; }
+  @media (max-width: 575.98px) {
+    .dashboard .features .features-bar {
+      margin-bottom: 1rem; } }
   .dashboard .features .features-bar h3 {
     margin: 0;
     font-family: "Inter", sans-serif;
@@ -808,13 +887,23 @@ footer {
   border-radius: 4px;
   border: 1px solid #d9d9d9;
   background: #f2f2f2;
-  padding: 24px 32px; }
+  padding: 24px 32px;
+  height: 230px; }
   @media (min-width: 1200px) and (max-width: 1399.98px) {
     .dashboard .features .card {
       padding: 20px; } }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     .dashboard .features .card {
+      height: 250px; } }
+  @media (max-width: 1199.98px) {
+    .dashboard .features .card {
       margin-bottom: 1rem; } }
+  @media (max-width: 991.98px) {
+    .dashboard .features .card {
+      height: auto; } }
+  @media (max-width: 575.98px) {
+    .dashboard .features .card {
+      padding: 1rem; } }
   .dashboard .features .card h4 {
     color: #353c44;
     font-family: "Inter", sans-serif;
@@ -822,13 +911,27 @@ footer {
     font-weight: 700;
     line-height: 150%;
     margin: 0 0 8px 0; }
+    @media (min-width: 1200px) and (max-width: 1399.98px) {
+      .dashboard .features .card h4 {
+        font-size: 17px; } }
+    @media (max-width: 575.98px) {
+      .dashboard .features .card h4 {
+        font-size: 16px; } }
   .dashboard .features .card p {
     margin-bottom: 1rem;
     color: #353c44;
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 150%; }
+    line-height: 150%;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 100px; }
+    @media (max-width: 991.98px) {
+      .dashboard .features .card p {
+        height: auto; } }
   .dashboard .features .card a {
     background-color: #00756A;
     padding: 12px 16px;
@@ -838,6 +941,12 @@ footer {
     font-size: 1rem;
     font-weight: 500;
     line-height: 24px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
     text-decoration: none;
     max-width: 200px;
     text-align: center; }
+    .dashboard .features .card a:hover {
+      background-color: #ffffff;
+      color: #00756A;
+      border-color: #00756A; }

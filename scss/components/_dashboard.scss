@@ -2,6 +2,9 @@
   // Job Info CSS
   .job-info {
     margin-bottom: 40px;
+    @media(max-width: 575.98px) {
+      margin-bottom: 0;
+    }
     .card-body {
       padding: 0;
       border-radius: 4px;
@@ -9,7 +12,7 @@
       display: flex;
       align-items: center;
       justify-content: start; 
-      @media(min-width: 768px)and(max-width: 991.98px) {
+      @media(max-width: 991.98px) {
         margin-bottom: 1rem;
       }
       &.bg-active {
@@ -62,6 +65,9 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 40px;
+      @media(max-width: 575.98px) {
+        margin-bottom: 1rem;
+      }
       h3 {
         margin: 0;
         font-family: $inter;
@@ -71,6 +77,9 @@
         color: $dark2;
         display: flex;
         align-items: center;
+        @media(max-width: 575.98px) {
+          font-size: 15px;
+        } 
         span {
           display: inline-block;
           margin-left: 8px;
@@ -118,8 +127,11 @@
         @media(min-width: 992px)and(max-width: 1199.98px) {
           grid-template-columns: repeat(3, 1fr);
         }
-        @media(min-width: 768px)and(max-width: 991.98px) {
+        @media(min-width: 576px)and(max-width: 991.98px) {
           grid-template-columns: repeat(2, 1fr);
+        }
+        @media(max-width: 575.98px) {
+          grid-template-columns: repeat(1, 1fr);
         }
         .card {
           border-radius: 4px;
@@ -177,12 +189,28 @@
     padding: 20px 24px 16px 24px;
     border-radius: 2px;
     margin-bottom: 40px;
+    @media(max-width: 575.98px) {
+      padding: 16px 10px 16px 10px;
+      margin-bottom: 1rem;
+    }
     .all-tabs {
       position: relative;
       .see-all-links {
         position: absolute;
         right: 0;
         top: 0;
+        @media(min-width: 768px)and(max-width: 991.98px) {
+          top: 10px;
+          right: -10px;
+        }
+        @media(min-width: 576px)and(max-width: 767.98px) {
+          top: 5px;
+        }
+        @media(max-width: 575.98px) {
+          position: relative;
+          top:8px;
+          float: right;
+        }
         a {
           display: inline-block;
           width: 102px;
@@ -214,6 +242,15 @@
             line-height: 28px;
             display: flex;
             align-items: center;
+            @media(min-width: 768px)and(max-width: 991.98px) {
+              padding-left: 10px;
+              padding-right: 10px;
+            }
+            @media(max-width: 575.98px) {
+              padding-left: 10px;
+              padding-right: 10px;
+              font-size: 14px;
+            }
             span {
               &.badge {
                 margin-left: 8px;
@@ -358,6 +395,9 @@
   .features {
     .features-bar {
       margin-bottom: 40px;
+      @media(max-width: 575.98px) {
+        margin-bottom: 1rem;
+      }
       h3 {
         margin: 0;
         font-family: $inter;
@@ -374,11 +414,21 @@
       border: 1px solid #d9d9d9;
       background: #f2f2f2;
       padding: 24px 32px;
+      height: 230px;
       @media(min-width: 1200px)and(max-width: 1399.98px) {
         padding: 20px; 
       }
       @media(min-width: 992px)and(max-width: 1199.98px) {
+        height: 250px;
+      }
+      @media(max-width: 1199.98px) {
         margin-bottom: 1rem;
+      }
+      @media(max-width: 991.98px) {
+        height: auto;
+      }
+      @media(max-width: 575.98px) {
+        padding: 1rem;
       }
       h4 {
         color: $dark3;
@@ -387,6 +437,12 @@
         font-weight: $bold;
         line-height: 150%;
         margin: 0 0 8px 0;
+        @media(min-width: 1200px)and(max-width: 1399.98px) {
+          font-size: 17px;
+        }
+        @media(max-width: 575.98px) {
+          font-size: 16px;
+        }
       }
       p {
         margin-bottom: 1rem;
@@ -395,6 +451,14 @@
         font-size: $fontNormal;
         font-weight: $normal;
         line-height: 150%;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+        height: 100px;
+        @media(max-width: 991.98px) {
+          height: auto;
+        }
       }
       a {
         @include btn-theme;

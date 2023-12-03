@@ -4,9 +4,15 @@
   justify-content: space-between;
   background-color: $white;
   height: 106px;
-  margin-bottom: 40px;   
+  margin-bottom: 40px;
+  @media(max-width: 767.98px) {
+    height: auto;
+  }
+  @media(max-width: 575.98px) {
+    margin-bottom: 1rem;
+  }   
   .content {
-    @media(min-width: 768px)and(max-width: 991.98px) {
+    @media(max-width: 991.98px) {
       display: none;
     }
     .company-intro {
@@ -40,11 +46,20 @@
       justify-content: space-evenly;
       width: 100%;
     }
+    @media(max-width: 767.98px) {
+      justify-content: end;
+      width: 100%;
+      gap: 10px;
+    }
     .create-job-links {
       a {
         @include btn-theme;
         text-decoration: none;
         display: inline-block;
+        @media(max-width: 575.98px) {
+          padding: 5px 10px;
+          font-size: 12px;
+        }
       }
     }
     .notifications {
