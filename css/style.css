@@ -43,12 +43,13 @@ body {
   max-width: 1920px; }
 
 .custom-space {
-  padding: 1rem;
+  padding: 1rem 40px;
   margin-bottom: 40px; }
   @media (max-width: 1199.98px) {
     .custom-space {
       margin-bottom: 0;
-      padding-bottom: 0; } }
+      padding-bottom: 0;
+      padding: 1rem; } }
 
 .responsive-height {
   height: calc(100vh - 0px);
@@ -265,7 +266,6 @@ input:focus-visible {
 .sidenav {
   border-right: 1px solid #d6d8dc;
   background: #001815;
-  max-width: 242px;
   width: 17%; }
   @media (min-width: 768px) {
     .sidenav .closebtn {
@@ -570,6 +570,9 @@ footer {
     @media (max-width: 991.98px) {
       .dashboard .job-info .card-body {
         margin-bottom: 1rem; } }
+    @media (max-width: 575.98px) {
+      .dashboard .job-info .card-body {
+        margin-bottom: 8px; } }
     .dashboard .job-info .card-body.bg-active {
       background: #e7f8ea; }
     .dashboard .job-info .card-body.bg-pending {
@@ -585,6 +588,10 @@ footer {
         .dashboard .job-info .card-body svg {
           margin-right: 0.8rem;
           margin-left: 0.8rem; } }
+      @media (max-width: 575.98px) {
+        .dashboard .job-info .card-body svg {
+          margin-right: 10px;
+          margin-left: 10px; } }
     .dashboard .job-info .card-body .content h3 {
       color: #030a16;
       font-family: "Inter", sans-serif;
@@ -600,6 +607,10 @@ footer {
       opacity: 0.8;
       font-size: 14px;
       font-weight: 400; }
+      @media (max-width: 575.98px) {
+        .dashboard .job-info .card-body .content span {
+          font-size: 13px;
+          letter-spacing: 0; } }
 
 .dashboard .applicants-info {
   margin-bottom: 17px; }

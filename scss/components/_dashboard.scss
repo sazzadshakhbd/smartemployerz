@@ -15,6 +15,9 @@
       @media(max-width: 991.98px) {
         margin-bottom: 1rem;
       }
+      @media(max-width: 575.98px) {
+        margin-bottom: 8px;
+      }
       &.bg-active {
         background: #e7f8ea;
       }
@@ -33,6 +36,10 @@
         @media(min-width: 992px)and(max-width: 1199.98px) {
           margin-right: 0.8rem;
           margin-left: 0.8rem;
+        }
+        @media(max-width: 575.98px) {
+          margin-right: 10px;
+          margin-left: 10px;
         }
       }
       .content {
@@ -53,6 +60,10 @@
           opacity: 0.8;
           font-size: $fontSmall;
           font-weight: $normal;
+          @media(max-width: 575.98px) {
+            font-size: 13px;
+            letter-spacing: 0;
+          }
         }
       }
     }
