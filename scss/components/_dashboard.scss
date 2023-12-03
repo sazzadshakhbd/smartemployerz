@@ -99,23 +99,13 @@
         }
       }
       a {
-        display: inline-block;
-        width: 102px;
-        height: 36px;
-        border-radius: 3px;
-        border-radius: 3px;
-        border: 1px solid #d0d5dd;
-        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #344054;
-        font-family: $inter;
-        font-size: $fontSmall;
-        font-weight: 500;
-        line-height: 20px;
+        @include see-all-btn;
         svg {
           margin-left: 8px;
+          transition: $transitionNormal;
+          &:hover {
+            margin-left: 5px;
+          }
         }
       }
     }
@@ -390,7 +380,6 @@
       }
     }
   }
-
   // Features
   .features {
     .features-bar {
