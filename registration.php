@@ -1,4 +1,5 @@
 <?php @include("./view/header.php") ?>
+
 <body>
   <!-- Start Main Section -->
   <main>
@@ -9,7 +10,9 @@
             <!-- Registration Form -->
             <div class="card login-card border-0 bg-transparent">
               <div class="card-header bg-transparent border-0 p-0">
-                <img src="./img/logo/logo.png" alt="logo" class="img-fluid" />
+              <a href="./index.php">
+              <img src="./img/logo/logo.png" alt="logo" class="img-fluid" />
+              </a>
               </div>
               <div class="card-body p-0 h-100 ">
                 <form method="get" id="regForm" autocomplete="off">
@@ -19,6 +22,26 @@
                       <h2 class="text-capitalize">Create Employer Account</h2>
                       <p class="mb-0">Here is today’s report and performances</p>
                     </div>
+                    <div class="social-links">
+                      <a href="#"
+                        class="text-center d-flex align-items-center justify-content-center text-decoration-none mb-3"
+                        target="_blank">
+                        <img src="./img/auth/gmail.png" alt="gmail-logo" />
+                        Login With Google
+                      </a>
+                      <a href="#"
+                        class="text-center d-flex align-items-center justify-content-center text-decoration-none mb-3"
+                        target="_blank">
+                        <img src="./img/auth/microsoft.png" alt="microsoft-logo" />
+                        Login With Microsoft
+                      </a>
+                      <a href="#"
+                        class="text-center d-flex align-items-center justify-content-center text-decoration-none mb-3"
+                        target="_blank">
+                        <img src="./img/auth/linkedin.png" alt="linkedin-logo" />
+                        Login With Linkedin
+                      </a>
+                    </div>
                     <div class="form-group">
                       <label class="form-label" for="email">Email Address</label>
                       <input oninput="this.className = ''" class="form-control" type="email" id="email"
@@ -26,14 +49,13 @@
                     </div>
                     <div class="form-group">
                       <label class="form-label" for="mobile_code">Phone Number</label>
-                      <input oninput="this.className = ''" class="form-control" type="number" id="mobile_code"
-                         required>
+                      <input oninput="this.className = ''" class="form-control" type="number" id="mobile_code" required>
                     </div>
                     <div class="form-group position-relative" id="show_hide_password">
                       <label for="password" class="form-label">Password</label>
                       <div class="input-group">
                         <input oninput="this.className = ''" type="password" id="password" name="password"
-                         autocomplete="off" class="form-control" required />
+                          autocomplete="off" class="form-control" required />
                         <div class="input-group-addon">
                           <a href="javascript:void(0)">
                             <i class="far slash-icon fa-eye-slash" aria-hidden="true"></i>
@@ -45,7 +67,7 @@
                       <label for="password2" class="form-label">Confirm Password</label>
                       <div class="input-group">
                         <input oninput="this.className = ''" type="password" id="password2" name="password2"
-                           autocomplete="off" class="form-control" required />
+                          autocomplete="off" class="form-control" required />
                         <div class="input-group-addon">
                           <a href="javascript:void(0)">
                             <i class="far slash-icon fa-eye-slash" aria-hidden="true"></i>
@@ -58,7 +80,7 @@
 
                   <!-- Start Step Two -->
                   <div class="tab">
-                  <div class="form-title">
+                    <div class="form-title">
                       <h2 class="text-capitalize">Company Detail Information</h2>
                       <p class="mb-0">Update your photo and personal details here.</p>
                     </div>
@@ -69,8 +91,7 @@
                     </div>
                     <div class="form-group">
                       <label class="form-label" for="industryType">Industry Type</label>
-                      <select id="industryType" class="form-select"
-                        aria-label="Default select example">
+                      <select id="industryType" class="form-select" aria-label="Default select example">
                         <option selected>Select</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
@@ -79,8 +100,7 @@
                     </div>
                     <div class="form-group">
                       <label class="form-label" for="numberOfEmployees">Number Of Employees</label>
-                      <select class="form-select" id="numberOfEmployees"
-                        aria-label="Default select example">
+                      <select class="form-select" id="numberOfEmployees" aria-label="Default select example">
                         <option selected>Select</option>
                         <option value="1">01-10</option>
                         <option value="2">11-25</option>
@@ -94,8 +114,7 @@
                         <path d="M5 7.5L10 12.5L15 7.5" stroke="#343a40" stroke-width="1.66667" stroke-linecap="round"
                           stroke-linejoin="round" />
                       </svg>
-                      <select class="form-select"
-                        aria-label="Default select example" id="countries">
+                      <select class="form-select" aria-label="Default select example" id="countries">
                         <option value="AF" data-capital="Kabul">Afghanistan</option>
                         <option value="AX" data-capital="Mariehamn">Aland Islands</option>
                         <option value="AL" data-capital="Tirana">Albania</option>
@@ -332,8 +351,7 @@
                     </div>
                     <div class="form-group">
                       <div class="form-check">
-                        <input type="checkbox" class="form-check-input"
-                          id="exampleCheck1">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
                         <label class="form-check-label" for="exampleCheck1">I Agree With The <a href="#">Terms &
                             Conditions</a> Of smartemployeerz.com</label>
                       </div>
@@ -343,9 +361,8 @@
 
                   <div class="form-group overflow-auto">
                     <div class="d-grid col-12 float-end">
-                      <button class="btn text-white" type="button" id="prevBtn"
-                        onclick="nextPrev(-1)">Previous</button>
-                      <button class="btn text-white" type="button" id="nextBtn" onclick="nextPrev(1)">Next
+                      <button class="btn" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                      <button class="btn" type="button" id="nextBtn" onclick="nextPrev(1)">Next
                         Step</button>
                     </div>
                   </div>
@@ -374,8 +391,8 @@
 
   <?php @include("./view/footer.php") ?>
   <script>
-    // For Registration Stepper JS
-var currentTab = 0; // Current tab is set to be the first tab (0)
+  // For Registration Stepper JS
+  var currentTab = 0; // Current tab is set to be the first tab (0)
   showTab(currentTab); // Display the current tab
 
   function showTab(n) {

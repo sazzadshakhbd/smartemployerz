@@ -40,7 +40,9 @@
             <!-- Registration Form -->
             <div class="card login-card border-0 bg-transparent">
               <div class="card-header bg-transparent border-0 p-0">
+               <a href="./index.html">
                 <img src="./img/logo/logo.png" alt="logo" class="img-fluid" />
+               </a>
               </div>
               <div class="card-body p-0 h-100 ">
                 <form method="get" id="regForm" autocomplete="off">
@@ -50,6 +52,20 @@
                       <h2 class="text-capitalize">Create Employer Account</h2>
                       <p class="mb-0">Here is today’s report and performances</p>
                     </div>
+                    <div class="social-links">
+                      <a href="#" class="text-center d-flex align-items-center justify-content-center text-decoration-none mb-3" target="_blank">
+                          <img src="./img/auth/gmail.png" alt="gmail-logo" />
+                          Login With Google
+                      </a>
+                      <a href="#" class="text-center d-flex align-items-center justify-content-center text-decoration-none mb-3" target="_blank">
+                          <img src="./img/auth/microsoft.png" alt="microsoft-logo" />
+                          Login With Microsoft
+                      </a>
+                      <a href="#" class="text-center d-flex align-items-center justify-content-center text-decoration-none mb-3" target="_blank">
+                          <img src="./img/auth/linkedin.png" alt="linkedin-logo" />
+                          Login With Linkedin
+                      </a>
+                  </div>
                     <div class="form-group">
                       <label class="form-label" for="email">Email Address</label>
                       <input oninput="this.className = ''" class="form-control" type="email" id="email"
@@ -374,11 +390,11 @@
 
                   <div class="form-group overflow-auto">
                     <div class="d-grid col-12 float-end">
-                      <button class="btn text-white" type="button" id="prevBtn"
+                      <button class="btn" type="button" id="prevBtn"
                         onclick="nextPrev(-1)">Previous</button>
-                      <button class="btn text-white" type="button" id="nextBtn" onclick="nextPrev(1)">Next
+                      <button class="btn" type="button" id="nextBtn" onclick="nextPrev(1)">Next
                         Step</button>
-                    </div>
+                    </div> 
                   </div>
                   <!-- Circles which indicates the steps of the form: -->
                   <div class="d-none">
