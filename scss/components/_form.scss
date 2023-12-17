@@ -97,20 +97,36 @@ form {
         }
       }
     }
-    .action-buttons {
-      button {
-        margin-left: 4px;
-        @include btn-theme;
-        @media(max-width: 575.98px) {
-          padding: 12px;
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      a {
+        &.custom-links {
+          color: $teal;
+          font-family: $inter;
+          font-size: $fontSmall;
+          font-weight: 600;
         }
-        &.btn-default {
-          background-color: $white;
-          color: $gray; 
-          border-color: $gray2;
-          &:hover {
-            color: $teal;
-            border-color: $teal;
+      }
+      .action-buttons {
+        a {
+          margin-left: 4px;
+          text-decoration: none;
+          @include btn-theme;
+          @media(max-width: 575.98px) {
+            padding: 12px;
+          }
+          &.btn-default {
+            background-color: $white;
+            color: $gray; 
+            border-color: $gray2;
+            &:hover {
+              color: $teal;
+              border-color: $teal;
+            }
           }
         }
       }
