@@ -2,7 +2,7 @@
   // Job Info CSS
   .job-info {
     margin-bottom: 40px;
-    @media(max-width: 575.98px) {
+    @media (max-width: 575.98px) {
       margin-bottom: 0;
     }
     .card-body {
@@ -11,11 +11,11 @@
       height: 92px;
       display: flex;
       align-items: center;
-      justify-content: start; 
-      @media(max-width: 991.98px) {
+      justify-content: start;
+      @media (max-width: 991.98px) {
         margin-bottom: 1rem;
       }
-      @media(max-width: 575.98px) {
+      @media (max-width: 575.98px) {
         margin-bottom: 8px;
       }
       &.bg-active {
@@ -33,17 +33,16 @@
       svg {
         margin-right: 1.5rem;
         margin-left: 1.5rem;
-        @media(min-width: 992px)and(max-width: 1199.98px) {
+        @media (min-width: 992px) and(max-width: 1199.98px) {
           margin-right: 0.8rem;
           margin-left: 0.8rem;
         }
-        @media(max-width: 575.98px) {
+        @media (max-width: 575.98px) {
           margin-right: 10px;
           margin-left: 10px;
         }
       }
       .content {
-        
         h3 {
           color: $dark;
           font-family: $inter;
@@ -60,7 +59,7 @@
           opacity: 0.8;
           font-size: $fontSmall;
           font-weight: $normal;
-          @media(max-width: 575.98px) {
+          @media (max-width: 575.98px) {
             font-size: 13px;
             letter-spacing: 0;
           }
@@ -76,7 +75,7 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 40px;
-      @media(max-width: 575.98px) {
+      @media (max-width: 575.98px) {
         margin-bottom: 1rem;
       }
       h3 {
@@ -88,9 +87,9 @@
         color: $dark2;
         display: flex;
         align-items: center;
-        @media(max-width: 575.98px) {
+        @media (max-width: 575.98px) {
           font-size: 15px;
-        } 
+        }
         span {
           display: inline-block;
           margin-left: 8px;
@@ -125,13 +124,13 @@
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-gap: 16px;
-        @media(min-width: 992px)and(max-width: 1199.98px) {
+        @media (min-width: 992px) and(max-width: 1199.98px) {
           grid-template-columns: repeat(3, 1fr);
         }
-        @media(min-width: 576px)and(max-width: 991.98px) {
+        @media (min-width: 576px) and(max-width: 991.98px) {
           grid-template-columns: repeat(2, 1fr);
         }
-        @media(max-width: 575.98px) {
+        @media (max-width: 575.98px) {
           grid-template-columns: repeat(1, 1fr);
         }
         .card {
@@ -140,8 +139,8 @@
           background: #f2f2f2;
           padding: 24px 46px;
           text-align: center;
-          @media(min-width: 1200px)and(max-width: 1399.98px) {
-            padding: 20px; 
+          @media (min-width: 1200px) and(max-width: 1399.98px) {
+            padding: 20px;
           }
           .card-body {
             padding: 0;
@@ -154,7 +153,7 @@
               align-items: center;
               justify-content: center;
               margin: 0 auto;
-              
+
               img {
                 width: 75px;
                 height: 75px;
@@ -190,7 +189,7 @@
     padding: 20px 24px 16px 24px;
     border-radius: 2px;
     margin-bottom: 40px;
-    @media(max-width: 575.98px) {
+    @media (max-width: 575.98px) {
       padding: 16px 10px 16px 10px;
       margin-bottom: 1rem;
     }
@@ -200,16 +199,16 @@
         position: absolute;
         right: 0;
         top: 0;
-        @media(min-width: 768px)and(max-width: 991.98px) {
+        @media (min-width: 768px) and(max-width: 991.98px) {
           top: 10px;
           right: -10px;
         }
-        @media(min-width: 576px)and(max-width: 767.98px) {
+        @media (min-width: 576px) and(max-width: 767.98px) {
           top: 5px;
         }
-        @media(max-width: 575.98px) {
+        @media (max-width: 575.98px) {
           position: relative;
-          top:8px;
+          top: 8px;
           float: right;
         }
         a {
@@ -234,6 +233,11 @@
         }
       }
       ul {
+        &.all-jobs-tab {
+          @media (max-width: 1479.98px) {
+            justify-content: center;
+          }
+        }
         li {
           button {
             color: #98a2b3;
@@ -243,11 +247,11 @@
             line-height: 28px;
             display: flex;
             align-items: center;
-            @media(min-width: 768px)and(max-width: 991.98px) {
+            @media (min-width: 768px) and(max-width: 991.98px) {
               padding-left: 10px;
               padding-right: 10px;
             }
-            @media(max-width: 575.98px) {
+            @media (max-width: 575.98px) {
               padding-left: 10px;
               padding-right: 10px;
               font-size: 14px;
@@ -282,11 +286,103 @@
       .tab-content {
         margin-top: 26px;
         .tab-pane {
+          position: relative;
+          .filter-section {
+            display: flex;
+            width: 515px;
+            gap: 12px;
+            position: absolute;
+            top: -65px;
+            right: 0;
+            @media (min-width: 1480px) and(max-width: 1700px) {
+              width: auto;
+            }
+            @media (max-width: 1479.98px) {
+              position: relative;
+              margin: 0 auto;
+              margin-bottom: 30px;
+              top: 0;
+            }
+            @media (max-width: 991.98px) {
+              width: 100%;
+            }
+            @media (max-width: 767.98px) {
+              justify-content: center;
+            }
+            .search-filed {
+              width: 77%;
+              @media (min-width: 1480px) and(max-width: 1700px) {
+                width: auto;
+              }
+              @media (min-width: 576px) and(max-width: 991.98px) {
+                width: 72%;
+              }
+              input {
+                border-radius: 8px;
+                border: 1px solid $gray2;
+                background: $white;
+                box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+                height: 44px;
+                padding: 10px 10px 10px 40px;
+                position: relative;
+                width: 100%;
+                @media (max-width: 767.98px) {
+                  padding-left: 16px;
+                }
+                &::placeholder {
+                  padding-left: 0px;
+                  color: $gray1;
+                  font-family: $inter;
+                  font-size: $fontNormal;
+                  font-weight: $normal;
+                }
+              }
+              svg {
+                position: absolute;
+                top: 13px;
+                left: 14px;
+                z-index: 1;
+                @media (max-width: 767.98px) {
+                  display: none;
+                }
+              }
+            }
+            button {
+              padding: 10px 16px;
+              border-radius: 8px;
+              border: 1px solid $gray2;
+              background: $white;
+              box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+              height: 44px;
+              color: $gray;
+              font-family: $inter;
+              font-size: $fontNormal;
+              font-weight: 600;
+              span {
+                @media(max-width:575.98px) {
+                  display: none;
+                }
+              }
+            }
+          }
           .table-responsive {
             table {
-              @media(min-width: 992px)and(max-width: 1199.98px) {
+              @media (min-width: 1200px) and(max-width: 1299.98px) {
+                width: 110%;
+              }
+              @media (min-width: 992px) and(max-width: 1199.98px) {
                 width: 135%;
               }
+              @media (min-width: 768px) and(max-width: 991.98px) {
+                width: 210%;
+              }
+              @media (min-width: 576px) and(max-width: 767.98px) {
+                width: 185%;
+              }
+              @media (max-width: 575.98px) {
+                width: 350%;
+              }
+              
               thead {
                 border-bottom: 1px solid #eaecf0;
                 background: #f9fafb;
@@ -395,7 +491,7 @@
   .features {
     .features-bar {
       margin-bottom: 40px;
-      @media(max-width: 575.98px) {
+      @media (max-width: 575.98px) {
         margin-bottom: 1rem;
       }
       h3 {
@@ -415,19 +511,19 @@
       background: #f2f2f2;
       padding: 24px 32px;
       height: 230px;
-      @media(min-width: 1200px)and(max-width: 1399.98px) {
-        padding: 20px; 
+      @media (min-width: 1200px) and(max-width: 1399.98px) {
+        padding: 20px;
       }
-      @media(min-width: 992px)and(max-width: 1199.98px) {
+      @media (min-width: 992px) and(max-width: 1199.98px) {
         height: 250px;
       }
-      @media(max-width: 1199.98px) {
+      @media (max-width: 1199.98px) {
         margin-bottom: 1rem;
       }
-      @media(max-width: 991.98px) {
+      @media (max-width: 991.98px) {
         height: auto;
       }
-      @media(max-width: 575.98px) {
+      @media (max-width: 575.98px) {
         padding: 1rem;
       }
       h4 {
@@ -437,10 +533,10 @@
         font-weight: $bold;
         line-height: 150%;
         margin: 0 0 8px 0;
-        @media(min-width: 1200px)and(max-width: 1399.98px) {
+        @media (min-width: 1200px) and(max-width: 1399.98px) {
           font-size: 17px;
         }
-        @media(max-width: 575.98px) {
+        @media (max-width: 575.98px) {
           font-size: 16px;
         }
       }
@@ -453,10 +549,10 @@
         line-height: 150%;
         display: -webkit-box;
         -webkit-line-clamp: 4;
-        -webkit-box-orient: vertical;  
+        -webkit-box-orient: vertical;
         overflow: hidden;
         height: 100px;
-        @media(max-width: 991.98px) {
+        @media (max-width: 991.98px) {
           height: auto;
         }
       }

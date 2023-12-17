@@ -927,6 +927,9 @@ footer {
         line-height: 20px; }
         .dashboard .all-plans .all-tabs .see-all-links a svg {
           margin-left: 8px; }
+    @media (max-width: 1479.98px) {
+      .dashboard .all-plans .all-tabs ul.all-jobs-tab {
+        justify-content: center; } }
     .dashboard .all-plans .all-tabs ul li button {
       color: #98a2b3;
       font-family: "Inter", sans-serif;
@@ -966,80 +969,164 @@ footer {
         border-radius: 0; }
     .dashboard .all-plans .all-tabs .tab-content {
       margin-top: 26px; }
-      @media (min-width: 992px) and (max-width: 1199.98px) {
-        .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table {
-          width: 135%; } }
-      .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table thead {
-        border-bottom: 1px solid #eaecf0;
-        background: #f9fafb; }
-        .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table thead tr th {
-          color: #667085;
-          font-family: Inter;
-          font-size: 12px;
-          font-weight: 500;
-          line-height: 18px;
-          padding: 13px 10px; }
-      .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody {
-        border-top: 0; }
-        .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr:last-child td {
-          border-bottom: 0;
-          padding-bottom: 0; }
-        .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td {
-          color: #667085;
-          font-family: "Inter", sans-serif;
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 20px;
-          margin-bottom: 0;
-          vertical-align: middle;
-          padding: 22px 10px; }
-          .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td .title {
-            display: flex;
-            align-items: center; }
-            .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td .title h3 {
-              color: #101828;
-              font-family: "Inter", sans-serif;
-              font-size: 14px;
-              font-weight: 500;
-              line-height: 20px;
-              margin-bottom: 3px;
-              max-width: 160px; }
-            .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td .title span {
-              line-height: 0; }
-          .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td p {
+      .dashboard .all-plans .all-tabs .tab-content .tab-pane {
+        position: relative; }
+        .dashboard .all-plans .all-tabs .tab-content .tab-pane .filter-section {
+          display: flex;
+          width: 515px;
+          gap: 12px;
+          position: absolute;
+          top: -65px;
+          right: 0; }
+          @media (min-width: 1480px) and (max-width: 1700px) {
+            .dashboard .all-plans .all-tabs .tab-content .tab-pane .filter-section {
+              width: auto; } }
+          @media (max-width: 1479.98px) {
+            .dashboard .all-plans .all-tabs .tab-content .tab-pane .filter-section {
+              position: relative;
+              margin: 0 auto;
+              margin-bottom: 30px;
+              top: 0; } }
+          @media (max-width: 991.98px) {
+            .dashboard .all-plans .all-tabs .tab-content .tab-pane .filter-section {
+              width: 100%; } }
+          @media (max-width: 767.98px) {
+            .dashboard .all-plans .all-tabs .tab-content .tab-pane .filter-section {
+              justify-content: center; } }
+          .dashboard .all-plans .all-tabs .tab-content .tab-pane .filter-section .search-filed {
+            width: 77%; }
+            @media (min-width: 1480px) and (max-width: 1700px) {
+              .dashboard .all-plans .all-tabs .tab-content .tab-pane .filter-section .search-filed {
+                width: auto; } }
+            @media (min-width: 576px) and (max-width: 991.98px) {
+              .dashboard .all-plans .all-tabs .tab-content .tab-pane .filter-section .search-filed {
+                width: 72%; } }
+            .dashboard .all-plans .all-tabs .tab-content .tab-pane .filter-section .search-filed input {
+              border-radius: 8px;
+              border: 1px solid #D0D5DD;
+              background: #ffffff;
+              box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+              height: 44px;
+              padding: 10px 10px 10px 40px;
+              position: relative;
+              width: 100%; }
+              @media (max-width: 767.98px) {
+                .dashboard .all-plans .all-tabs .tab-content .tab-pane .filter-section .search-filed input {
+                  padding-left: 16px; } }
+              .dashboard .all-plans .all-tabs .tab-content .tab-pane .filter-section .search-filed input::placeholder {
+                padding-left: 0px;
+                color: #858585;
+                font-family: "Inter", sans-serif;
+                font-size: 16px;
+                font-weight: 400; }
+            .dashboard .all-plans .all-tabs .tab-content .tab-pane .filter-section .search-filed svg {
+              position: absolute;
+              top: 13px;
+              left: 14px;
+              z-index: 1; }
+              @media (max-width: 767.98px) {
+                .dashboard .all-plans .all-tabs .tab-content .tab-pane .filter-section .search-filed svg {
+                  display: none; } }
+          .dashboard .all-plans .all-tabs .tab-content .tab-pane .filter-section button {
+            padding: 10px 16px;
+            border-radius: 8px;
+            border: 1px solid #D0D5DD;
+            background: #ffffff;
+            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+            height: 44px;
+            color: #344054;
+            font-family: "Inter", sans-serif;
+            font-size: 16px;
+            font-weight: 600; }
+            @media (max-width: 575.98px) {
+              .dashboard .all-plans .all-tabs .tab-content .tab-pane .filter-section button span {
+                display: none; } }
+        @media (min-width: 1200px) and (max-width: 1299.98px) {
+          .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table {
+            width: 110%; } }
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+          .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table {
+            width: 135%; } }
+        @media (min-width: 768px) and (max-width: 991.98px) {
+          .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table {
+            width: 210%; } }
+        @media (min-width: 576px) and (max-width: 767.98px) {
+          .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table {
+            width: 185%; } }
+        @media (max-width: 575.98px) {
+          .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table {
+            width: 350%; } }
+        .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table thead {
+          border-bottom: 1px solid #eaecf0;
+          background: #f9fafb; }
+          .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table thead tr th {
+            color: #667085;
+            font-family: Inter;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px;
+            padding: 13px 10px; }
+        .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody {
+          border-top: 0; }
+          .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr:last-child td {
+            border-bottom: 0;
+            padding-bottom: 0; }
+          .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td {
             color: #667085;
             font-family: "Inter", sans-serif;
             font-size: 14px;
             font-weight: 400;
             line-height: 20px;
-            margin-bottom: 0; }
-          .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td ul.tags {
-            display: flex;
-            align-items: center;
-            gap: 8px; }
-            .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td ul.tags li {
-              color: #030a16;
-              text-align: center;
+            margin-bottom: 0;
+            vertical-align: middle;
+            padding: 22px 10px; }
+            .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td .title {
+              display: flex;
+              align-items: center; }
+              .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td .title h3 {
+                color: #101828;
+                font-family: "Inter", sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+                margin-bottom: 3px;
+                max-width: 160px; }
+              .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td .title span {
+                line-height: 0; }
+            .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td p {
+              color: #667085;
               font-family: "Inter", sans-serif;
-              font-size: 12px;
-              font-weight: 500;
-              line-height: 18px;
-              padding: 4px 5px;
-              border-radius: 4px; }
-              .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td ul.tags li.bg-shortlist {
-                background: #ffedd5; }
-              .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td ul.tags li.bg-interview {
-                background: #dbeafe; }
-              .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td ul.tags li.bg-hired {
-                background: #dcfce7; }
-              .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td ul.tags li.bg-offered {
-                background: #f3e8ff; }
-          .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td ul.links {
-            display: flex;
-            align-items: center;
-            gap: 16px; }
-            .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td ul.links a.modal-pointer {
-              cursor: pointer; }
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 20px;
+              margin-bottom: 0; }
+            .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td ul.tags {
+              display: flex;
+              align-items: center;
+              gap: 8px; }
+              .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td ul.tags li {
+                color: #030a16;
+                text-align: center;
+                font-family: "Inter", sans-serif;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 18px;
+                padding: 4px 5px;
+                border-radius: 4px; }
+                .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td ul.tags li.bg-shortlist {
+                  background: #ffedd5; }
+                .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td ul.tags li.bg-interview {
+                  background: #dbeafe; }
+                .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td ul.tags li.bg-hired {
+                  background: #dcfce7; }
+                .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td ul.tags li.bg-offered {
+                  background: #f3e8ff; }
+            .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td ul.links {
+              display: flex;
+              align-items: center;
+              gap: 16px; }
+              .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td ul.links a.modal-pointer {
+                cursor: pointer; }
 
 .dashboard .features .features-bar {
   margin-bottom: 40px; }
