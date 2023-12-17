@@ -173,6 +173,114 @@ input.invalid {
       letter-spacing: 0.28px;
       opacity: 0.5; }
 
+form.create-new-job-form {
+  max-width: 640px; }
+  form.create-new-job-form .form-group .form-title {
+    padding-bottom: 16px; }
+    form.create-new-job-form .form-group .form-title h2 {
+      color: #101828;
+      font-family: "Inter", sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 28px;
+      margin-bottom: 0; }
+    form.create-new-job-form .form-group .form-title p {
+      color: #667085;
+      font-family: "Inter", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 28px;
+      margin-bottom: 0; }
+  form.create-new-job-form .form-group textarea {
+    height: 128px;
+    padding-top: 10px !important;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #101828; }
+  form.create-new-job-form .form-group button {
+    gap: 8px; }
+  form.create-new-job-form .title-bar {
+    color: #101828;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 0;
+    border-radius: 4px;
+    background: #f2f2f2;
+    padding: 7px 0 6px 24px; }
+    @media (max-width: 575.98px) {
+      form.create-new-job-form .title-bar {
+        padding-left: 10px; } }
+  form.create-new-job-form .title-bar-with-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px; }
+    form.create-new-job-form .title-bar-with-btn h3 {
+      flex-grow: 1; }
+    form.create-new-job-form .title-bar-with-btn button {
+      display: flex;
+      align-items: center;
+      padding: 9px 8px;
+      border-radius: 4px;
+      border: 1px solid #00756A;
+      background: #00756A;
+      box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+      gap: 8px;
+      color: #ffffff;
+      font-family: "Inter", sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.3s ease; }
+      form.create-new-job-form .title-bar-with-btn button:hover {
+        background: #fff;
+        color: #00756A; }
+  form.create-new-job-form .title-bar-with-switch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px; }
+    form.create-new-job-form .title-bar-with-switch h3 {
+      flex-basis: 80%; }
+    form.create-new-job-form .title-bar-with-switch .form-switch {
+      flex-basis: 20%;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px; }
+      form.create-new-job-form .title-bar-with-switch .form-switch .form-check-input {
+        margin-left: 0; }
+  form.create-new-job-form .action-buttons button {
+    margin-left: 4px;
+    background-color: #00756A;
+    padding: 12px 16px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 24px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease; }
+    form.create-new-job-form .action-buttons button:hover {
+      background-color: #ffffff;
+      color: #00756A;
+      border-color: #00756A; }
+    @media (max-width: 575.98px) {
+      form.create-new-job-form .action-buttons button {
+        padding: 12px; } }
+    form.create-new-job-form .action-buttons button.btn-default {
+      background-color: #ffffff;
+      color: #344054;
+      border-color: #D0D5DD; }
+      form.create-new-job-form .action-buttons button.btn-default:hover {
+        color: #00756A;
+        border-color: #00756A; }
+
 form .form-group {
   margin-bottom: 1.5rem; }
   form .form-group .form-check label {
@@ -201,7 +309,8 @@ form .form-group {
   form .form-group input[type="text"],
   form .form-group input[type="email"],
   form .form-group input[type="number"],
-  form .form-group input[type="password"] {
+  form .form-group input[type="password"],
+  form .form-group textarea {
     background: #ffffff;
     padding: 1rem;
     border: 1px solid #D0D5DD;
@@ -213,8 +322,15 @@ form .form-group {
     form .form-group input[type="text"]:focus,
     form .form-group input[type="email"]:focus,
     form .form-group input[type="number"]:focus,
-    form .form-group input[type="password"]:focus {
+    form .form-group input[type="password"]:focus,
+    form .form-group textarea:focus {
       border-color: #00756A; }
+  form .form-group .form-text {
+    color: #858585;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px; }
   form .form-group .form-select {
     padding: 0 1rem;
     border: 1px solid #D0D5DD;
@@ -251,6 +367,30 @@ form .form-group {
       color: #00756A;
       border-color: #00756A; }
 
+form .form-switch .form-check-input {
+  width: 36px;
+  height: 20px; }
+  form .form-switch .form-check-input:checked {
+    background-color: #00756A;
+    border-color: #00756A; }
+  form .form-switch .form-check-input:focus {
+    border-color: #858585;
+    box-shadow: none; }
+
+form .form-switch label {
+  color: #858585;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px; }
+
+form .form-switch span {
+  color: #344054;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px; }
+
 .form-control:focus {
   box-shadow: none; }
 
@@ -262,6 +402,9 @@ input:focus-visible {
 
 :focus-visible {
   outline: 0; }
+
+.custom-border-bottom {
+  border-bottom: 1px solid #eaecf0; }
 
 .sidenav {
   border-right: 1px solid #d6d8dc;

@@ -1,4 +1,121 @@
 form {
+  &.create-new-job-form {
+    max-width: 640px;
+    .form-group {
+      .form-title {
+        padding-bottom: 16px;
+        h2 {
+          color: #101828;
+          font-family: $inter;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 28px;
+          margin-bottom: 0;
+        }
+        p {
+          color: #667085;
+          font-family: $inter;
+          font-size: $fontSmall;
+          font-weight: $normal;
+          line-height: 28px;
+          margin-bottom: 0;
+        }
+      }
+      textarea {
+        height: 128px;
+        padding-top: 10px !important;
+        font-family: $inter;
+        font-size: $fontNormal;
+        font-weight: $normal;
+        line-height: 24px;
+        color: $dark2;
+      }
+      button {
+        gap: 8px;
+      }
+    }
+    .title-bar {
+      color: #101828;
+      font-family: $inter;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 28px;
+      margin-bottom: 0;
+      border-radius: 4px;
+      background: #f2f2f2;
+      padding: 7px 0 6px 24px;
+      @media(max-width: 575.98px) {
+        padding-left: 10px;
+        
+      }
+    }
+    .title-bar-with-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      h3 {
+        flex-grow: 1;
+      }
+      button {
+        display: flex;
+        align-items: center;
+        padding: 9px 8px;
+        border-radius: 4px;
+        border: 1px solid $teal;
+        background: $teal;
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        gap: 8px;
+        color: $white;
+        font-family: $inter;
+        font-size: $fontSmall;
+        font-weight: 600;
+        transition: $transitionNormal;
+        &:hover {
+          background: #fff;
+          color: $teal;
+        }
+      }
+    }
+    .title-bar-with-switch {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      h3 {
+        flex-basis: 80%;
+      }
+      .form-switch {
+        flex-basis: 20%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        .form-check-input {
+          margin-left: 0;
+        }
+      }
+    }
+    .action-buttons {
+      button {
+        margin-left: 4px;
+        @include btn-theme;
+        @media(max-width: 575.98px) {
+          padding: 12px;
+        }
+        &.btn-default {
+          background-color: $white;
+          color: $gray; 
+          border-color: $gray2;
+          &:hover {
+            color: $teal;
+            border-color: $teal;
+          }
+        }
+      }
+    }
+  }
   .form-group {
     margin-bottom: 1.5rem;
     .form-check {
@@ -36,7 +153,8 @@ form {
     input[type="text"],
     input[type="email"],
     input[type="number"],
-    input[type="password"] {
+    input[type="password"],
+    textarea {
       background: $white;
       padding: 1rem;
       border: 1px solid $gray2;
@@ -48,6 +166,13 @@ form {
       &:focus {
         border-color: $teal;
       }
+    }
+    .form-text {
+      color: $gray1;
+      font-family: $inter;
+      font-size: $fontSmall;
+      font-weight: $normal;
+      line-height: 20px;
     }
     .form-select {
       padding: 0 1rem;
@@ -75,9 +200,36 @@ form {
     }
     button {
       margin-top: 1rem;
-     @include btn-theme;
+      @include btn-theme;
     }
-    
+  }
+  .form-switch {
+    .form-check-input {
+      width: 36px;
+      height: 20px;
+      &:checked {
+        background-color: $teal;
+        border-color: $teal;
+      }
+      &:focus {
+        border-color: $gray1;
+        box-shadow: none;
+      }
+    }
+    label {
+      color: $gray1;
+      font-family: $inter;
+      font-size: $fontSmall;
+      font-weight: $normal;
+      line-height: 24px;
+    }
+    span {
+      color: #344054;
+      font-family: $inter;
+      font-size: $fontSmall;
+      font-weight: 500;
+      line-height: 20px;
+    }
   }
 }
 .form-control:focus {
@@ -92,7 +244,7 @@ input:focus-visible {
 :focus-visible {
   outline: 0;
 }
-
-
-
+.custom-border-bottom {
+  border-bottom: 1px solid #eaecf0;
+}
 
