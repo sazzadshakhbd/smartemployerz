@@ -834,6 +834,77 @@ footer {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 16px; }
+    .dashboard .applicants-info .all-applicants .applicants-wrapper.all-applicants-wrapper {
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 8px; }
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        .dashboard .applicants-info .all-applicants .applicants-wrapper.all-applicants-wrapper {
+          grid-template-columns: repeat(3, 1fr); } }
+      @media (min-width: 576px) and (max-width: 991.98px) {
+        .dashboard .applicants-info .all-applicants .applicants-wrapper.all-applicants-wrapper {
+          grid-template-columns: repeat(2, 1fr); } }
+      @media (max-width: 575.98px) {
+        .dashboard .applicants-info .all-applicants .applicants-wrapper.all-applicants-wrapper {
+          grid-template-columns: repeat(1, 1fr); } }
+      .dashboard .applicants-info .all-applicants .applicants-wrapper.all-applicants-wrapper .card {
+        padding: 20px 16px; }
+        @media (min-width: 1200px) and (max-width: 1399.98px) {
+          .dashboard .applicants-info .all-applicants .applicants-wrapper.all-applicants-wrapper .card {
+            padding: 10px 9px; } }
+        .dashboard .applicants-info .all-applicants .applicants-wrapper.all-applicants-wrapper .card .card-body .description {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          margin: 0 0 1rem 0; }
+          @media (min-width: 1200px) and (max-width: 1399.98px) {
+            .dashboard .applicants-info .all-applicants .applicants-wrapper.all-applicants-wrapper .card .card-body .description {
+              gap: 10px; } }
+          .dashboard .applicants-info .all-applicants .applicants-wrapper.all-applicants-wrapper .card .card-body .description .image {
+            width: 88px;
+            height: 88px;
+            border-radius: 44px;
+            background-color: #d1eae8;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+            .dashboard .applicants-info .all-applicants .applicants-wrapper.all-applicants-wrapper .card .card-body .description .image img {
+              width: 80px;
+              height: 80px;
+              border-radius: 40px; }
+          .dashboard .applicants-info .all-applicants .applicants-wrapper.all-applicants-wrapper .card .card-body .description .content {
+            text-align: left; }
+            .dashboard .applicants-info .all-applicants .applicants-wrapper.all-applicants-wrapper .card .card-body .description .content h2 {
+              margin: 0 0 10px 0;
+              color: #353c44;
+              font-family: "Inter", sans-serif;
+              font-size: 1rem;
+              font-weight: 700;
+              line-height: 1rem; }
+              .dashboard .applicants-info .all-applicants .applicants-wrapper.all-applicants-wrapper .card .card-body .description .content h2 span {
+                font-weight: 400;
+                color: #5D6369;
+                font-size: 10px; }
+            .dashboard .applicants-info .all-applicants .applicants-wrapper.all-applicants-wrapper .card .card-body .description .content h3 {
+              margin: 0;
+              color: #353c44;
+              font-family: "Inter", sans-serif;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 20px;
+              opacity: 0.8; }
+              .dashboard .applicants-info .all-applicants .applicants-wrapper.all-applicants-wrapper .card .card-body .description .content h3 span {
+                font-size: 10px;
+                display: block; }
+        .dashboard .applicants-info .all-applicants .applicants-wrapper.all-applicants-wrapper .card .card-body .location {
+          display: flex;
+          align-items: center;
+          justify-content: space-between; }
+          .dashboard .applicants-info .all-applicants .applicants-wrapper.all-applicants-wrapper .card .card-body .location .content span {
+            color: #5D6369;
+            font-family: "Inter", sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px; }
     @media (min-width: 992px) and (max-width: 1199.98px) {
       .dashboard .applicants-info .all-applicants .applicants-wrapper {
         grid-template-columns: repeat(3, 1fr); } }
@@ -1210,3 +1281,69 @@ footer {
       background-color: #ffffff;
       color: #00756A;
       border-color: #00756A; }
+
+.dashboard .filtering-bar {
+  margin-bottom: 65px; }
+  .dashboard .filtering-bar .search-filed {
+    position: relative; }
+    .dashboard .filtering-bar .search-filed input {
+      border-radius: 8px;
+      border: 1px solid #D0D5DD;
+      background: #ffffff;
+      box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+      height: 44px;
+      padding: 10px 10px 10px 40px;
+      position: relative;
+      width: 100%; }
+      @media (max-width: 767.98px) {
+        .dashboard .filtering-bar .search-filed input {
+          padding-left: 16px; } }
+      .dashboard .filtering-bar .search-filed input::placeholder {
+        padding-left: 0px;
+        color: #858585;
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 400; }
+      .dashboard .filtering-bar .search-filed input:focus {
+        border-color: #00756A;
+        outline: 0px;
+        box-shadow: none; }
+    .dashboard .filtering-bar .search-filed svg {
+      position: absolute;
+      top: 13px;
+      left: 14px;
+      z-index: 1; }
+      @media (max-width: 767.98px) {
+        .dashboard .filtering-bar .search-filed svg {
+          display: none; } }
+  .dashboard .filtering-bar button {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    background: #ffffff;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    height: 44px;
+    color: #344054;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600; }
+    @media (max-width: 575.98px) {
+      .dashboard .filtering-bar button span {
+        display: none; } }
+  .dashboard .filtering-bar .select-filter {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 8px; }
+    @media (max-width: 575.98px) {
+      .dashboard .filtering-bar .select-filter {
+        justify-content: center;
+        margin-top: 1rem; } }
+    .dashboard .filtering-bar .select-filter select {
+      height: 44px;
+      border-radius: 8px;
+      font-weight: 600; }
+      .dashboard .filtering-bar .select-filter select:focus {
+        border-color: #00756A;
+        outline: 0px;
+        box-shadow: none; }
