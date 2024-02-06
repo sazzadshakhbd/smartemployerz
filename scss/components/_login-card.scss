@@ -1,5 +1,6 @@
 .login-wrapper {
-  height: calc(100vh - 100px);
+  // height: calc(100vh - 100px);
+  height: 100%;
   gap: 80px;
   @media(max-width: 991.98px) {
     height: auto;
@@ -11,6 +12,7 @@
   .login-card {
     flex-basis: 40%;
     flex-grow: 1;
+    padding-left: 80px;
     .card-header {
       margin-bottom: 70px;
       margin-top: 40px;
@@ -69,12 +71,18 @@
             font-weight: 500;
           }
         }
-      }
+      } 
     }
   }
   .login-image {
     flex-basis: 60%;
-    flex-grow: 1;
+    flex-grow: 1; 
+    background-image: url('../../img/auth/login-image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    &.reg-image {
+      background-image: url('../../img/auth/reg-image.png');
+    }
     @media screen and (max-width: 991.98px) {
       display: none;
     }
