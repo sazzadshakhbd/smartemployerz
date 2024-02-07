@@ -44,9 +44,8 @@ form {
       border-radius: 4px;
       background: #f2f2f2;
       padding: 7px 0 6px 24px;
-      @media(max-width: 575.98px) {
+      @media (max-width: 575.98px) {
         padding-left: 10px;
-        
       }
     }
     .title-bar-with-btn {
@@ -116,12 +115,12 @@ form {
           margin-left: 4px;
           text-decoration: none;
           @include btn-theme;
-          @media(max-width: 575.98px) {
+          @media (max-width: 575.98px) {
             padding: 12px;
           }
           &.btn-default {
             background-color: $white;
-            color: $gray; 
+            color: $gray;
             border-color: $gray2;
             &:hover {
               color: $teal;
@@ -263,4 +262,102 @@ input:focus-visible {
 .custom-border-bottom {
   border-bottom: 1px solid #eaecf0;
 }
+// Modal
+.custom-modal {
+  .modal-dialog {
+    .modal-content {
+      border-radius: 0;
+      .modal-body {
+        padding: 0;
+        .top-header {
+          padding: 35px;
+          background: #eba346;
+          display: flex;
+          align-items: flex-end;
+          gap: 1rem;
+          justify-content: space-between;
+          .brand-details {
+            display: flex;
+            gap: 60px;
+            max-width: 800px;
+            width: 100%;
+            .brand-logo {
+              img {
+                max-width: 100px;
+              }
+            }
+            .brand-info {
+              h1 {
+                color: #10110c;
+                font-family: $inter;
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 18px;
+                margin-bottom: 20px;
+              }
+              h2 {
+                color: #10110c;
+                font-family: $workSans;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 18px;
+              }
+              p {
+                color: #10110c;
+                font-family: $workSans;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 24px;
+                margin-bottom: 0;
+              }
+            }
+          }
+          .action-btn {
+            a {
+              @include btn-theme;
+            }
+          }
+        }
+        .details {
+          padding: 0 36px;
+          h3 {
+            color: #344054;
+            font-family: $workSans;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24px;
+          }
+          section {
+            dl {
+              display: flex;
+              max-width: 150px;
+              dt {
+                color: #344054;
+                font-family: $workSans;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 18px;
 
+              }
+              dd {
+                color: #344054;
+                font-family: $workSans;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 18px;
+              }
+            }
+            h4 {
+            }
+            p {
+            }
+            ul {
+              li {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
