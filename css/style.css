@@ -486,8 +486,7 @@ input:focus-visible {
         font-weight: 600;
         line-height: 24px; }
       .custom-modal .modal-dialog .modal-content .modal-body .details section dl {
-        display: flex;
-        max-width: 150px; }
+        display: flex; }
         .custom-modal .modal-dialog .modal-content .modal-body .details section dl dt {
           color: #344054;
           font-family: "Work Sans", sans-serif;
@@ -499,7 +498,33 @@ input:focus-visible {
           font-family: "Work Sans", sans-serif;
           font-size: 16px;
           font-weight: 400;
-          line-height: 18px; }
+          line-height: 18px;
+          margin-left: 1rem; }
+      .custom-modal .modal-dialog .modal-content .modal-body .details section h4 {
+        color: #344054;
+        font-family: "Work Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 18px; }
+      .custom-modal .modal-dialog .modal-content .modal-body .details section p {
+        color: #344054;
+        text-align: justify;
+        font-family: "Work Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        max-width: 850px; }
+      .custom-modal .modal-dialog .modal-content .modal-body .details section ul.add-info li {
+        list-style-type: none;
+        margin-left: 0; }
+      .custom-modal .modal-dialog .modal-content .modal-body .details section ul li {
+        list-style-type: disc;
+        margin-left: 1rem;
+        color: #344054;
+        font-family: "Work Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px; }
 
 .sidenav {
   border-right: 1px solid #d6d8dc;

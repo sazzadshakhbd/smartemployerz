@@ -330,14 +330,12 @@ input:focus-visible {
           section {
             dl {
               display: flex;
-              max-width: 150px;
               dt {
                 color: #344054;
                 font-family: $workSans;
                 font-size: 16px;
                 font-weight: 600;
                 line-height: 18px;
-
               }
               dd {
                 color: #344054;
@@ -345,14 +343,40 @@ input:focus-visible {
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 18px;
+                margin-left: 1rem;
               }
             }
             h4 {
+              color: #344054;
+              font-family: $workSans;
+              font-size: 16px;
+              font-weight: 600;
+              line-height: 18px;
             }
             p {
+              color: #344054;
+              text-align: justify;
+              font-family: $workSans;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24px;
+              max-width: 850px;
             }
             ul {
+              &.add-info {
+                li {
+                  list-style-type: none;
+                  margin-left: 0;
+                }
+              }
               li {
+                list-style-type: disc;
+                margin-left: 1rem;
+                color: #344054;
+                font-family: $workSans;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
               }
             }
           }
