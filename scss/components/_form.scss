@@ -96,36 +96,43 @@ form {
         }
       }
     }
-    .wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 10px;
-      a {
-        &.custom-links {
-          color: $teal;
-          font-family: $inter;
-          font-size: $fontSmall;
-          font-weight: 600;
+    a {
+      &.custom-links {
+        color: $teal;
+        font-family: $inter;
+        font-size: $fontSmall;
+        font-weight: 600;
+        position: relative;
+        display: inline-block;
+        top: 11px;
+        @media (max-width: 459.98px) {
+          display: block;
+          top: 0;
+          padding-bottom: 20px;
+          text-align: right;
         }
       }
-      .action-buttons {
-        a {
-          margin-left: 4px;
-          text-decoration: none;
-          @include btn-theme;
-          @media (max-width: 575.98px) {
-            padding: 12px;
+    }
+    button {
+      &.btn-form {
+        @include btn-theme;
+        float: right;
+        @media (max-width: 575.98px) {
+          padding: 12px;
+        }
+        &.btn-default {
+          background-color: $white;
+          color: $gray;
+          border-color: $gray2;
+          &:hover {
+            color: $teal;
+            border-color: $teal;
           }
-          &.btn-default {
-            background-color: $white;
-            color: $gray;
-            border-color: $gray2;
-            &:hover {
-              color: $teal;
-              border-color: $teal;
-            }
+        }
+        &.btn-form-continue {
+          margin-right: 23px;
+          @media (max-width: 767.98px) {
+            margin-right: 0;
           }
         }
       }
@@ -269,6 +276,15 @@ input:focus-visible {
       border-radius: 0;
       .modal-body {
         padding: 0;
+        position: relative;
+        button {
+          &.btn-close {
+            position: absolute;
+            right: 7px;
+            top: 7px;
+            opacity: 1;
+          }
+        }
         .top-header {
           padding: 35px;
           background: #eba346;
@@ -381,7 +397,27 @@ input:focus-visible {
             }
           }
         }
+        .modal-end {
+          text-align: right;
+          padding: 1rem;
+          button {
+            @include btn-theme;
+            &.btn-default {
+              background-color: $white;
+              color: $gray;
+              border-color: $gray2;
+              &:hover {
+                color: $teal;
+                border-color: $teal;
+              }
+            }
+          }
+        }
       }
     }
   }
+}
+
+#msform .steper-wrapper:not(:first-of-type) {
+  display: none;
 }

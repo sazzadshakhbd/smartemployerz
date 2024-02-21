@@ -85,3 +85,67 @@ $("#mobile_code").intlTelInput({
 	separateDialCode: true,
 	// utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"
 });
+
+
+
+// Step Slider
+
+$(document).ready(function () {
+  var current_fs, next_fs, previous_fs; //steper-wrapper
+  var opacity;
+
+  $(".next").click(function () {
+    current_fs = $(this).parent();
+    next_fs = $(this).parent().next();
+
+    //show the next steper-wrapper
+    next_fs.show();
+    //hide the current steper-wrapper with style
+    current_fs.animate(
+      { opacity: 0 },
+      {
+        step: function (now) {
+          // for making fielset appear animation
+          opacity = 1 - now;
+
+          current_fs.css({
+            display: "none",
+            position: "relative",
+          });
+          next_fs.css({ opacity: opacity });
+        },
+        duration: 600,
+      }
+    );
+  });
+
+  $(".previous").click(function () {
+    current_fs = $(this).parent();
+    previous_fs = $(this).parent().prev();
+
+    //show the previous steper-wrapper
+    previous_fs.show();
+
+    //hide the current steper-wrapper with style
+    current_fs.animate(
+      { opacity: 0 },
+      {
+        step: function (now) {
+          // for making fielset appear animation
+          opacity = 1 - now;
+
+          current_fs.css({
+            display: "none",
+            position: "relative",
+          });
+          previous_fs.css({ opacity: opacity });
+        },
+        duration: 600,
+      }
+    );
+  });
+
+  $(".submit").click(function () {
+    return false;
+  });
+});
