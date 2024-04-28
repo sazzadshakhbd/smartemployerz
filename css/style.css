@@ -71,6 +71,9 @@ body {
     flex-basis: 50%;
     flex-grow: 1;
     padding-left: 80px; }
+    @media (max-width: 575.98px) {
+      .login-wrapper .login-card {
+        padding: 0 1rem; } }
     .login-wrapper .login-card .card-header {
       margin-bottom: 70px;
       margin-top: 40px; }
@@ -126,6 +129,8 @@ body {
     background-repeat: no-repeat; }
     .login-wrapper .login-image.reg-image {
       background-image: url("../../img/auth/reg-image.png"); }
+    .login-wrapper .login-image.forget-image {
+      background-image: url("../../img/auth/forget-password.png"); }
     @media screen and (max-width: 991.98px) {
       .login-wrapper .login-image {
         display: none; } }
@@ -597,6 +602,36 @@ form .form-group {
       background-color: #ffffff;
       color: #00756A;
       border-color: #00756A; }
+    form .form-group button.otp-btn {
+      background: #F2F2F2;
+      color: #00756A; }
+  form .form-group fieldset .inputfield {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; }
+  form .form-group fieldset .inputfield input:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  form .form-group fieldset .inputfield input:last-child {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0; }
+  form .form-group fieldset .input {
+    outline: none;
+    text-align: center;
+    /*Hide number field arrows*/
+    -moz-appearance: textfield; }
+  form .form-group fieldset input[type="number"]::-webkit-outer-spin-button,
+  form .form-group fieldset input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
+  form .form-group fieldset .input:disabled {
+    color: #89888b; }
+  form .form-group fieldset .input:focus {
+    border: 1px solid #c0c7ce; }
+  form .form-group fieldset .show {
+    display: block; }
+  form .form-group fieldset .hide {
+    display: none; }
 
 form .form-switch .form-check-input {
   width: 36px;

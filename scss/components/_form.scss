@@ -442,6 +442,48 @@ form {
     button {
       margin-top: 1rem;
       @include btn-theme;
+      &.otp-btn {
+        background: #F2F2F2;
+        color: #00756A;
+      }
+    }
+    fieldset {
+      .inputfield { 
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+      .inputfield input:first-child {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      .inputfield input:last-child {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+      }
+      .input {
+        outline: none;
+        text-align: center;
+        /*Hide number field arrows*/
+        -moz-appearance: textfield;
+      }
+      input[type="number"]::-webkit-outer-spin-button,
+      input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      .input:disabled {
+        color: #89888b;
+      }
+      .input:focus {
+        border: 1px solid #c0c7ce;
+      }
+      .show {
+        display: block;
+      }
+      .hide {
+        display: none;
+      }
     }
   }
   .form-switch {
