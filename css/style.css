@@ -1797,3 +1797,237 @@ footer {
         border-color: #00756A;
         outline: 0px;
         box-shadow: none; }
+
+.job-schedule .card-body .top-header {
+  padding: 35px;
+  background: #eba346;
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  justify-content: space-between; }
+  .job-schedule .card-body .top-header .brand-details {
+    display: flex;
+    gap: 60px;
+    max-width: 800px;
+    width: 100%; }
+    @media (max-width: 575.98px) {
+      .job-schedule .card-body .top-header .brand-details {
+        flex-wrap: wrap;
+        justify-content: center; } }
+    .job-schedule .card-body .top-header .brand-details .brand-logo img {
+      max-width: 100px; }
+    .job-schedule .card-body .top-header .brand-details .brand-info h1 {
+      color: #10110c;
+      font-family: "Inter", sans-serif;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 18px;
+      margin-bottom: 20px; }
+    .job-schedule .card-body .top-header .brand-details .brand-info h2 {
+      color: #10110c;
+      font-family: "Work Sans", sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 18px; }
+    .job-schedule .card-body .top-header .brand-details .brand-info p {
+      color: #10110c;
+      font-family: "Work Sans", sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 24px;
+      margin-bottom: 0; }
+  .job-schedule .card-body .top-header .action-btn a {
+    background-color: #00756A;
+    padding: 12px 16px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 24px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease; }
+    .job-schedule .card-body .top-header .action-btn a:hover {
+      background-color: #ffffff;
+      color: #00756A;
+      border-color: #00756A; }
+
+.job-schedule .card-body .details {
+  padding: 0 36px; }
+  .job-schedule .card-body .details h3 {
+    color: #344054;
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px; }
+  .job-schedule .card-body .details section dl {
+    display: flex; }
+    .job-schedule .card-body .details section dl dt {
+      color: #344054;
+      font-family: "Work Sans", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 18px; }
+    .job-schedule .card-body .details section dl dd {
+      color: #344054;
+      font-family: "Work Sans", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 18px;
+      margin-left: 1rem; }
+  .job-schedule .card-body .details section h4 {
+    color: #344054;
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px; }
+  .job-schedule .card-body .details section p {
+    color: #344054;
+    text-align: justify;
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 850px; }
+  .job-schedule .card-body .details section ul.add-info li {
+    list-style-type: none;
+    margin-left: 0; }
+  .job-schedule .card-body .details section ul li {
+    list-style-type: disc;
+    margin-left: 1rem;
+    color: #344054;
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; }
+
+.job-schedule .card-body .button-end {
+  padding: 2rem;
+  padding-right: 12px; }
+  .job-schedule .card-body .button-end .form-datePicker-wrapper {
+    display: flex;
+    gap: 1rem;
+    align-items: center; }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .job-schedule .card-body .button-end .form-datePicker-wrapper {
+        margin-bottom: 1rem; } }
+    @media (max-width: 991.98px) {
+      .job-schedule .card-body .button-end .form-datePicker-wrapper {
+        margin-bottom: 1rem;
+        display: block; } }
+    .job-schedule .card-body .button-end .form-datePicker-wrapper .form-datePicker {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      width: 50%; }
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        .job-schedule .card-body .button-end .form-datePicker-wrapper .form-datePicker {
+          width: 70%; } }
+      @media (max-width: 991.98px) {
+        .job-schedule .card-body .button-end .form-datePicker-wrapper .form-datePicker {
+          width: 100%;
+          margin-bottom: 1rem; } }
+      @media (max-width: 575.98px) {
+        .job-schedule .card-body .button-end .form-datePicker-wrapper .form-datePicker {
+          flex-direction: column; } }
+      .job-schedule .card-body .button-end .form-datePicker-wrapper .form-datePicker .form-group {
+        width: 50%; }
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+          .job-schedule .card-body .button-end .form-datePicker-wrapper .form-datePicker .form-group {
+            width: 70%; } }
+        @media (max-width: 991.98px) {
+          .job-schedule .card-body .button-end .form-datePicker-wrapper .form-datePicker .form-group {
+            width: 100%; } }
+  .job-schedule .card-body .button-end button {
+    background-color: #00756A;
+    padding: 12px 16px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 24px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    padding: 6px 16px; }
+    .job-schedule .card-body .button-end button:hover {
+      background-color: #ffffff;
+      color: #00756A;
+      border-color: #00756A; }
+    @media (max-width: 575.98px) {
+      .job-schedule .card-body .button-end button {
+        width: 100%; } }
+    .job-schedule .card-body .button-end button.btn-default {
+      background-color: #ffffff;
+      color: #344054;
+      border-color: #D0D5DD; }
+      .job-schedule .card-body .button-end button.btn-default:hover {
+        color: #00756A;
+        border-color: #00756A; }
+
+.job-schedule-modal .modal-dialog .modal-content .modal-header .modal-title {
+  color: #030a16; }
+  .job-schedule-modal .modal-dialog .modal-content .modal-header .modal-title h1 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.48px;
+    margin-bottom: 7px; }
+  .job-schedule-modal .modal-dialog .modal-content .modal-header .modal-title p {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.28px;
+    opacity: 0.5;
+    margin-bottom: 0; }
+
+.job-schedule-modal .modal-dialog .modal-content .modal-body .active-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 0 1rem; }
+  .job-schedule-modal .modal-dialog .modal-content .modal-body .active-date .form-group {
+    width: 100%; }
+    .job-schedule-modal .modal-dialog .modal-content .modal-body .active-date .form-group label {
+      display: block;
+      margin-bottom: 10px;
+      color: #344054;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      /* 142.857% */ }
+    .job-schedule-modal .modal-dialog .modal-content .modal-body .active-date .form-group p {
+      padding-bottom: 16px;
+      margin-bottom: 0;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0px 2px 1px 0px rgba(16, 24, 40, 0.05);
+      color: #667085;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px; }
+
+.job-schedule-modal .modal-dialog .modal-content .modal-footer {
+  border-top: 0;
+  justify-content: center;
+  padding: 0rem 2rem 1rem; }
+  .job-schedule-modal .modal-dialog .modal-content .modal-footer .modal-btn {
+    display: inline-block;
+    background-color: #00756A;
+    padding: 12px 16px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 24px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    padding: 6px 16px;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 16px; }
+    .job-schedule-modal .modal-dialog .modal-content .modal-footer .modal-btn:hover {
+      background-color: #ffffff;
+      color: #00756A;
+      border-color: #00756A; }
