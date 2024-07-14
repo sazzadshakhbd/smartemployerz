@@ -1332,7 +1332,7 @@ footer {
               line-height: 1rem; }
               .dashboard .applicants-info .all-applicants .applicants-wrapper.all-applicants-wrapper .card .card-body .description .content h2 span {
                 font-weight: 400;
-                color: #5D6369;
+                color: #5d6369;
                 font-size: 10px; }
             .dashboard .applicants-info .all-applicants .applicants-wrapper.all-applicants-wrapper .card .card-body .description .content h3 {
               margin: 0;
@@ -1350,7 +1350,7 @@ footer {
           align-items: center;
           justify-content: space-between; }
           .dashboard .applicants-info .all-applicants .applicants-wrapper.all-applicants-wrapper .card .card-body .location .content span {
-            color: #5D6369;
+            color: #5d6369;
             font-family: "Inter", sans-serif;
             font-size: 12px;
             font-weight: 500;
@@ -1414,6 +1414,39 @@ footer {
       margin-bottom: 1rem; } }
   .dashboard .all-plans .all-tabs {
     position: relative; }
+    .dashboard .all-plans .all-tabs.all-applicants-tab .tab-content .tab-pane .filter-section {
+      top: -72px;
+      right: 0px; }
+      @media (max-width: 1480.99px) {
+        .dashboard .all-plans .all-tabs.all-applicants-tab .tab-content .tab-pane .filter-section {
+          top: 0;
+          width: 515px; } }
+      @media (max-width: 575.98px) {
+        .dashboard .all-plans .all-tabs.all-applicants-tab .tab-content .tab-pane .filter-section {
+          width: 100%; } }
+    .dashboard .all-plans .all-tabs.all-applicants-tab ul {
+      gap: 1rem; }
+      @media (max-width: 991.98px) {
+        .dashboard .all-plans .all-tabs.all-applicants-tab ul {
+          justify-content: center; } }
+      .dashboard .all-plans .all-tabs.all-applicants-tab ul.custom-nav-pills li button {
+        border-radius: 4px;
+        color: #030a16;
+        font-size: 16px;
+        border: 1px solid #d9d9d9;
+        background: linear-gradient(0deg, #fff 0%, #fff 100%), linear-gradient(0deg, #fff 0%, #fff 100%), linear-gradient(0deg, #fff 0%, #fff 100%), #fff; }
+        .dashboard .all-plans .all-tabs.all-applicants-tab ul.custom-nav-pills li button.active {
+          background: #f2f2f2;
+          color: #030a16; }
+      .dashboard .all-plans .all-tabs.all-applicants-tab ul.custom-nav-pills li span {
+        color: #5d6369;
+        font-weight: 400;
+        display: inline-block;
+        margin-left: 5px; }
+      .dashboard .all-plans .all-tabs.all-applicants-tab ul li button {
+        font-size: 14px; }
+        .dashboard .all-plans .all-tabs.all-applicants-tab ul li button.active {
+          color: #00756a; }
     .dashboard .all-plans .all-tabs .see-all-links {
       position: absolute;
       right: 0;
@@ -2031,3 +2064,300 @@ footer {
       background-color: #ffffff;
       color: #00756A;
       border-color: #00756A; }
+
+.all-applicants-content button.select-all-btn {
+  border-radius: 8px;
+  background: #00756a;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  height: 40px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  border: 0;
+  padding: 10px 18px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  position: absolute;
+  right: 0;
+  top: -68px; }
+  @media (max-width: 991.98px) {
+    .all-applicants-content button.select-all-btn {
+      position: relative;
+      top: 0;
+      margin: 0 auto; } }
+  .all-applicants-content button.select-all-btn input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--form-background);
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center; }
+    .all-applicants-content button.select-all-btn input[type="checkbox"]::before {
+      content: "";
+      width: 0.65em;
+      height: 0.65em;
+      clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+      transform: scale(0);
+      transform-origin: bottom left;
+      transition: 120ms transform ease-in-out;
+      box-shadow: inset 1em 1em #fff;
+      background-color: CanvasText; }
+    .all-applicants-content button.select-all-btn input[type="checkbox"]:checked::before {
+      transform: scale(1); }
+  .all-applicants-content button.select-all-btn span {
+    display: block;
+    margin-top: -4px; }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .all-applicants-content .table-responsive .dt-container .row.justify-content-between {
+    width: 150%; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .all-applicants-content .table-responsive .dt-container .row.justify-content-between {
+    width: 230%; } }
+
+@media (max-width: 575.98px) {
+  .all-applicants-content .table-responsive .dt-container .row.justify-content-between {
+    width: 180% !important; } }
+
+.all-applicants-content .table-responsive .table {
+  margin: 1rem 0; }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .all-applicants-content .table-responsive .table {
+      width: 150% !important; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .all-applicants-content .table-responsive .table {
+      width: 230% !important; } }
+  @media (max-width: 575.98px) {
+    .all-applicants-content .table-responsive .table {
+      width: 180% !important; } }
+  .all-applicants-content .table-responsive .table tbody tr {
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    background: #fff;
+    padding: 1rem;
+    display: block;
+    margin-bottom: 1rem; }
+    .all-applicants-content .table-responsive .table tbody tr td {
+      border-radius: 4px;
+      border: 0;
+      padding: 1rem !important; }
+      @media (max-width: 767.98px) {
+        .all-applicants-content .table-responsive .table tbody tr td .border-end {
+          border: 0 !important; } }
+      .all-applicants-content .table-responsive .table tbody tr td input[type="checkbox"] {
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: transparent;
+        margin: 0;
+        font: inherit;
+        color: #667085;
+        width: 1.15em;
+        height: 1.15em;
+        border: 0.15em solid #667085;
+        border-radius: 0.15em;
+        transform: translateY(-0.075em);
+        display: grid;
+        place-content: center; }
+        .all-applicants-content .table-responsive .table tbody tr td input[type="checkbox"]::before {
+          content: "";
+          width: 0.65em;
+          height: 0.65em;
+          clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+          transform: scale(0);
+          transform-origin: bottom left;
+          transition: 120ms transform ease-in-out;
+          box-shadow: inset 1em 1em #00756a;
+          background-color: CanvasText; }
+        .all-applicants-content .table-responsive .table tbody tr td input[type="checkbox"]:checked::before {
+          transform: scale(1); }
+      .all-applicants-content .table-responsive .table tbody tr td .applicant-address {
+        display: flex;
+        align-items: center;
+        gap: 1rem; }
+        .all-applicants-content .table-responsive .table tbody tr td .applicant-address .applicants-img .bg-img {
+          width: 124px;
+          height: 124px;
+          background-color: #d1eae8;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative; }
+          @media (min-width: 1200px) and (max-width: 1400px) {
+            .all-applicants-content .table-responsive .table tbody tr td .applicant-address .applicants-img .bg-img {
+              width: 100px;
+              height: 100px; } }
+          @media (max-width: 767.98px) {
+            .all-applicants-content .table-responsive .table tbody tr td .applicant-address .applicants-img .bg-img {
+              width: 100px;
+              height: 100px; } }
+          .all-applicants-content .table-responsive .table tbody tr td .applicant-address .applicants-img .bg-img img {
+            max-width: 110px; }
+            @media (min-width: 1200px) and (max-width: 1400px) {
+              .all-applicants-content .table-responsive .table tbody tr td .applicant-address .applicants-img .bg-img img {
+                max-width: 100px; } }
+            @media (max-width: 767.98px) {
+              .all-applicants-content .table-responsive .table tbody tr td .applicant-address .applicants-img .bg-img img {
+                max-width: 100px; } }
+          .all-applicants-content .table-responsive .table tbody tr td .applicant-address .applicants-img .bg-img .bg-sm-percent {
+            width: 52px;
+            height: 52px;
+            position: absolute;
+            background-color: #11ab9d;
+            border: 3px solid #d1eae8;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            right: 0;
+            top: 0; }
+            @media (min-width: 1200px) and (max-width: 1400px) {
+              .all-applicants-content .table-responsive .table tbody tr td .applicant-address .applicants-img .bg-img .bg-sm-percent {
+                width: 40px;
+                height: 40px; } }
+            @media (max-width: 767.98px) {
+              .all-applicants-content .table-responsive .table tbody tr td .applicant-address .applicants-img .bg-img .bg-sm-percent {
+                width: 40px;
+                height: 40px; } }
+            .all-applicants-content .table-responsive .table tbody tr td .applicant-address .applicants-img .bg-img .bg-sm-percent p {
+              margin: 0;
+              color: #fff;
+              font-size: 18px;
+              font-weight: 700;
+              line-height: 150%;
+              text-align: center; }
+              @media (min-width: 1200px) and (max-width: 1400px) {
+                .all-applicants-content .table-responsive .table tbody tr td .applicant-address .applicants-img .bg-img .bg-sm-percent p {
+                  font-size: 10px; } }
+              @media (max-width: 767.98px) {
+                .all-applicants-content .table-responsive .table tbody tr td .applicant-address .applicants-img .bg-img .bg-sm-percent p {
+                  font-size: 10px; } }
+              .all-applicants-content .table-responsive .table tbody tr td .applicant-address .applicants-img .bg-img .bg-sm-percent p span {
+                font-size: 12px;
+                font-weight: 500; }
+        .all-applicants-content .table-responsive .table tbody tr td .applicant-address .applicants-info {
+          margin-bottom: 0; }
+          .all-applicants-content .table-responsive .table tbody tr td .applicant-address .applicants-info ul li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 10px; }
+            .all-applicants-content .table-responsive .table tbody tr td .applicant-address .applicants-info ul li h3 {
+              color: #353c44;
+              font-size: 14px;
+              font-weight: 700;
+              margin: 0; }
+              .all-applicants-content .table-responsive .table tbody tr td .applicant-address .applicants-info ul li h3 span {
+                color: #5d6369;
+                font-size: 10px;
+                font-weight: 400; }
+            .all-applicants-content .table-responsive .table tbody tr td .applicant-address .applicants-info ul li h4 {
+              color: #5e6369;
+              font-size: 13px;
+              font-weight: 600;
+              line-height: 20px;
+              opacity: 0.8; }
+              .all-applicants-content .table-responsive .table tbody tr td .applicant-address .applicants-info ul li h4 span {
+                color: #5d6369;
+                font-size: 10px;
+                font-weight: 400;
+                opacity: 1; }
+      .all-applicants-content .table-responsive .table tbody tr td .applicant-experience ul {
+        padding-left: 3rem; }
+        @media (min-width: 1200px) and (max-width: 1400px) {
+          .all-applicants-content .table-responsive .table tbody tr td .applicant-experience ul {
+            padding-left: 1.5rem; } }
+        @media (max-width: 767.98px) {
+          .all-applicants-content .table-responsive .table tbody tr td .applicant-experience ul {
+            padding-left: 1rem; } }
+        .all-applicants-content .table-responsive .table tbody tr td .applicant-experience ul li {
+          margin-bottom: 6px; }
+          .all-applicants-content .table-responsive .table tbody tr td .applicant-experience ul li h3 {
+            color: #353c44;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 0; }
+            .all-applicants-content .table-responsive .table tbody tr td .applicant-experience ul li h3 span {
+              opacity: 0.8;
+              color: #7e8287;
+              font-size: 10px;
+              font-weight: 600;
+              line-height: 20px; }
+          .all-applicants-content .table-responsive .table tbody tr td .applicant-experience ul li p {
+            color: #5d6369 !important;
+            font-size: 10px !important;
+            line-height: 150% !important; }
+      .all-applicants-content .table-responsive .table tbody tr td .applicant-progress {
+        display: flex;
+        gap: 5px;
+        align-items: flex-start; }
+        @media (max-width: 767.98px) {
+          .all-applicants-content .table-responsive .table tbody tr td .applicant-progress {
+            margin: 1rem 0; } }
+        .all-applicants-content .table-responsive .table tbody tr td .applicant-progress .chips {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          flex-wrap: wrap;
+          justify-content: end;
+          gap: 17px; }
+          @media (min-width: 1200px) and (max-width: 1400px) {
+            .all-applicants-content .table-responsive .table tbody tr td .applicant-progress .chips {
+              gap: 10px; } }
+          .all-applicants-content .table-responsive .table tbody tr td .applicant-progress .chips span {
+            display: inline-block;
+            border-radius: 4px;
+            border: 1px solid #d3d3d3;
+            background: rgba(0, 117, 106, 0.1);
+            display: flex;
+            align-items: center;
+            padding: 5px 12px;
+            gap: 8px;
+            font-size: 12px; }
+            @media (min-width: 1200px) and (max-width: 1400px) {
+              .all-applicants-content .table-responsive .table tbody tr td .applicant-progress .chips span {
+                font-size: 10px;
+                padding: 5px 8px; } }
+            .all-applicants-content .table-responsive .table tbody tr td .applicant-progress .chips span.reject {
+              background: rgba(197, 54, 66, 0.1); }
+              .all-applicants-content .table-responsive .table tbody tr td .applicant-progress .chips span.reject i {
+                color: #c53642; }
+        .all-applicants-content .table-responsive .table tbody tr td .applicant-progress .btn-group button {
+          background-color: transparent;
+          border: 0;
+          color: #d9d9d9; }
+          .all-applicants-content .table-responsive .table tbody tr td .applicant-progress .btn-group button::before {
+            content: none; }
+          .all-applicants-content .table-responsive .table tbody tr td .applicant-progress .btn-group button::after {
+            content: none; }
+        .all-applicants-content .table-responsive .table tbody tr td .applicant-progress .btn-group ul {
+          height: 120px;
+          overflow-y: scroll; }
+          .all-applicants-content .table-responsive .table tbody tr td .applicant-progress .btn-group ul li {
+            font-size: 12px; }
+            .all-applicants-content .table-responsive .table tbody tr td .applicant-progress .btn-group ul li a.dropdown-item.active {
+              background-color: rgba(0, 117, 106, 0.1);
+              color: inherit; }
+            .all-applicants-content .table-responsive .table tbody tr td .applicant-progress .btn-group ul li a.dropdown-item svg {
+              width: 14px;
+              margin-right: 5px; }
+            .all-applicants-content .table-responsive .table tbody tr td .applicant-progress .btn-group ul li a:hover, .all-applicants-content .table-responsive .table tbody tr td .applicant-progress .btn-group ul li a:active {
+              background-color: rgba(0, 117, 106, 0.1);
+              color: #353c44; }
+
+.pagination .page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #11ab9d;
+  border-color: #11ab9d; }

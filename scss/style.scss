@@ -2,7 +2,7 @@
 @import "mixin";
 @import "reset";
 @import "variables";
-@import "colors"; 
+@import "colors";
 
 @import "./components/login-card.scss";
 @import "./components/form.scss";
@@ -11,4 +11,4 @@
 @import "./components/footer.scss";
 @import "./components/dashboard.scss";
 @import "./components/job-schedule.scss";
- 
+@import "./components/all_applicants_info.scss";

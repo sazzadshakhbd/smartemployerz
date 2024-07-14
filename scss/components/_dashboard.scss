@@ -127,14 +127,14 @@
         &.all-applicants-wrapper {
           grid-template-columns: repeat(4, 1fr);
           grid-gap: 8px;
-          
-          @media(min-width: 992px)and(max-width: 1199.98px) {
+
+          @media (min-width: 992px) and(max-width: 1199.98px) {
             grid-template-columns: repeat(3, 1fr);
           }
-          @media(min-width: 576px)and(max-width: 991.98px) {
+          @media (min-width: 576px) and(max-width: 991.98px) {
             grid-template-columns: repeat(2, 1fr);
           }
-          @media(max-width: 575.98px) {
+          @media (max-width: 575.98px) {
             grid-template-columns: repeat(1, 1fr);
           }
           .card {
@@ -176,7 +176,7 @@
                     line-height: 1rem;
                     span {
                       font-weight: 400;
-                      color: #5D6369;
+                      color: #5d6369;
                       font-size: 10px;
                     }
                   }
@@ -203,11 +203,11 @@
                   svg {
                   }
                   span {
-                    color: #5D6369;
+                    color: #5d6369;
                     font-family: $inter;
                     font-size: 12px;
                     font-weight: 500;
-                    line-height: 18px; 
+                    line-height: 18px;
                   }
                 }
               }
@@ -285,6 +285,60 @@
     }
     .all-tabs {
       position: relative;
+      &.all-applicants-tab {
+        .tab-content {
+          .tab-pane {
+            .filter-section {
+              top: -72px;
+              right: 0px;
+              @media (max-width: 1480.99px) {
+                top: 0;
+                width: 515px;
+              }
+              @media (max-width: 575.98px) {
+                width: 100%;
+              }
+            }
+          }
+        }
+        ul {
+          gap: 1rem;
+          @media (max-width: 991.98px) {
+            justify-content: center;
+          }
+          &.custom-nav-pills {
+            li {
+              button {
+                &.active {
+                  background: #f2f2f2;
+                  color: #030a16;
+                }
+                border-radius: 4px;
+                color: #030a16;
+                font-size: 16px;
+                border: 1px solid #d9d9d9;
+                background: linear-gradient(0deg, #fff 0%, #fff 100%),
+                  linear-gradient(0deg, #fff 0%, #fff 100%),
+                  linear-gradient(0deg, #fff 0%, #fff 100%), #fff;
+              }
+              span {
+                color: #5d6369;
+                font-weight: 400;
+                display: inline-block;
+                margin-left: 5px;
+              }
+            }
+          }
+          li {
+            button {
+              font-size: 14px;
+              &.active {
+                color: #00756a;
+              }
+            }
+          }
+        }
+      }
       .see-all-links {
         position: absolute;
         right: 0;
@@ -717,7 +771,7 @@
       align-items: center;
       justify-content: end;
       gap: 8px;
-      @media(max-width: 575.98px) {
+      @media (max-width: 575.98px) {
         justify-content: center;
         margin-top: 1rem;
       }
