@@ -1831,6 +1831,188 @@ footer {
         outline: 0px;
         box-shadow: none; }
 
+.participant-modal .modal-dialog {
+  max-width: 1170px; }
+  .participant-modal .modal-dialog .modal-content {
+    border-radius: 0; }
+    .participant-modal .modal-dialog .modal-content .modal-header {
+      background-color: #323b4c;
+      border-radius: 0;
+      border-bottom: 0;
+      flex-direction: column;
+      align-items: initial;
+      padding: 45px; }
+      @media (max-width: 480px) {
+        .participant-modal .modal-dialog .modal-content .modal-header {
+          padding: 1rem; } }
+      .participant-modal .modal-dialog .modal-content .modal-header .image-box {
+        display: flex;
+        gap: 34px; }
+        @media (max-width: 480px) {
+          .participant-modal .modal-dialog .modal-content .modal-header .image-box {
+            gap: 2rem;
+            flex-direction: column;
+            align-items: center; } }
+        .participant-modal .modal-dialog .modal-content .modal-header .image-box .user-image {
+          width: 116px;
+          height: 116px; }
+          .participant-modal .modal-dialog .modal-content .modal-header .image-box .user-image img {
+            max-width: 115px;
+            border-radius: 100%; }
+        @media (max-width: 480px) {
+          .participant-modal .modal-dialog .modal-content .modal-header .image-box .user-details {
+            text-align: center; } }
+        .participant-modal .modal-dialog .modal-content .modal-header .image-box .user-details h3 {
+          margin: 0 0 20px 0;
+          color: #fff;
+          font-size: 36px;
+          font-weight: 700;
+          line-height: 18px;
+          font-family: "Inter", sans-serif; }
+        .participant-modal .modal-dialog .modal-content .modal-header .image-box .user-details h4 {
+          color: #cecece;
+          font-family: "Work Sans", sans-serif;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 18px;
+          margin: 0 0 8px 0; }
+        .participant-modal .modal-dialog .modal-content .modal-header .image-box .user-details p {
+          color: #cecece;
+          font-family: "Work Sans", sans-serif;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 24px;
+          margin: 0; }
+      @media (max-width: 480px) {
+        .participant-modal .modal-dialog .modal-content .modal-header .social-links {
+          text-align: center; } }
+      .participant-modal .modal-dialog .modal-content .modal-header .social-links a {
+        color: #81b0ff;
+        font-family: "Work Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 32px;
+        text-decoration-line: underline; }
+      .participant-modal .modal-dialog .modal-content .modal-header p.para {
+        color: #cecece;
+        font-family: "Work Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px; }
+      .participant-modal .modal-dialog .modal-content .modal-header .applicant-progress {
+        display: flex;
+        gap: 5px;
+        align-items: flex-start; }
+        @media (max-width: 767.98px) {
+          .participant-modal .modal-dialog .modal-content .modal-header .applicant-progress {
+            margin: 1rem 0; } }
+        .participant-modal .modal-dialog .modal-content .modal-header .applicant-progress .chips {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          flex-wrap: wrap;
+          justify-content: end;
+          gap: 17px; }
+          @media (min-width: 1200px) and (max-width: 1400px) {
+            .participant-modal .modal-dialog .modal-content .modal-header .applicant-progress .chips {
+              gap: 10px; } }
+          @media (max-width: 991.98px) {
+            .participant-modal .modal-dialog .modal-content .modal-header .applicant-progress .chips {
+              justify-content: flex-start; } }
+          .participant-modal .modal-dialog .modal-content .modal-header .applicant-progress .chips span {
+            display: inline-block;
+            border-radius: 4px;
+            border: 1px solid #d3d3d3;
+            background: #d3d3d3;
+            display: flex;
+            align-items: center;
+            padding: 5px 12px;
+            gap: 8px;
+            font-size: 12px;
+            color: #5d6369; }
+            .participant-modal .modal-dialog .modal-content .modal-header .applicant-progress .chips span.active-shortlist {
+              border-color: #161617;
+              background-color: #161617;
+              color: #939ba2;
+              border-radius: 4px; }
+            @media (min-width: 1200px) and (max-width: 1400px) {
+              .participant-modal .modal-dialog .modal-content .modal-header .applicant-progress .chips span {
+                font-size: 10px;
+                padding: 5px 8px; } }
+            .participant-modal .modal-dialog .modal-content .modal-header .applicant-progress .chips span i {
+              color: #00756a; }
+      .participant-modal .modal-dialog .modal-content .modal-header button.btn-close {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        background: none;
+        color: #fff;
+        opacity: 1;
+        font-size: 20px; }
+      .participant-modal .modal-dialog .modal-content .modal-header button.pdf-download {
+        border-radius: 10px;
+        background: #00756a;
+        display: inline-flex;
+        padding: 12px 16px;
+        flex-direction: column;
+        align-items: center;
+        border: 0;
+        color: #fff;
+        font-family: "Work Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        float: right; }
+        @media (max-width: 1199.98px) {
+          .participant-modal .modal-dialog .modal-content .modal-header button.pdf-download {
+            font-size: 13px; } }
+        @media (max-width: 575.98px) {
+          .participant-modal .modal-dialog .modal-content .modal-header button.pdf-download {
+            float: left; } }
+        @media (max-width: 480px) {
+          .participant-modal .modal-dialog .modal-content .modal-header button.pdf-download {
+            float: inherit;
+            margin: 0 auto;
+            display: flex; } }
+    .participant-modal .modal-dialog .modal-content .modal-body {
+      padding: 45px; }
+      @media (max-width: 575.98px) {
+        .participant-modal .modal-dialog .modal-content .modal-body {
+          padding: 2rem 1rem; } }
+      .participant-modal .modal-dialog .modal-content .modal-body .details h3 {
+        margin-top: 0;
+        margin-bottom: 27px;
+        color: #344054;
+        font-family: "Work Sans", sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 18px; }
+      .participant-modal .modal-dialog .modal-content .modal-body .details section {
+        border-bottom: 2px solid #e1e1e1;
+        padding-bottom: 24px;
+        margin-bottom: 48px; }
+        .participant-modal .modal-dialog .modal-content .modal-body .details section dl dt {
+          font-size: 18px;
+          font-weight: 600;
+          color: #344054;
+          font-family: "Work Sans", sans-serif;
+          line-height: 22px;
+          margin-bottom: 5px; }
+          .participant-modal .modal-dialog .modal-content .modal-body .details section dl dt span {
+            display: block;
+            float: right; }
+            @media (max-width: 575.98px) {
+              .participant-modal .modal-dialog .modal-content .modal-body .details section dl dt span {
+                display: contents; } }
+        .participant-modal .modal-dialog .modal-content .modal-body .details section dl dd {
+          font-size: 16px;
+          font-weight: 400;
+          color: #344054;
+          font-family: "Work Sans", sans-serif;
+          line-height: 22px;
+          margin-bottom: 0; }
+
 .job-schedule .card-body .top-header {
   padding: 35px;
   background: #eba346;
