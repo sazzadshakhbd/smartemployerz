@@ -2564,28 +2564,51 @@ footer {
               background: rgba(197, 54, 66, 0.1); }
               .all-applicants-content .table-responsive .table tbody tr td .applicant-progress .chips span.reject i {
                 color: #c53642; }
-        .all-applicants-content .table-responsive .table tbody tr td .applicant-progress .btn-group button {
-          background-color: transparent;
-          border: 0;
-          color: #d9d9d9; }
-          .all-applicants-content .table-responsive .table tbody tr td .applicant-progress .btn-group button::before {
-            content: none; }
-          .all-applicants-content .table-responsive .table tbody tr td .applicant-progress .btn-group button::after {
-            content: none; }
-        .all-applicants-content .table-responsive .table tbody tr td .applicant-progress .btn-group ul {
-          height: 120px;
-          overflow-y: scroll; }
-          .all-applicants-content .table-responsive .table tbody tr td .applicant-progress .btn-group ul li {
-            font-size: 12px; }
-            .all-applicants-content .table-responsive .table tbody tr td .applicant-progress .btn-group ul li a.dropdown-item.active {
-              background-color: rgba(0, 117, 106, 0.1);
-              color: inherit; }
-            .all-applicants-content .table-responsive .table tbody tr td .applicant-progress .btn-group ul li a.dropdown-item svg {
-              width: 14px;
-              margin-right: 5px; }
-            .all-applicants-content .table-responsive .table tbody tr td .applicant-progress .btn-group ul li a:hover, .all-applicants-content .table-responsive .table tbody tr td .applicant-progress .btn-group ul li a:active {
-              background-color: rgba(0, 117, 106, 0.1);
-              color: #353c44; }
+
+.all-applicants-content .btn-group.custom-btn-group {
+  border-radius: 8px;
+  background: #00756a;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  height: 40px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  border: 0;
+  padding: 10px 18px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  position: absolute;
+  right: 283px;
+  top: -68px; }
+  .all-applicants-content .btn-group.custom-btn-group button {
+    color: #fff; }
+
+.all-applicants-content .btn-group button {
+  background-color: transparent;
+  border: 0;
+  color: #d9d9d9; }
+  .all-applicants-content .btn-group button::before {
+    content: none; }
+  .all-applicants-content .btn-group button::after {
+    content: none; }
+
+.all-applicants-content .btn-group ul {
+  height: 120px;
+  overflow-y: scroll; }
+  .all-applicants-content .btn-group ul li {
+    font-size: 12px; }
+    .all-applicants-content .btn-group ul li a.dropdown-item.active {
+      background-color: rgba(0, 117, 106, 0.1);
+      color: inherit; }
+    .all-applicants-content .btn-group ul li a.dropdown-item svg {
+      width: 14px;
+      margin-right: 5px; }
+    .all-applicants-content .btn-group ul li a:hover, .all-applicants-content .btn-group ul li a:active {
+      background-color: rgba(0, 117, 106, 0.1);
+      color: #353c44; }
 
 .pagination .page-item.active .page-link {
   z-index: 3;
