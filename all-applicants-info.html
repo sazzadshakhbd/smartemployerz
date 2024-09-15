@@ -1354,7 +1354,7 @@
                                                       <li>
                                                         <a
                                                           class="dropdown-item"
-                                                          href="#"
+                                                          data-bs-toggle="modal" data-bs-target="#EmailCandidate"
                                                         >
                                                           <svg
                                                             xmlns="http://www.w3.org/2000/svg"
@@ -1385,7 +1385,7 @@
                                                       <li>
                                                         <a
                                                           class="dropdown-item"
-                                                          href="#"
+                                                          data-bs-toggle="modal" data-bs-target="#ShareCandidate"
                                                         >
                                                           <svg
                                                             xmlns="http://www.w3.org/2000/svg"
@@ -1436,7 +1436,7 @@
                                                       <li>
                                                         <a
                                                           class="dropdown-item"
-                                                          href="#"
+                                                          data-bs-toggle="modal" data-bs-target="#MoveToOtherJob"
                                                         >
                                                           <svg
                                                             xmlns="http://www.w3.org/2000/svg"
@@ -14081,6 +14081,124 @@
     </script>
     <!-- Custom JS -->
     <script src="./js/custom.js"></script>
+
+    <!-- Email Candidate Modal -->
+    <div class="modal fade user-modal" id="EmailCandidate" tabindex="-1" aria-labelledby="EmailCandidateLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 id="EmailCandidateLabel">Email Candidate</h1>
+            <p>Send Email to this candidate from here</p>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="#" method="post">
+              <div class="mb-4">
+                <label for="candidate" class="form-label">Candidate</label>
+                <input class="form-control" type="text" placeholder="Jason Ruly" aria-label="Disabled input example" disabled>
+              </div>
+              <div class="mb-4">
+                <label for="emailSubject" class="form-label">Email Subject</label>
+                <input type="email" required class="form-control" id="emailSubject" placeholder="name@example.com">
+              </div>
+              <div class="mb-4">
+                <label for="detailsArea" class="form-label">Detail</label>
+                <textarea required class="form-control" placeholder="Write Detail" id="detailsArea" rows="5"></textarea>
+              </div>
+              <div class="mb-4">
+                <button type="submit" class="btn w-100">Send Email</button>
+              </div>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Share Candidate Modal -->
+    <div class="modal fade user-modal" id="ShareCandidate" tabindex="-1" aria-labelledby="ShareCandidateLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 id="ShareCandidateLabel">Share Candidate</h1>
+            <p>Send this candidate to other employeer</p>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="#" method="post">
+              
+              <div class="mb-4">
+                <label for="emailSubject" class="form-label">Employers email address </label>
+                <input type="email" required class="form-control" id="emailSubject" placeholder="Write email address here">
+              </div>
+              <div class="mb-4">
+                <label for="candidate" class="form-label">Candidate</label>
+                <input class="form-control input-with-icon" type="text" placeholder="Jason Ruly" aria-label="Disabled input example" disabled>
+              </div>
+              <div class="mb-4">
+                <label for="Subject" class="form-label">Subject </label>
+                <input type="text" required class="form-control" id="Subject" placeholder="Referring Candidate As Ux Designer">
+              </div>
+              <div class="mb-4">
+                <label for="detailsArea" class="form-label">Detail</label>
+                <textarea required class="form-control" placeholder="Hi, I am referring you this candidate https://meet.google.com/dbz-fztd-ueu" id="detailsArea" rows="5"></textarea>
+              </div>
+              <div class="mb-4">
+                <button type="submit" class="btn w-100">Send Email</button>
+              </div>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+    <!--MoveToOtherJob Modal -->
+    <div class="modal fade user-modal" id="MoveToOtherJob" tabindex="-1" aria-labelledby="MoveToOtherJobLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 id="MoveToOtherJobLabel">Move to other job</h1>
+            <p>You can move this candidate as applicant of your other circular</p>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="#" method="post">
+              <div class="mb-4">
+                <label for="candidate" class="form-label">Candidate</label>
+                <input class="form-control input-with-icon" type="text" placeholder="Jason Ruly" aria-label="Disabled input example" disabled>
+              </div>
+              <div class="mb-4">
+                <label for="SelectJob" class="form-label">Select other job post</label>
+                <select required class="form-select" id="SelectJob" aria-label="Default select example">
+                  <option selected>Ux Designer</option>
+                  <option value="1">Frontend Developer</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <label for="SelectShorting" class="form-label">Select Shorting Position</label>
+                <select id="SelectShorting" required class="form-select" aria-label="Default select example">
+                  <option selected>ShortList</option>
+                  <option value="1">DownList</option>
+                </select>
+              </div>
+              
+              
+              
+              
+              
+              
+              <div class="mb-4">
+                <button type="submit" class="btn w-100">Send Email</button>
+              </div>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
     <!-- Modal -->
     <div
       class="modal fade"

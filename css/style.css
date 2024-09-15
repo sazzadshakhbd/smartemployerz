@@ -603,8 +603,8 @@ form .form-group {
       color: #00756A;
       border-color: #00756A; }
     form .form-group button.otp-btn {
-      background: #F2F2F2;
-      color: #00756A; }
+      background: #f2f2f2;
+      color: #00756a; }
   form .form-group fieldset .inputfield {
     width: 100%;
     display: flex;
@@ -864,6 +864,77 @@ input:focus-visible {
           .custom-modal .modal-dialog .modal-content .modal-body .modal-end button.btn-default:hover {
             color: #00756A;
             border-color: #00756A; }
+
+.user-modal .modal-dialog {
+  max-width: 683px; }
+  .user-modal .modal-dialog .modal-content .modal-header {
+    flex-direction: column;
+    align-items: baseline;
+    padding: 40px 50px; }
+    @media (max-width: 575.98px) {
+      .user-modal .modal-dialog .modal-content .modal-header {
+        padding: 1rem; } }
+    .user-modal .modal-dialog .modal-content .modal-header h3 {
+      color: #030a16;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.48px;
+      margin: 0 0 12px 0; }
+    .user-modal .modal-dialog .modal-content .modal-header p {
+      margin: 0;
+      color: #030a16;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.28px;
+      opacity: 0.5; }
+    .user-modal .modal-dialog .modal-content .modal-header button {
+      position: absolute;
+      right: 32px;
+      top: 32px; }
+  .user-modal .modal-dialog .modal-content .modal-body {
+    padding: 40px 50px; }
+    @media (max-width: 575.98px) {
+      .user-modal .modal-dialog .modal-content .modal-body {
+        padding: 1rem; } }
+    .user-modal .modal-dialog .modal-content .modal-body form label {
+      color: #344054;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      margin-bottom: 12px; }
+    .user-modal .modal-dialog .modal-content .modal-body form select {
+      border-radius: 8px;
+      border: 1px solid #d0d5dd;
+      box-shadow: 0px 2px 1px 0px rgba(16, 24, 40, 0.05);
+      height: 44px;
+      color: #667085;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px; }
+      .user-modal .modal-dialog .modal-content .modal-body form select:focus {
+        border-color: #00756a; }
+    .user-modal .modal-dialog .modal-content .modal-body form .form-control {
+      border-radius: 8px;
+      border: 1px solid #d0d5dd;
+      box-shadow: 0px 2px 1px 0px rgba(16, 24, 40, 0.05); }
+      .user-modal .modal-dialog .modal-content .modal-body form .form-control:focus {
+        border-color: #00756a; }
+      .user-modal .modal-dialog .modal-content .modal-body form .form-control.input-with-icon {
+        background-image: url("../../img/user-1.png");
+        background-repeat: no-repeat;
+        background-position: 8px 11px;
+        background-size: 24px 24px;
+        padding-left: 40px; }
+    .user-modal .modal-dialog .modal-content .modal-body form input {
+      height: 44px; }
+    .user-modal .modal-dialog .modal-content .modal-body form button {
+      background-color: #00756a;
+      color: #fff;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      padding: 12px 18px; }
 
 #msform .steper-wrapper:not(:first-of-type) {
   display: none; }
