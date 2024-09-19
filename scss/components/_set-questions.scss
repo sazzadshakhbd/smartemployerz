@@ -1,0 +1,98 @@
+.set-questions {
+  .question-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    .count-qus {
+      button {
+        border: 1px solid #d9d9d9;
+        background: #f2f2f2;
+        width: 160px;
+        padding: 13px 0;
+        color: #030a16;
+        text-align: center;
+        font-family: $inter;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18px;
+        span {
+          color: #5d6369;
+          font-weight: 400;
+        }
+      }
+    }
+    .create-question {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      button {
+        &.add-new {
+          border-radius: 4px;
+          border: 1px solid #d0d5dd;
+          box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+          color: #797979;
+          text-align: center;
+          font-family: $inter;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+          transition: 0.3s;
+          display: block;
+          padding: 12px 0;
+          width: 180px;
+          height: 44px;
+          background: #fff;
+          &:hover {
+          }
+        }
+        &.ai-btn {
+          border-radius: 4px;
+          border: 1px solid #00756a;
+          background: #00756a;
+          box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+          color: #fff;
+          font-family: $inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 20px;
+          display: block;
+          padding: 12px 0;
+          width: 192px;
+          height: 44px;
+        }
+      }
+    }
+  }
+  .question-box {
+    border-radius: 4px;
+    border: 1px solid #d0d5dd;
+    background: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .blank-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        max-width: 116px;
+      }
+      p {
+        margin: 24px 0 0 0;
+        color: #030a16;
+        text-align: center;
+        font-family: $inter;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.32px;
+        opacity: 0.5;
+      }
+    }
+  }
+}

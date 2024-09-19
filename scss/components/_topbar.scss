@@ -5,14 +5,14 @@
   background-color: $white;
   height: 106px;
   margin-bottom: 40px;
-  @media(max-width: 767.98px) {
+  @media (max-width: 767.98px) {
     height: auto;
   }
-  @media(max-width: 575.98px) {
+  @media (max-width: 575.98px) {
     margin-bottom: 1rem;
-  }   
+  }
   .content {
-    @media(max-width: 991.98px) {
+    @media (max-width: 991.98px) {
       display: none;
     }
     .company-intro {
@@ -23,7 +23,26 @@
         font-weight: $bold;
         letter-spacing: 0.48px;
         margin-bottom: 12px;
+        span {
+          &.muted-text {
+            color: #81848a;
+            font-family: $inter;
+            font-size: 16px;
+
+            font-weight: 600;
+
+            letter-spacing: 0.32px;
+          }
+        }
         a {
+          &.link {
+            color: #0084ff;
+            font-family: $inter;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 0.32px;
+            text-decoration-line: underline;
+          }
           svg {
           }
         }
@@ -42,11 +61,11 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    @media(min-width: 768px)and(max-width: 991.98px) {
+    @media (min-width: 768px) and(max-width: 991.98px) {
       justify-content: space-evenly;
       width: 100%;
     }
-    @media(max-width: 767.98px) {
+    @media (max-width: 767.98px) {
       justify-content: end;
       width: 100%;
       gap: 10px;
@@ -56,7 +75,7 @@
         @include btn-theme;
         text-decoration: none;
         display: inline-block;
-        @media(max-width: 575.98px) {
+        @media (max-width: 575.98px) {
           padding: 5px 10px;
           font-size: 12px;
         }
@@ -81,10 +100,10 @@
               width: 14px;
               height: 14px;
               border-radius: 100%;
-              background-color: #E7502C;
+              background-color: #e7502c;
               position: absolute;
               top: 10px;
-              color: #FFF;
+              color: #fff;
               text-align: center;
               font-family: Inter;
               font-size: 7px;
