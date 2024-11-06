@@ -1,3 +1,6 @@
+@use "../mixin";
+@use "../variables";
+
 // Modal
 .job-schedule {
   .card-body {
@@ -25,7 +28,7 @@
         .brand-info {
           h1 {
             color: #10110c;
-            font-family: $inter;
+            font-family: variables.$inter;
             font-size: 36px;
             font-weight: 700;
             line-height: 18px;
@@ -33,14 +36,14 @@
           }
           h2 {
             color: #10110c;
-            font-family: $workSans;
+            font-family: variables.$workSans;
             font-size: 20px;
             font-weight: 500;
             line-height: 18px;
           }
           p {
             color: #10110c;
-            font-family: $workSans;
+            font-family: variables.$workSans;
             font-size: 12px;
             font-weight: 400;
             line-height: 24px;
@@ -50,7 +53,7 @@
       }
       .action-btn {
         a {
-          @include btn-theme;
+          @include mixin.btn-theme;
         }
       }
     }
@@ -58,7 +61,7 @@
       padding: 0 36px;
       h3 {
         color: #344054;
-        font-family: $workSans;
+        font-family: variables.$workSans;
         font-size: 20px;
         font-weight: 600;
         line-height: 24px;
@@ -68,14 +71,14 @@
           display: flex;
           dt {
             color: #344054;
-            font-family: $workSans;
+            font-family: variables.$workSans;
             font-size: 16px;
             font-weight: 600;
             line-height: 18px;
           }
           dd {
             color: #344054;
-            font-family: $workSans;
+            font-family: variables.$workSans;
             font-size: 16px;
             font-weight: 400;
             line-height: 18px;
@@ -84,7 +87,7 @@
         }
         h4 {
           color: #344054;
-          font-family: $workSans;
+          font-family: variables.$workSans;
           font-size: 16px;
           font-weight: 600;
           line-height: 18px;
@@ -92,7 +95,7 @@
         p {
           color: #344054;
           text-align: justify;
-          font-family: $workSans;
+          font-family: variables.$workSans;
           font-size: 16px;
           font-weight: 400;
           line-height: 24px;
@@ -109,7 +112,7 @@
             list-style-type: disc;
             margin-left: 1rem;
             color: #344054;
-            font-family: $workSans;
+            font-family: variables.$workSans;
             font-size: 16px;
             font-weight: 400;
             line-height: 24px;
@@ -124,7 +127,7 @@
         display: flex;
         gap: 1rem;
         align-items: center;
-        @media (min-width: 992px) and(max-width: 1199.98px) {
+        @media (min-width: 992px) and (max-width: 1199.98px) {
           margin-bottom: 1rem;
         }
         @media (max-width: 991.98px) {
@@ -148,7 +151,7 @@
           }
           .form-group {
             width: 50%;
-            @media (min-width: 992px) and(max-width: 1199.98px) {
+            @media (min-width: 992px) and (max-width: 1199.98px) {
               width: 70%;
             }
             @media (max-width: 991.98px) {
@@ -158,19 +161,19 @@
         }
       }
       button {
-        @include btn-theme;
+        @include mixin.btn-theme;
         padding: 6px 16px;
         @media (max-width: 575.98px) {
           width: 100%;
         }
         &.btn-default {
-          background-color: $white;
-          color: $gray;
-          border-color: $gray2;
+          background-color: variables.$white;
+          color: variables.$gray;
+          border-color: variables.$gray2;
 
           &:hover {
-            color: $teal;
-            border-color: $teal;
+            color: variables.$teal;
+            border-color: variables.$teal;
           }
         }
       }
@@ -237,7 +240,7 @@
         padding: 0rem 2rem 1rem;
         .modal-btn {
           display: inline-block;
-          @include btn-theme;
+          @include mixin.btn-theme;
           padding: 6px 16px;
           text-decoration: none;
           width: 100%;

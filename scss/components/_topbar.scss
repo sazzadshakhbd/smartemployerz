@@ -1,8 +1,11 @@
+@use "../mixin";
+@use "../variables";
+
 .top-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: $white;
+  background-color: variables.$white;
   height: 106px;
   margin-bottom: 40px;
   @media (max-width: 767.98px) {
@@ -17,16 +20,16 @@
     }
     .company-intro {
       h3 {
-        color: $dark;
-        font-family: $inter;
-        font-size: $fontLarge;
-        font-weight: $bold;
+        color: variables.$dark;
+        font-family: variables.$inter;
+        font-size: variables.$fontLarge;
+        font-weight: variables.$bold;
         letter-spacing: 0.48px;
         margin-bottom: 12px;
         span {
           &.muted-text {
             color: #81848a;
-            font-family: $inter;
+            font-family: variables.$inter;
             font-size: 16px;
 
             font-weight: 600;
@@ -37,7 +40,7 @@
         a {
           &.link {
             color: #0084ff;
-            font-family: $inter;
+            font-family: variables.$inter;
             font-size: 16px;
             font-weight: 600;
             letter-spacing: 0.32px;
@@ -49,10 +52,10 @@
       }
       p {
         margin-bottom: 0;
-        color: $dark;
-        font-family: $inter;
-        font-size: $fontSmall;
-        font-weight: $normal;
+        color: variables.$dark;
+        font-family: variables.$inter;
+        font-size: variables.$fontSmall;
+        font-weight: variables.$normal;
         letter-spacing: 0.28px;
       }
     }
@@ -61,7 +64,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    @media (min-width: 768px) and(max-width: 991.98px) {
+    @media (min-width: 768px) and (max-width: 991.98px) {
       justify-content: space-evenly;
       width: 100%;
     }
@@ -72,7 +75,7 @@
     }
     .create-job-links {
       a {
-        @include btn-theme;
+        @include mixin.btn-theme;
         text-decoration: none;
         display: inline-block;
         @media (max-width: 575.98px) {

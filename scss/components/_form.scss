@@ -1,3 +1,6 @@
+@use "../mixin";
+@use "../variables";
+
 form {
   &.create-new-job-form {
     max-width: 640px;
@@ -6,7 +9,7 @@ form {
         padding-bottom: 16px;
         h2 {
           color: #101828;
-          font-family: $inter;
+          font-family: variables.$inter;
           font-size: 18px;
           font-weight: 500;
           line-height: 28px;
@@ -14,9 +17,9 @@ form {
         }
         p {
           color: #667085;
-          font-family: $inter;
-          font-size: $fontSmall;
-          font-weight: $normal;
+          font-family: variables.$inter;
+          font-size: variables.$fontSmall;
+          font-weight: variables.$normal;
           line-height: 28px;
           margin-bottom: 0;
         }
@@ -24,11 +27,11 @@ form {
       textarea {
         height: 128px;
         padding-top: 10px !important;
-        font-family: $inter;
-        font-size: $fontNormal;
-        font-weight: $normal;
+        font-family: variables.$inter;
+        font-size: variables.$fontNormal;
+        font-weight: variables.$normal;
         line-height: 24px;
-        color: $dark2;
+        color: variables.$dark2;
       }
       button {
         gap: 8px;
@@ -36,7 +39,7 @@ form {
     }
     .title-bar {
       color: #101828;
-      font-family: $inter;
+      font-family: variables.$inter;
       font-size: 16px;
       font-weight: 500;
       line-height: 28px;
@@ -61,18 +64,18 @@ form {
         align-items: center;
         padding: 9px 8px;
         border-radius: 4px;
-        border: 1px solid $teal;
-        background: $teal;
+        border: 1px solid variables.$teal;
+        background: variables.$teal;
         box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
         gap: 8px;
-        color: $white;
-        font-family: $inter;
-        font-size: $fontSmall;
+        color: variables.$white;
+        font-family: variables.$inter;
+        font-size: variables.$fontSmall;
         font-weight: 600;
-        transition: $transitionNormal;
+        transition: variables.$transitionNormal;
         &:hover {
           background: #fff;
-          color: $teal;
+          color: variables.$teal;
         }
       }
     }
@@ -98,9 +101,9 @@ form {
     }
     a {
       &.custom-links {
-        color: $teal;
-        font-family: $inter;
-        font-size: $fontSmall;
+        color: variables.$teal;
+        font-family: variables.$inter;
+        font-size: variables.$fontSmall;
         font-weight: 600;
         position: relative;
         display: inline-block;
@@ -115,18 +118,18 @@ form {
     }
     button {
       &.btn-form {
-        @include btn-theme;
+        @include mixin.btn-theme;
         float: right;
         @media (max-width: 575.98px) {
           padding: 12px;
         }
         &.btn-default {
-          background-color: $white;
-          color: $gray;
-          border-color: $gray2;
+          background-color: variables.$white;
+          color: variables.$gray;
+          border-color: variables.$gray2;
           &:hover {
-            color: $teal;
-            border-color: $teal;
+            color: variables.$teal;
+            border-color: variables.$teal;
           }
         }
         &.btn-form-continue {
@@ -144,7 +147,7 @@ form {
         padding-bottom: 16px;
         h2 {
           color: #101828;
-          font-family: $inter;
+          font-family: variables.$inter;
           font-size: 18px;
           font-weight: 500;
           line-height: 28px;
@@ -152,9 +155,9 @@ form {
         }
         p {
           color: #667085;
-          font-family: $inter;
-          font-size: $fontSmall;
-          font-weight: $normal;
+          font-family: variables.$inter;
+          font-size: variables.$fontSmall;
+          font-weight: variables.$normal;
           line-height: 28px;
           margin-bottom: 0;
         }
@@ -162,11 +165,11 @@ form {
       textarea {
         height: 128px;
         padding-top: 10px !important;
-        font-family: $inter;
-        font-size: $fontNormal;
-        font-weight: $normal;
+        font-family: variables.$inter;
+        font-size: variables.$fontNormal;
+        font-weight: variables.$normal;
         line-height: 24px;
-        color: $dark2;
+        color: variables.$dark2;
       }
       button {
         gap: 8px;
@@ -174,7 +177,7 @@ form {
     }
     .title-bar {
       color: #101828;
-      font-family: $inter;
+      font-family: variables.$inter;
       font-size: 16px;
       font-weight: 500;
       line-height: 28px;
@@ -199,18 +202,18 @@ form {
         align-items: center;
         padding: 9px 8px;
         border-radius: 4px;
-        border: 1px solid $teal;
-        background: $teal;
+        border: 1px solid variables.$teal;
+        background: variables.$teal;
         box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
         gap: 8px;
-        color: $white;
-        font-family: $inter;
-        font-size: $fontSmall;
+        color: variables.$white;
+        font-family: variables.$inter;
+        font-size: variables.$fontSmall;
         font-weight: 600;
-        transition: $transitionNormal;
+        transition: variables.$transitionNormal;
         &:hover {
           background: #fff;
-          color: $teal;
+          color: variables.$teal;
         }
       }
     }
@@ -236,9 +239,9 @@ form {
     }
     a {
       &.custom-links {
-        color: $teal;
-        font-family: $inter;
-        font-size: $fontSmall;
+        color: variables.$teal;
+        font-family: variables.$inter;
+        font-size: variables.$fontSmall;
         font-weight: 600;
         position: relative;
         display: inline-block;
@@ -253,18 +256,18 @@ form {
     }
     button {
       &.btn-form {
-        @include btn-theme;
+        @include mixin.btn-theme;
         float: right;
         @media (max-width: 575.98px) {
           padding: 12px;
         }
         &.btn-default {
-          background-color: $white;
-          color: $gray;
-          border-color: $gray2;
+          background-color: variables.$white;
+          color: variables.$gray;
+          border-color: variables.$gray2;
           &:hover {
-            color: $teal;
-            border-color: $teal;
+            color: variables.$teal;
+            border-color: variables.$teal;
           }
         }
         &.btn-form-continue {
@@ -363,7 +366,7 @@ form {
       label {
         margin-bottom: 0;
         color: #344054;
-        font-family: $inter;
+        font-family: variables.$inter;
         font-size: 14px;
         font-weight: 500;
         line-height: 20px;
@@ -378,15 +381,15 @@ form {
           box-shadow: none;
         }
         &:checked {
-          background-color: $teal;
-          border-color: $teal;
+          background-color: variables.$teal;
+          border-color: variables.$teal;
         }
       }
     }
     label {
-      color: $gray;
-      font-family: $inter;
-      font-size: $fontSmall;
+      color: variables.$gray;
+      font-family: variables.$inter;
+      font-size: variables.$fontSmall;
       font-weight: 500;
       line-height: 20px;
       margin-bottom: 0.5rem;
@@ -396,39 +399,39 @@ form {
     input[type="number"],
     input[type="password"],
     textarea {
-      background: $white;
+      background: variables.$white;
       padding: 1rem;
-      border: 1px solid $gray2;
+      border: 1px solid variables.$gray2;
       box-shadow: 0px 2px 1px 0px rgba(16, 24, 40, 0.05);
       height: 44px;
-      border-radius: $radiusSmall;
-      transition: $transitionNormal;
+      border-radius: variables.$radiusSmall;
+      transition: variables.$transitionNormal;
       width: 100%;
       &:focus {
-        border-color: $teal;
+        border-color: variables.$teal;
       }
     }
     .form-text {
-      color: $gray1;
-      font-family: $inter;
-      font-size: $fontSmall;
-      font-weight: $normal;
+      color: variables.$gray1;
+      font-family: variables.$inter;
+      font-size: variables.$fontSmall;
+      font-weight: variables.$normal;
       line-height: 20px;
     }
     .form-select {
       padding: 0 1rem;
-      border: 1px solid $gray2;
+      border: 1px solid variables.$gray2;
       box-shadow: 0px 2px 1px 0px rgba(16, 24, 40, 0.05);
       height: 44px;
-      border-radius: $radiusSmall;
-      color: $gray1;
-      font-family: $inter;
-      font-size: $fontNormal;
-      font-weight: $normal;
+      border-radius: variables.$radiusSmall;
+      color: variables.$gray1;
+      font-family: variables.$inter;
+      font-size: variables.$fontNormal;
+      font-weight: variables.$normal;
       line-height: 24px;
-      transition: $transitionNormal;
+      transition: variables.$transitionNormal;
       &:focus {
-        border-color: $teal;
+        border-color: variables.$teal;
       }
     }
     i {
@@ -436,12 +439,12 @@ form {
         position: absolute;
         top: 1rem;
         right: 1rem;
-        color: $gray1;
+        color: variables.$gray1;
       }
     }
     button {
       margin-top: 1rem;
-      @include btn-theme;
+      @include mixin.btn-theme;
       &.otp-btn {
         background: #f2f2f2;
         color: #00756a;
@@ -491,25 +494,25 @@ form {
       width: 36px;
       height: 20px;
       &:checked {
-        background-color: $teal;
-        border-color: $teal;
+        background-color: variables.$teal;
+        border-color: variables.$teal;
       }
       &:focus {
-        border-color: $gray1;
+        border-color: variables.$gray1;
         box-shadow: none;
       }
     }
     label {
-      color: $gray1;
-      font-family: $inter;
-      font-size: $fontSmall;
-      font-weight: $normal;
+      color: variables.$gray1;
+      font-family: variables.$inter;
+      font-size: variables.$fontSmall;
+      font-weight: variables.$normal;
       line-height: 24px;
     }
     span {
       color: #344054;
-      font-family: $inter;
-      font-size: $fontSmall;
+      font-family: variables.$inter;
+      font-size: variables.$fontSmall;
       font-weight: 500;
       line-height: 20px;
     }
@@ -521,18 +524,18 @@ form {
     button {
       margin-left: 10px;
       &.btn-form {
-        @include btn-theme;
+        @include mixin.btn-theme;
         float: right;
         @media (max-width: 575.98px) {
           padding: 12px;
         }
         &.btn-default {
-          background-color: $white;
-          color: $gray;
-          border-color: $gray2;
+          background-color: variables.$white;
+          color: variables.$gray;
+          border-color: variables.$gray2;
           &:hover {
-            color: $teal;
-            border-color: $teal;
+            color: variables.$teal;
+            border-color: variables.$teal;
           }
         }
         &.btn-form-continue {
@@ -624,7 +627,7 @@ input:focus-visible {
             .brand-info {
               h1 {
                 color: #10110c;
-                font-family: $inter;
+                font-family: variables.$inter;
                 font-size: 36px;
                 font-weight: 700;
                 line-height: 18px;
@@ -632,14 +635,14 @@ input:focus-visible {
               }
               h2 {
                 color: #10110c;
-                font-family: $workSans;
+                font-family: variables.$workSans;
                 font-size: 20px;
                 font-weight: 500;
                 line-height: 18px;
               }
               p {
                 color: #10110c;
-                font-family: $workSans;
+                font-family: variables.$workSans;
                 font-size: 12px;
                 font-weight: 400;
                 line-height: 24px;
@@ -649,7 +652,7 @@ input:focus-visible {
           }
           .action-btn {
             a {
-              @include btn-theme;
+              @include mixin.btn-theme;
             }
           }
         }
@@ -657,7 +660,7 @@ input:focus-visible {
           padding: 0 36px;
           h3 {
             color: #344054;
-            font-family: $workSans;
+            font-family: variables.$workSans;
             font-size: 20px;
             font-weight: 600;
             line-height: 24px;
@@ -667,14 +670,14 @@ input:focus-visible {
               display: flex;
               dt {
                 color: #344054;
-                font-family: $workSans;
+                font-family: variables.$workSans;
                 font-size: 16px;
                 font-weight: 600;
                 line-height: 18px;
               }
               dd {
                 color: #344054;
-                font-family: $workSans;
+                font-family: variables.$workSans;
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 18px;
@@ -683,7 +686,7 @@ input:focus-visible {
             }
             h4 {
               color: #344054;
-              font-family: $workSans;
+              font-family: variables.$workSans;
               font-size: 16px;
               font-weight: 600;
               line-height: 18px;
@@ -691,7 +694,7 @@ input:focus-visible {
             p {
               color: #344054;
               text-align: justify;
-              font-family: $workSans;
+              font-family: variables.$workSans;
               font-size: 16px;
               font-weight: 400;
               line-height: 24px;
@@ -708,7 +711,7 @@ input:focus-visible {
                 list-style-type: disc;
                 margin-left: 1rem;
                 color: #344054;
-                font-family: $workSans;
+                font-family: variables.$workSans;
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 24px;
@@ -720,14 +723,14 @@ input:focus-visible {
           text-align: right;
           padding: 1rem;
           button {
-            @include btn-theme;
+            @include mixin.btn-theme;
             &.btn-default {
-              background-color: $white;
-              color: $gray;
-              border-color: $gray2;
+              background-color: variables.$white;
+              color: variables.$gray;
+              border-color: variables.$gray2;
               &:hover {
-                color: $teal;
-                border-color: $teal;
+                color: variables.$teal;
+                border-color: variables.$teal;
               }
             }
           }

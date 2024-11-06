@@ -1,3 +1,5 @@
+@use "../variables";
+
 .sidenav {
   border-right: 1px solid #d6d8dc;
   background: #001815;
@@ -69,88 +71,88 @@
       .content {
         h3,
         span {
-          color: $white;
-          font-family: $inter;
+          color: variables.$white;
+          font-family: variables.$inter;
           font-size: 14px;
-          font-weight: $bold;
+          font-weight: variables.$bold;
           margin-bottom: 3px;
           line-height: normal;
         }
         span {
           letter-spacing: 0.12px;
           font-size: 12px;
-          font-weight: $normal;
-          opacity: $half;
+          font-weight: variables.$normal;
+          opacity: variables.$half;
         }
       }
     }
     ul {
       margin-bottom: 36px;
       p {
-        color: $white;
-        font-family: $inter;
-        font-size: $fontSmall;
-        font-weight: $normal;
+        color: variables.$white;
+        font-family: variables.$inter;
+        font-size: variables.$fontSmall;
+        font-weight: variables.$normal;
         letter-spacing: 0.14px;
-        opacity: $half;
+        opacity: variables.$half;
       }
       li {
         display: flex;
         flex-direction: column;
-        transition: $transitionNormal;
+        transition: variables.$transitionNormal;
         margin-bottom: 5px;
         &.active {
-          background: $teal;
-          border-radius: $radiusSmall;
+          background: variables.$teal;
+          border-radius: variables.$radiusSmall;
           svg {
             opacity: 1;
           }
           span {
             opacity: 1;
             &.badge {
-              background: $white;
-              color: $teal;
+              background: variables.$white;
+              color: variables.$teal;
             }
           }
         }
         &:hover {
           a {
-            background: $teal;
-            border-radius: $radiusSmall;
+            background: variables.$teal;
+            border-radius: variables.$radiusSmall;
             svg {
               opacity: 1;
             }
             span {
               opacity: 1;
               &.badge {
-                background: $white;
-                color: $teal;
+                background: variables.$white;
+                color: variables.$teal;
               }
             }
           }
         }
         a,
         button {
-          color: $white;
-          font-family: $inter;
-          font-size: $fontNormal;
-          font-weight: $normal;
+          color: variables.$white;
+          font-family: variables.$inter;
+          font-size: variables.$fontNormal;
+          font-weight: variables.$normal;
           letter-spacing: 0.16px;
           padding: 12px 8px;
-          transition: $transitionNormal;
+          transition: variables.$transitionNormal;
           background: transparent;
           svg {
             margin-right: 1rem;
-            opacity: $half;
+            opacity: variables.$half;
           }
           span {
-            opacity: $half;
+            opacity: variables.$half;
             &.badge {
               opacity: 1;
-              background: $teal;
+              background: variables.$teal;
               display: inline-block;
-              color: $white;
-              font-family: $inter;
+              color: variables.$white;
+              font-family: variables.$inter;
               font-size: 12px;
               font-weight: 400;
               margin-left: 8px;

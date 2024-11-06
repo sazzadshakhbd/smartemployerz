@@ -1,8 +1,15 @@
 {
+  "name": "smartemployerz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
   "scripts": {
-    "watch:scss": "node-sass -w scss/style.scss css/style.css"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "node-sass": "^9.0.0"
+    "sass": "^1.80.6"
   }
 }
