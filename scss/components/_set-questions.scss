@@ -7,6 +7,7 @@
     justify-content: space-between;
     gap: 1rem;
     flex-wrap: wrap;
+
     .count-qus {
       button {
         border: 1px solid #d9d9d9;
@@ -19,19 +20,23 @@
         font-size: 16px;
         font-weight: 500;
         line-height: 18px;
+
         span {
           color: #5d6369;
           font-weight: 400;
         }
       }
     }
+
     .create-question {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 1rem;
       flex-wrap: wrap;
-      button, a {
+
+      button,
+      a {
         &.add-new {
           border-radius: 4px;
           border: 1px solid #d0d5dd;
@@ -48,9 +53,10 @@
           width: 180px;
           height: 44px;
           background: #fff;
-          &:hover {
-          }
+
+          &:hover {}
         }
+
         &.ai-btn {
           border-radius: 4px;
           border: 1px solid #00756a;
@@ -71,6 +77,27 @@
       }
     }
   }
+
+  .subjective-number {
+    margin-bottom: 15px;
+    border: 1px solid #D9D9D9;
+    background: #F2F2F2;
+    padding: 10px 28px 15px 28px;
+    color: #030A16;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      color: #5D6369;
+      font-weight: 400;
+    }
+  }
+
   .question-box {
     border-radius: 4px;
     border: 1px solid #d0d5dd;
@@ -79,13 +106,118 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &.subjective-question {
+      border-radius: 4px;
+      border: 1px solid #D0D5DD;
+      background: linear-gradient(252deg, #F7FFFF 3.92%, #FFF1FF 99.65%);
+      display: block;
+
+      .btn-group {
+        button {
+          background-color: transparent;
+          border: 0;
+          color: #d9d9d9;
+
+          &::before {
+            content: none;
+          }
+
+          &::after {
+            content: none;
+          }
+        }
+
+        ul {
+          height: 120px;
+          overflow-y: scroll;
+
+          li {
+            font-size: 12px;
+
+            a {
+              &.dropdown-item {
+                &.active {
+                  background-color: rgba(0, 117, 106, 0.1);
+                  color: inherit;
+                }
+
+                svg {
+                  width: 14px;
+                  margin-right: 5px;
+                }
+              }
+
+              &:hover,
+              &:active {
+                background-color: rgba(0, 117, 106, 0.1);
+                color: #353c44;
+              }
+            }
+          }
+        }
+      }
+
+      .ai-btn {
+        border-radius: 4px;
+        border: 1px solid #00756a;
+        background: #00756a;
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        color: #fff;
+        font-family: variables.$inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+        padding: 12px 16px;
+        display: inline-block;
+        @media(min-width: 992px) and (max-width: 1199.98px) {
+          padding: 12px 14px;
+        }
+      }
+
+      .questions-wrapper {
+        h3 {
+          color: #525866;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 24px;
+        }
+
+        .form-check {
+          cursor: pointer;
+        }
+
+        .form-check-input {
+          background-color: #D9D9D9;
+          border: 0;
+        }
+
+        .form-check-input:checked[type=radio] {
+          background-image: none;
+          background-color: #00756a;
+        }
+
+        .form-check label {
+          color: #8D9096;
+          font-size: 16px;
+          margin: 0;
+          vertical-align: 1px;
+          font-weight: 400;
+          line-height: 24px;
+        }
+      }
+    }
+
     .blank-content {
       display: flex;
       flex-direction: column;
       align-items: center;
+
       img {
         max-width: 116px;
       }
+
       p {
         margin: 24px 0 0 0;
         color: #030a16;
@@ -98,4 +230,6 @@
       }
     }
   }
+
+  .all-plans {}
 }

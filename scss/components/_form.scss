@@ -4,9 +4,11 @@
 form {
   &.create-new-job-form {
     max-width: 640px;
+
     .form-group {
       .form-title {
         padding-bottom: 16px;
+
         h2 {
           color: #101828;
           font-family: variables.$inter;
@@ -15,6 +17,7 @@ form {
           line-height: 28px;
           margin-bottom: 0;
         }
+
         p {
           color: #667085;
           font-family: variables.$inter;
@@ -24,6 +27,7 @@ form {
           margin-bottom: 0;
         }
       }
+
       textarea {
         height: 128px;
         padding-top: 10px !important;
@@ -33,10 +37,12 @@ form {
         line-height: 24px;
         color: variables.$dark2;
       }
+
       button {
         gap: 8px;
       }
     }
+
     .title-bar {
       color: #101828;
       font-family: variables.$inter;
@@ -47,18 +53,22 @@ form {
       border-radius: 4px;
       background: #f2f2f2;
       padding: 7px 0 6px 24px;
+
       @media (max-width: 575.98px) {
         padding-left: 10px;
       }
     }
+
     .title-bar-with-btn {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 8px;
+
       h3 {
         flex-grow: 1;
       }
+
       button {
         display: flex;
         align-items: center;
@@ -73,20 +83,24 @@ form {
         font-size: variables.$fontSmall;
         font-weight: 600;
         transition: variables.$transitionNormal;
+
         &:hover {
           background: #fff;
           color: variables.$teal;
         }
       }
     }
+
     .title-bar-with-switch {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 8px;
+
       h3 {
         flex-basis: 80%;
       }
+
       .form-switch {
         flex-basis: 20%;
         padding: 0;
@@ -94,11 +108,13 @@ form {
         align-items: center;
         justify-content: space-between;
         gap: 16px;
+
         .form-check-input {
           margin-left: 0;
         }
       }
     }
+
     a {
       &.custom-links {
         color: variables.$teal;
@@ -108,6 +124,7 @@ form {
         position: relative;
         display: inline-block;
         top: 11px;
+
         @media (max-width: 459.98px) {
           display: block;
           top: 0;
@@ -116,24 +133,30 @@ form {
         }
       }
     }
+
     button {
       &.btn-form {
         @include mixin.btn-theme;
         float: right;
+
         @media (max-width: 575.98px) {
           padding: 12px;
         }
+
         &.btn-default {
           background-color: variables.$white;
           color: variables.$gray;
           border-color: variables.$gray2;
+
           &:hover {
             color: variables.$teal;
             border-color: variables.$teal;
           }
         }
+
         &.btn-form-continue {
           margin-right: 23px;
+
           @media (max-width: 767.98px) {
             margin-right: 0;
           }
@@ -141,10 +164,12 @@ form {
       }
     }
   }
+
   &.apply-job-form {
     .form-group {
       .form-title {
         padding-bottom: 16px;
+
         h2 {
           color: #101828;
           font-family: variables.$inter;
@@ -153,6 +178,7 @@ form {
           line-height: 28px;
           margin-bottom: 0;
         }
+
         p {
           color: #667085;
           font-family: variables.$inter;
@@ -162,6 +188,7 @@ form {
           margin-bottom: 0;
         }
       }
+
       textarea {
         height: 128px;
         padding-top: 10px !important;
@@ -171,10 +198,12 @@ form {
         line-height: 24px;
         color: variables.$dark2;
       }
+
       button {
         gap: 8px;
       }
     }
+
     .title-bar {
       color: #101828;
       font-family: variables.$inter;
@@ -185,18 +214,22 @@ form {
       border-radius: 4px;
       background: #f2f2f2;
       padding: 7px 0 6px 24px;
+
       @media (max-width: 575.98px) {
         padding-left: 10px;
       }
     }
+
     .title-bar-with-btn {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 8px;
+
       h3 {
         flex-grow: 1;
       }
+
       button {
         display: flex;
         align-items: center;
@@ -211,20 +244,24 @@ form {
         font-size: variables.$fontSmall;
         font-weight: 600;
         transition: variables.$transitionNormal;
+
         &:hover {
           background: #fff;
           color: variables.$teal;
         }
       }
     }
+
     .title-bar-with-switch {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 8px;
+
       h3 {
         flex-basis: 80%;
       }
+
       .form-switch {
         flex-basis: 20%;
         padding: 0;
@@ -232,11 +269,13 @@ form {
         align-items: center;
         justify-content: space-between;
         gap: 16px;
+
         .form-check-input {
           margin-left: 0;
         }
       }
     }
+
     a {
       &.custom-links {
         color: variables.$teal;
@@ -246,6 +285,7 @@ form {
         position: relative;
         display: inline-block;
         top: 11px;
+
         @media (max-width: 459.98px) {
           display: block;
           top: 0;
@@ -254,42 +294,50 @@ form {
         }
       }
     }
+
     button {
       &.btn-form {
         @include mixin.btn-theme;
         float: right;
+
         @media (max-width: 575.98px) {
           padding: 12px;
         }
+
         &.btn-default {
           background-color: variables.$white;
           color: variables.$gray;
           border-color: variables.$gray2;
+
           &:hover {
             color: variables.$teal;
             border-color: variables.$teal;
           }
         }
+
         &.btn-form-continue {
           margin-right: 23px;
+
           @media (max-width: 767.98px) {
             margin-right: 0;
           }
         }
       }
     }
+
     .edit-image {
       width: 84px;
       height: 84px;
       position: relative;
+
       svg {
         position: absolute;
         top: 0;
         right: 0;
         cursor: pointer;
       }
-      img {
-      }
+
+      img {}
     }
 
     .drop-zone {
@@ -310,6 +358,7 @@ form {
       background: rgba(0, 117, 106, 0.05);
       width: 100%;
     }
+
     .drop-zone h3 {
       color: #667085;
       font-size: 14px;
@@ -317,10 +366,12 @@ form {
       line-height: 20px;
       margin: 0;
     }
+
     .drop-zone h3 span {
       color: #00756a;
       font-weight: 600;
     }
+
     .drop-zone p {
       margin: 0;
       color: #667085;
@@ -360,8 +411,23 @@ form {
       text-align: center;
     }
   }
+
   .form-group {
     margin-bottom: 1.5rem;
+
+    &.input-ai {
+      .ai-icon {
+        position: absolute;
+        left: 14px;
+        top: 14px;
+        width: 16px;
+      }
+      input {
+        padding-left: 38px !important;
+        padding-top: 11px !important;
+      }
+    }
+
     .form-check {
       label {
         margin-bottom: 0;
@@ -371,21 +437,25 @@ form {
         font-weight: 500;
         line-height: 20px;
         margin-top: 3px;
+
         a {
           color: #00756a;
           text-decoration-line: underline;
         }
       }
+
       .form-check-input {
         &:focus {
           box-shadow: none;
         }
+
         &:checked {
           background-color: variables.$teal;
           border-color: variables.$teal;
         }
       }
     }
+
     label {
       color: variables.$gray;
       font-family: variables.$inter;
@@ -394,6 +464,7 @@ form {
       line-height: 20px;
       margin-bottom: 0.5rem;
     }
+
     input[type="text"],
     input[type="email"],
     input[type="number"],
@@ -407,10 +478,12 @@ form {
       border-radius: variables.$radiusSmall;
       transition: variables.$transitionNormal;
       width: 100%;
+
       &:focus {
         border-color: variables.$teal;
       }
     }
+
     .form-text {
       color: variables.$gray1;
       font-family: variables.$inter;
@@ -418,6 +491,7 @@ form {
       font-weight: variables.$normal;
       line-height: 20px;
     }
+
     .form-select {
       padding: 0 1rem;
       border: 1px solid variables.$gray2;
@@ -430,10 +504,12 @@ form {
       font-weight: variables.$normal;
       line-height: 24px;
       transition: variables.$transitionNormal;
+
       &:focus {
         border-color: variables.$teal;
       }
     }
+
     i {
       &.slash-icon {
         position: absolute;
@@ -442,66 +518,81 @@ form {
         color: variables.$gray1;
       }
     }
+
     button {
       margin-top: 1rem;
       @include mixin.btn-theme;
+
       &.otp-btn {
         background: #f2f2f2;
         color: #00756a;
       }
     }
+
     fieldset {
       .inputfield {
         width: 100%;
         display: flex;
         justify-content: space-around;
       }
+
       .inputfield input:first-child {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
       }
+
       .inputfield input:last-child {
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
       }
+
       .input {
         outline: none;
         text-align: center;
         /*Hide number field arrows*/
         -moz-appearance: textfield;
       }
+
       input[type="number"]::-webkit-outer-spin-button,
       input[type="number"]::-webkit-inner-spin-button {
         -webkit-appearance: none;
         margin: 0;
       }
+
       .input:disabled {
         color: #89888b;
       }
+
       .input:focus {
         border: 1px solid #c0c7ce;
       }
+
       .show {
         display: block;
       }
+
       .hide {
         display: none;
       }
     }
   }
+
   .form-switch {
     .form-check-input {
       width: 36px;
       height: 20px;
+
       &:checked {
         background-color: variables.$teal;
         border-color: variables.$teal;
       }
+
       &:focus {
         border-color: variables.$gray1;
         box-shadow: none;
       }
     }
+
     label {
       color: variables.$gray1;
       font-family: variables.$inter;
@@ -509,6 +600,7 @@ form {
       font-weight: variables.$normal;
       line-height: 24px;
     }
+
     span {
       color: #344054;
       font-family: variables.$inter;
@@ -523,23 +615,29 @@ form {
   .action-buttons {
     button {
       margin-left: 10px;
+
       &.btn-form {
         @include mixin.btn-theme;
         float: right;
+
         @media (max-width: 575.98px) {
           padding: 12px;
         }
+
         &.btn-default {
           background-color: variables.$white;
           color: variables.$gray;
           border-color: variables.$gray2;
+
           &:hover {
             color: variables.$teal;
             border-color: variables.$teal;
           }
         }
+
         &.btn-form-continue {
           margin-right: 23px;
+
           @media (max-width: 767.98px) {
             margin-right: 0;
           }
@@ -548,6 +646,7 @@ form {
     }
   }
 }
+
 .input-title-wrapper {
   display: flex;
   align-items: center;
@@ -555,6 +654,7 @@ form {
   border-radius: 4px;
   background: #f2f2f2;
   height: 40px;
+
   p {
     color: #101828;
     font-size: 16px;
@@ -562,6 +662,7 @@ form {
     line-height: 28px;
     padding-left: 1rem;
   }
+
   button {
     border-radius: 4px;
     border: 1px solid #00756a;
@@ -576,29 +677,37 @@ form {
     border-top-left-radius: 0;
   }
 }
+
 .form-control:focus {
   box-shadow: none;
 }
+
 input:focus-visible {
   outline: 0;
 }
+
 input:focus-visible {
   outline: 0;
 }
+
 :focus-visible {
   outline: 0;
 }
+
 .custom-border-bottom {
   border-bottom: 1px solid #eaecf0;
 }
+
 // Modal
 .custom-modal {
   .modal-dialog {
     .modal-content {
       border-radius: 0;
+
       .modal-body {
         padding: 0;
         position: relative;
+
         button {
           &.btn-close {
             position: absolute;
@@ -607,6 +716,7 @@ input:focus-visible {
             opacity: 1;
           }
         }
+
         .top-header {
           padding: 35px;
           background: #eba346;
@@ -614,16 +724,19 @@ input:focus-visible {
           align-items: flex-end;
           gap: 1rem;
           justify-content: space-between;
+
           .brand-details {
             display: flex;
             gap: 60px;
             max-width: 800px;
             width: 100%;
+
             .brand-logo {
               img {
                 max-width: 100px;
               }
             }
+
             .brand-info {
               h1 {
                 color: #10110c;
@@ -633,6 +746,7 @@ input:focus-visible {
                 line-height: 18px;
                 margin-bottom: 20px;
               }
+
               h2 {
                 color: #10110c;
                 font-family: variables.$workSans;
@@ -640,6 +754,7 @@ input:focus-visible {
                 font-weight: 500;
                 line-height: 18px;
               }
+
               p {
                 color: #10110c;
                 font-family: variables.$workSans;
@@ -650,14 +765,17 @@ input:focus-visible {
               }
             }
           }
+
           .action-btn {
             a {
               @include mixin.btn-theme;
             }
           }
         }
+
         .details {
           padding: 0 36px;
+
           h3 {
             color: #344054;
             font-family: variables.$workSans;
@@ -665,9 +783,11 @@ input:focus-visible {
             font-weight: 600;
             line-height: 24px;
           }
+
           section {
             dl {
               display: flex;
+
               dt {
                 color: #344054;
                 font-family: variables.$workSans;
@@ -675,6 +795,7 @@ input:focus-visible {
                 font-weight: 600;
                 line-height: 18px;
               }
+
               dd {
                 color: #344054;
                 font-family: variables.$workSans;
@@ -684,6 +805,7 @@ input:focus-visible {
                 margin-left: 1rem;
               }
             }
+
             h4 {
               color: #344054;
               font-family: variables.$workSans;
@@ -691,6 +813,7 @@ input:focus-visible {
               font-weight: 600;
               line-height: 18px;
             }
+
             p {
               color: #344054;
               text-align: justify;
@@ -700,6 +823,7 @@ input:focus-visible {
               line-height: 24px;
               max-width: 850px;
             }
+
             ul {
               &.add-info {
                 li {
@@ -707,6 +831,7 @@ input:focus-visible {
                   margin-left: 0;
                 }
               }
+
               li {
                 list-style-type: disc;
                 margin-left: 1rem;
@@ -719,15 +844,19 @@ input:focus-visible {
             }
           }
         }
+
         .modal-end {
           text-align: right;
           padding: 1rem;
+
           button {
             @include mixin.btn-theme;
+
             &.btn-default {
               background-color: variables.$white;
               color: variables.$gray;
               border-color: variables.$gray2;
+
               &:hover {
                 color: variables.$teal;
                 border-color: variables.$teal;
@@ -739,17 +868,21 @@ input:focus-visible {
     }
   }
 }
+
 .user-modal {
   .modal-dialog {
     max-width: 683px;
+
     .modal-content {
       .modal-header {
         flex-direction: column;
         align-items: baseline;
         padding: 40px 50px;
+
         @media (max-width: 575.98px) {
           padding: 1rem;
         }
+
         h3 {
           color: #030a16;
           font-size: 24px;
@@ -757,6 +890,7 @@ input:focus-visible {
           letter-spacing: 0.48px;
           margin: 0 0 12px 0;
         }
+
         p {
           margin: 0;
           color: #030a16;
@@ -765,17 +899,21 @@ input:focus-visible {
           letter-spacing: 0.28px;
           opacity: 0.5;
         }
+
         button {
           position: absolute;
           right: 32px;
           top: 32px;
         }
       }
+
       .modal-body {
         padding: 40px 50px;
+
         @media (max-width: 575.98px) {
           padding: 1rem;
         }
+
         form {
           label {
             color: #344054;
@@ -784,6 +922,7 @@ input:focus-visible {
             line-height: 20px;
             margin-bottom: 12px;
           }
+
           select {
             border-radius: 8px;
             border: 1px solid #d0d5dd;
@@ -793,10 +932,12 @@ input:focus-visible {
             font-size: 16px;
             font-weight: 400;
             line-height: 24px;
+
             &:focus {
               border-color: #00756a;
             }
           }
+
           .form-control {
             border-radius: 8px;
             border: 1px solid #d0d5dd;
@@ -805,6 +946,7 @@ input:focus-visible {
             &:focus {
               border-color: #00756a;
             }
+
             &.input-with-icon {
               background-image: url("../../img/user-1.png");
               background-repeat: no-repeat;
@@ -813,9 +955,11 @@ input:focus-visible {
               padding-left: 40px;
             }
           }
+
           input {
             height: 44px;
           }
+
           button {
             background-color: #00756a;
             color: #fff;
@@ -830,6 +974,7 @@ input:focus-visible {
     }
   }
 }
+
 #msform .steper-wrapper:not(:first-of-type) {
   display: none;
 }
