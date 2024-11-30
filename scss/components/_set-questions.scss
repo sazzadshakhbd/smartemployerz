@@ -1,6 +1,7 @@
 @use "../variables";
 
 .set-questions {
+  
   .question-wrapper {
     display: flex;
     align-items: center;
@@ -107,10 +108,14 @@
     justify-content: center;
     align-items: center;
 
+    &.bg-linear {
+      background: linear-gradient(252deg, #F7FFFF 3.92%, #FFF1FF 99.65%);
+    }
+
     &.subjective-question {
       border-radius: 4px;
       border: 1px solid #D0D5DD;
-      background: linear-gradient(252deg, #F7FFFF 3.92%, #FFF1FF 99.65%);
+      
       display: block;
 
       .btn-group {
@@ -176,37 +181,51 @@
         }
       }
 
-      .questions-wrapper {
-        h3 {
-          color: #525866;
-          font-size: 18px;
-          font-weight: 600;
-          line-height: 24px;
+      .single-qus-wrapper {
+        display: flex;
+        column-gap: 22px;
+        @media(max-width: 575.98px) {
+          column-gap: 10px;
         }
+        .number {
+          span {
 
-        .form-check {
-          cursor: pointer;
+          }
         }
-
-        .form-check-input {
-          background-color: #D9D9D9;
-          border: 0;
-        }
-
-        .form-check-input:checked[type=radio] {
-          background-image: none;
-          background-color: #00756a;
-        }
-
-        .form-check label {
-          color: #8D9096;
-          font-size: 16px;
-          margin: 0;
-          vertical-align: 1px;
-          font-weight: 400;
-          line-height: 24px;
+        .single-qus {
+          flex-basis: 100%;
+          h3 {
+            color: #525866;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 24px;
+          }
+  
+          .form-check {
+            cursor: pointer;
+          }
+  
+          .form-check-input {
+            background-color: #D9D9D9;
+            border: 0;
+          }
+  
+          .form-check-input:checked[type=radio] {
+            background-image: none;
+            background-color: #00756a;
+          }
+  
+          .form-check label {
+            color: #8D9096;
+            font-size: 16px;
+            margin: 0;
+            vertical-align: 1px;
+            font-weight: 400;
+            line-height: 24px;
+          }
         }
       }
+      
     }
 
     .blank-content {
