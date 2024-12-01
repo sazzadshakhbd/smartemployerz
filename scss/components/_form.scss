@@ -577,40 +577,42 @@ form {
     }
   }
 
-  .form-switch {
-    .form-check-input {
-      width: 36px;
-      height: 20px;
+  
+}
+.form-switch {
+  .form-check-input {
+    width: 36px;
+    height: 20px;
+    cursor: pointer;
 
-      &:checked {
-        background-color: variables.$teal;
-        border-color: variables.$teal;
-      }
-
-      &:focus {
-        border-color: variables.$gray1;
-        box-shadow: none;
-      }
+    &:checked {
+      background-color: variables.$teal;
+      border-color: variables.$teal;
     }
 
-    label {
-      color: variables.$gray1;
-      font-family: variables.$inter;
-      font-size: variables.$fontSmall;
-      font-weight: variables.$normal;
-      line-height: 24px;
-    }
-
-    span {
-      color: #344054;
-      font-family: variables.$inter;
-      font-size: variables.$fontSmall;
-      font-weight: 500;
-      line-height: 20px;
+    &:focus {
+      border-color: variables.$gray1;
+      box-shadow: none;
     }
   }
-}
 
+  label {
+    color: variables.$gray1;
+    font-family: variables.$inter;
+    font-size: variables.$fontSmall;
+    font-weight: variables.$normal;
+    line-height: 24px;
+    cursor: pointer;
+  }
+
+  span {
+    color: #344054;
+    font-family: variables.$inter;
+    font-size: variables.$fontSmall;
+    font-weight: 500;
+    line-height: 20px;
+  }
+}
 .wrapper {
   .action-buttons {
     button {

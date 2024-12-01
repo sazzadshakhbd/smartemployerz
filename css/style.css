@@ -772,26 +772,29 @@ form .form-group fieldset .show {
 form .form-group fieldset .hide {
   display: none;
 }
-form .form-switch .form-check-input {
+
+.form-switch .form-check-input {
   width: 36px;
   height: 20px;
+  cursor: pointer;
 }
-form .form-switch .form-check-input:checked {
+.form-switch .form-check-input:checked {
   background-color: #00756A;
   border-color: #00756A;
 }
-form .form-switch .form-check-input:focus {
+.form-switch .form-check-input:focus {
   border-color: #858585;
   box-shadow: none;
 }
-form .form-switch label {
+.form-switch label {
   color: #858585;
   font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+  cursor: pointer;
 }
-form .form-switch span {
+.form-switch span {
   color: #344054;
   font-family: "Inter", sans-serif;
   font-size: 14px;
@@ -3572,6 +3575,132 @@ footer p {
   font-weight: 400;
   letter-spacing: 0.32px;
   opacity: 0.5;
+}
+.packages h1 {
+  margin: 0 0 30px 0;
+  color: #0E0F12;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 160%;
+}
+.packages p {
+  color: #8B8B8B;
+  letter-spacing: -0.18px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.packages label {
+  color: #0E0F12;
+  font-weight: 500;
+  font-size: 16px;
+}
+.packages label span {
+  color: #00756A;
+  font-weight: 600;
+}
+.packages .package-plan {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 1199.98px) {
+  .packages .package-plan {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+.packages .package-plan .feature {
+  border: 1px solid rgba(234, 236, 240, 0.5);
+  background: #FFF;
+  box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+  max-width: 276px;
+  flex-shrink: 0;
+  width: 100%;
+  padding: 0 0 32px 0;
+}
+@media (max-width: 1199.98px) {
+  .packages .package-plan .feature {
+    max-width: 100%;
+  }
+}
+.packages .package-plan .feature:not(:first-child) {
+  text-align: center;
+  max-width: 211px;
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .packages .package-plan .feature:not(:first-child) {
+    max-width: 170px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .packages .package-plan .feature:not(:first-child) {
+    max-width: 100%;
+  }
+}
+.packages .package-plan .feature h2 {
+  color: #000;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -0.64px;
+  margin: 0;
+  border-bottom: 1px solid rgba(234, 236, 240, 0.5);
+  padding: 32px 0;
+  text-align: center;
+}
+.packages .package-plan .feature ul {
+  margin: 0;
+  padding: 32px 28px 0px 32px;
+  list-style-type: none;
+}
+.packages .package-plan .feature ul li {
+  color: #667085;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.packages .package-plan .feature ul li i {
+  color: #4DE450;
+  font-size: 12px;
+}
+.packages .package-plan .feature h3 {
+  margin: 0;
+  color: #000;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -0.8px;
+  margin-bottom: 33px;
+}
+.packages .package-plan .feature h3 span {
+  color: #8B8B8B;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: -0.4px;
+}
+.packages .package-plan .feature a.btn-buy-now {
+  display: flex;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: #00756A;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-decoration: none;
+  max-width: 157px;
+  margin: 0 auto;
+  text-transform: capitalize;
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .packages .package-plan .feature a.btn-buy-now {
+    max-width: 120px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
