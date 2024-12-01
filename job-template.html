@@ -42,7 +42,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css" />
 
-    <title>Packages</title>
+    <title>Job Template</title>
   </head>
   <body>
     <!-- Start Main Section -->
@@ -588,7 +588,9 @@
                   </div>
                 </div>
                 <div class="top-bar-options">
-                  
+                  <div class="create-job-links">
+                    <a href="./create-new-job.html">+ Create New Job</a>
+                  </div>
                   <div class="notifications">
                     <div class="dropdown">
                       <button
@@ -621,150 +623,290 @@
                 </div>
               </div>
               <!-- End Top Bar -->
-               <div class="packages">
-                  <div class="row mb-3">
-                    <div class="col-md-12 text-center">
-                      <h1>Our Packages</h1>
-                      <p>Lorem ipsum dolor sit amet consectetur. Vestibulum at fusce consectetur sed consectetur  </p>
+
+              <!-- Start Filtering Bar -->
+              <div class="filtering-bar">
+                <div class="row">
+                  <div class="col-xl-3 col-lg-4 mb-2 mb-sm-4 mb-lg-0">
+                    <div class="search-filed">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M17.5 17.5L13.875 13.875M15.8333 9.16667C15.8333 12.8486 12.8486 15.8333 9.16667 15.8333C5.48477 15.8333 2.5 12.8486 2.5 9.16667C2.5 5.48477 5.48477 2.5 9.16667 2.5C12.8486 2.5 15.8333 5.48477 15.8333 9.16667Z"
+                          stroke="#667085"
+                          stroke-width="1.66667"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                      <input
+                        type="search"
+                        name="search"
+                        id="searchFileld"
+                        placeholder="Search"
+                      />
                     </div>
                   </div>
-                  <div class="row mb-5">
-                    <div class="col-md-12">
-                      <div class="form-check form-switch d-flex justify-content-center">
-                        <input
-                          class="form-check-input me-2"
-                          type="checkbox"
-                          role="switch"
-                          id="flex2SwitchCheckChecked"
-                          checked
-                        />
-                       
-                        <label
-                          class="form-check-label ps-1"
-                          for="flex2SwitchCheckChecked"
-                          >Annual pricing <span> (Save 20%)</span></label
+                  <div class="col-xl-9 col-lg-8">
+                    <div class="select-filter justify-content-lg-end justify-content-center flex-wrap">
+                      <div class="form-group">
+                        <select
+                          class="form-select"
+                          id="numberOfEmployees"
+                          aria-label="Default select example"
+                          fdprocessedid="ngsxem"
                         >
+                          <option value="1" selected="">Select Industry Type</option>
+                          <option value="2">Type - A</option>
+                          <option value="3">Type - B</option>
+                          <option value="3">Type - C</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <select
+                          class="form-select"
+                          id="numberOfEmployees"
+                          aria-label="Default select example"
+                          fdprocessedid="ngsxem"
+                        >
+                          <option value="1" selected="">Looking For / Designation</option>
+                          <option value="2">Type - A</option>
+                          <option value="3">Type - B</option>
+                          <option value="3">Type - C</option>
+                        </select>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Filtering Bar -->
+
+              <!-- Start Applicant Section -->
+              <div class="applicants-info">
+                <div class="row no-gutters">
+                  <div class="col-md-12">
+                    <div class="applicants-bar">
+                      <h3>Job Template <span>100</span></h3>
+                    </div>
+                    <div class="job-templates">
+                      <div class="row">
+                        <div class="col-xl-6">
+                          <div class="card">
+                            <div class="card-header">
+                              <h3>PHP Developer <span>Mid Level </span></h3>
+                            </div>
+                            <div class="card-body">
+                              <h4>Information Technology</h4>
+                              <ul>
+                                <li>
+                                  <span>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Dhaka, Bangladesh
+                                  </span>
+                                  <span>
+                                    <i class="fas fa-briefcase"></i>
+                                    $1,000
+                                  </span>
+                                </li>
+                                <li>
+                                  <button>use this template</button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-6">
+                          <div class="card">
+                            <div class="card-header">
+                              <h3>PHP Developer <span>Mid Level </span></h3>
+                            </div>
+                            <div class="card-body">
+                              <h4>Information Technology</h4>
+                              <ul>
+                                <li>
+                                  <span>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Dhaka, Bangladesh
+                                  </span>
+                                  <span>
+                                    <i class="fas fa-briefcase"></i>
+                                    $1,000
+                                  </span>
+                                </li>
+                                <li>
+                                  <button>use this template</button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-6">
+                          <div class="card">
+                            <div class="card-header">
+                              <h3>PHP Developer <span>Mid Level </span></h3>
+                            </div>
+                            <div class="card-body">
+                              <h4>Information Technology</h4>
+                              <ul>
+                                <li>
+                                  <span>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Dhaka, Bangladesh
+                                  </span>
+                                  <span>
+                                    <i class="fas fa-briefcase"></i>
+                                    $1,000
+                                  </span>
+                                </li>
+                                <li>
+                                  <button>use this template</button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-6">
+                          <div class="card">
+                            <div class="card-header">
+                              <h3>PHP Developer <span>Mid Level </span></h3>
+                            </div>
+                            <div class="card-body">
+                              <h4>Information Technology</h4>
+                              <ul>
+                                <li>
+                                  <span>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Dhaka, Bangladesh
+                                  </span>
+                                  <span>
+                                    <i class="fas fa-briefcase"></i>
+                                    $1,000
+                                  </span>
+                                </li>
+                                <li>
+                                  <button>use this template</button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-6">
+                          <div class="card">
+                            <div class="card-header">
+                              <h3>PHP Developer <span>Mid Level </span></h3>
+                            </div>
+                            <div class="card-body">
+                              <h4>Information Technology</h4>
+                              <ul>
+                                <li>
+                                  <span>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Dhaka, Bangladesh
+                                  </span>
+                                  <span>
+                                    <i class="fas fa-briefcase"></i>
+                                    $1,000
+                                  </span>
+                                </li>
+                                <li>
+                                  <button>use this template</button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-6">
+                          <div class="card">
+                            <div class="card-header">
+                              <h3>PHP Developer <span>Mid Level </span></h3>
+                            </div>
+                            <div class="card-body">
+                              <h4>Information Technology</h4>
+                              <ul>
+                                <li>
+                                  <span>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Dhaka, Bangladesh
+                                  </span>
+                                  <span>
+                                    <i class="fas fa-briefcase"></i>
+                                    $1,000
+                                  </span>
+                                </li>
+                                <li>
+                                  <button>use this template</button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-6">
+                          <div class="card">
+                            <div class="card-header">
+                              <h3>PHP Developer <span>Mid Level </span></h3>
+                            </div>
+                            <div class="card-body">
+                              <h4>Information Technology</h4>
+                              <ul>
+                                <li>
+                                  <span>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Dhaka, Bangladesh
+                                  </span>
+                                  <span>
+                                    <i class="fas fa-briefcase"></i>
+                                    $1,000
+                                  </span>
+                                </li>
+                                <li>
+                                  <button>use this template</button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-6">
+                          <div class="card">
+                            <div class="card-header">
+                              <h3>PHP Developer <span>Mid Level </span></h3>
+                            </div>
+                            <div class="card-body">
+                              <h4>Information Technology</h4>
+                              <ul>
+                                <li>
+                                  <span>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Dhaka, Bangladesh
+                                  </span>
+                                  <span>
+                                    <i class="fas fa-briefcase"></i>
+                                    $1,000
+                                  </span>
+                                </li>
+                                <li>
+                                  <button>use this template</button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="package-plan">
-                        <div class="feature">
-                          <h2>Feature</h2>
-                          <ul>
-                            <li>Number of Job Post</li>
-                            <li>Career Page Builder</li>
-                            <li>200+ Profile View / Month</li>
-                            <li>Gmail / Zoom Integration</li>
-                            <li>E-Signature & Offer Letter</li>
-                            <li>Self Guided onboarding</li>
-                            <li>Automated AI Shorting</li>
-                            <li>Recruitment Plan</li>
-                            <li>24/7 Customer Support</li>
-                            <li>100+ Job Template</li>
-                            <li>Dedicated Account Manager</li>
-                            <li>Email Integration</li>
-                            <li>External Resume Import</li>
-                            <li>Customization Report Builder</li>
-                            <li>User Friendly Talent Pool</li>
-                          </ul>
-                        </div>
-                        <div class="feature">
-                          <h2>PayGo</h2>
-                          <ul>
-                            <li>1</li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                          </ul>
-                          <h3>$2<span>.90/mo</span></h3>
-                          <a href="#" class="btn-buy-now">buy now</a>
-                        </div>
-                        <div class="feature">
-                          <h2>Startup</h2>
-                          <ul>
-                            <li>5</li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                          </ul>
-                          <h3>$5<span>.90/mo</span></h3>
-                          <a href="#" class="btn-buy-now">buy now</a>
-                        </div>
-                        <div class="feature">
-                          <h2>Business</h2>
-                          <ul>
-                            <li>10</li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                          </ul>
-                          <h3>$10<span>.90/mo</span></h3>
-                          <a href="#" class="btn-buy-now">buy now</a>
-                        </div>
-                        <div class="feature">
-                          <h2>Premium</h2>
-                          <ul>
-                            <li>15</li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                            <li><i class="fas fa-check"></i></li>
-                          </ul>
-                          <h3>$20<span>.90/mo</span></h3>
-                          <a href="#" class="btn-buy-now">buy now</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-               </div>
+                </div>
+              </div>
+              <!-- End Applicant Section -->
+
+             
             </div>
             <footer>
-              <p>All Right Reserved by @smartemployerz.com </p>
+              <p>All Right Reserved by @smartemployerz.com</p>
             </footer>
           </div>
         </div>
@@ -772,7 +914,238 @@
     </main>
     <!-- End Main Section -->
 
-    
+    <!-- Modal -->
+    <div
+      class="modal fade participant-modal"
+      id="participant"
+      tabindex="-1"
+      aria-labelledby="participantLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="row align-items-center mb-3 mb-sm-5">
+              <div class="col-lg-5 col-md-12 mb-3 mb-sm-5 mb-lg-0">
+                <div class="image-box">
+                  <div class="user-image">
+                    <img src="./img/applicants/user.png" alt="UserImage" />
+                  </div>
+                  <div class="user-details">
+                    <h3>Mithun Das</h3>
+                    <h4>UI/UX Designer</h4>
+                    <p>bappy.mithun@gmail.com</p>
+                    <p>01825932574</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-6 col-sm-6 col-12">
+                <div class="social-links mb-3 mb-sm-0">
+                  <a class="text-break" href="#"
+                    >https://www.linkedin.com/in/bappymithun1/</a
+                  >
+                  <a class="text-break" href="#"
+                    >https://dribbble.com/bappymithun</a
+                  >
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-sm-6 col-12">
+                <button class="pdf-download">Download PDF</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-8">
+                <p class="para">
+                  Lorem ipsum dolor sit amet consectetur. Praesent morbi arcu
+                  nisi nec. Turpis turpis neque scelerisque platea sed rhoncus
+                  fames turpis pharetra. Amet amet sit duis amet eu iaculis
+                  donec. Curabitur bibendum mollis dignissim mus habitant
+                  facilisis ac felis.
+                </p>
+              </div>
+              <div class="col-lg-4">
+                <div class="applicant-progress">
+                  <div class="chips">
+                    <span class="active-shortlist"
+                      ><i class="fas fa-check"></i>Shortlist</span
+                    >
+                    <span><i class="fas fa-file-invoice"></i>Assessment</span>
+                    <span><i class="fas fa-check"></i>Interview</span>
+                    <span><i class="fas fa-check"></i>Final Selection</span>
+                    <span><i class="fas fa-check"></i>Offer</span>
+                    <span><i class="fas fa-check"></i>Hire</span>
+                    <span
+                      ><i class="far fa-trash-alt text-danger"></i> Reject</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="details">
+              <h3>Experience 1 :</h3>
+              <section>
+                <dl class="row no-gutters">
+                  <dt class="col-lg-2 col-md-3 col-sm-4">
+                    Company <span>:</span>
+                  </dt>
+                  <dd class="col-lg-10 col-md-9 col-sm-8">Netcoden .inc</dd>
+                </dl>
+                <dl class="row no-gutters">
+                  <dt class="col-lg-2 col-md-3 col-sm-4">
+                    Designation <span>:</span>
+                  </dt>
+                  <dd class="col-lg-10 col-md-9 col-sm-8">Ui/Ux Designer</dd>
+                </dl>
+                <dl class="row no-gutters">
+                  <dt class="col-lg-2 col-md-3 col-sm-4">
+                    Timeframe <span>:</span>
+                  </dt>
+                  <dd class="col-lg-10 col-md-9 col-sm-8">Jan 2022 - Now</dd>
+                </dl>
+                <dl class="row no-gutters">
+                  <dt class="col-lg-2 col-md-3 col-sm-4">
+                    Detail <span>:</span>
+                  </dt>
+                  <dd class="col-lg-10 col-md-9 col-sm-8">
+                    As a UI/UX designer i have collaborated with the
+                    stakeholders & development teams on core projects to make
+                    product interfaces and experiences.
+                  </dd>
+                </dl>
+              </section>
+            </div>
+            <div class="details">
+              <h3>Experience 2 :</h3>
+              <section>
+                <dl class="row no-gutters">
+                  <dt class="col-lg-2 col-md-3 col-sm-4">
+                    Company <span>:</span>
+                  </dt>
+                  <dd class="col-lg-10 col-md-9 col-sm-8">Netcoden .inc</dd>
+                </dl>
+                <dl class="row no-gutters">
+                  <dt class="col-lg-2 col-md-3 col-sm-4">
+                    Designation <span>:</span>
+                  </dt>
+                  <dd class="col-lg-10 col-md-9 col-sm-8">Ui/Ux Designer</dd>
+                </dl>
+                <dl class="row no-gutters">
+                  <dt class="col-lg-2 col-md-3 col-sm-4">
+                    Timeframe <span>:</span>
+                  </dt>
+                  <dd class="col-lg-10 col-md-9 col-sm-8">Jan 2022 - Now</dd>
+                </dl>
+                <dl class="row no-gutters">
+                  <dt class="col-lg-2 col-md-3 col-sm-4">
+                    Detail <span>:</span>
+                  </dt>
+                  <dd class="col-lg-10 col-md-9 col-sm-8">
+                    As a UI/UX designer i have collaborated with the
+                    stakeholders & development teams on core projects to make
+                    product interfaces and experiences.
+                  </dd>
+                </dl>
+              </section>
+            </div>
+            <div class="details">
+              <h3>Experience 3 :</h3>
+              <section>
+                <dl class="row no-gutters">
+                  <dt class="col-lg-2 col-md-3 col-sm-4">
+                    Company <span>:</span>
+                  </dt>
+                  <dd class="col-lg-10 col-md-9 col-sm-8">Netcoden .inc</dd>
+                </dl>
+                <dl class="row no-gutters">
+                  <dt class="col-lg-2 col-md-3 col-sm-4">
+                    Designation <span>:</span>
+                  </dt>
+                  <dd class="col-lg-10 col-md-9 col-sm-8">Ui/Ux Designer</dd>
+                </dl>
+                <dl class="row no-gutters">
+                  <dt class="col-lg-2 col-md-3 col-sm-4">
+                    Timeframe <span>:</span>
+                  </dt>
+                  <dd class="col-lg-10 col-md-9 col-sm-8">Jan 2022 - Now</dd>
+                </dl>
+                <dl class="row no-gutters">
+                  <dt class="col-lg-2 col-md-3 col-sm-4">
+                    Detail <span>:</span>
+                  </dt>
+                  <dd class="col-lg-10 col-md-9 col-sm-8">
+                    As a UI/UX designer i have collaborated with the
+                    stakeholders & development teams on core projects to make
+                    product interfaces and experiences.
+                  </dd>
+                </dl>
+              </section>
+            </div>
+            <div class="details">
+              <h3>Skills :</h3>
+              <section>
+                <dl class="row no-gutters">
+                  <dt class="col-lg-2 col-md-3 col-sm-4">
+                    Skill 1 <span>:</span>
+                  </dt>
+                  <dd class="col-lg-10 col-md-9 col-sm-8">Ui Design</dd>
+                </dl>
+                <dl class="row no-gutters">
+                  <dt class="col-lg-2 col-md-3 col-sm-4">
+                    Skill 2 <span>:</span>
+                  </dt>
+                  <dd class="col-lg-10 col-md-9 col-sm-8">Ux Design</dd>
+                </dl>
+                <dl class="row no-gutters">
+                  <dt class="col-lg-2 col-md-3 col-sm-4">
+                    Skill 3 <span>:</span>
+                  </dt>
+                  <dd class="col-lg-10 col-md-9 col-sm-8">Web Design</dd>
+                </dl>
+              </section>
+            </div>
+            <div class="details">
+              <h3>Education :</h3>
+              <section class="mb-0 border-0 pb-0">
+                <dl class="row no-gutters">
+                  <dt class="col-lg-2 col-md-3 col-sm-4">SSC <span>:</span></dt>
+                  <dd class="col-lg-10 col-md-9 col-sm-8">
+                    <span>Science</span>
+                    <span>(4.50)</span>
+                    <span>2008</span>
+                  </dd>
+                </dl>
+                <dl class="row no-gutters">
+                  <dt class="col-lg-2 col-md-3 col-sm-4">HSC <span>:</span></dt>
+                  <dd class="col-lg-10 col-md-9 col-sm-8">
+                    <span>Science</span>
+                    <span>(4.24)</span>
+                    <span>2010</span>
+                  </dd>
+                </dl>
+                <dl class="row no-gutters">
+                  <dt class="col-lg-2 col-md-3 col-sm-4">BSC <span>:</span></dt>
+                  <dd class="col-lg-10 col-md-9 col-sm-8">
+                    <span>Mechatronics Engineering</span>
+                    <span> (3.50)</span>
+                    <span>2015</span>
+                  </dd>
+                </dl>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- JQuery 3.7.1 -->
     <script
@@ -792,23 +1165,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
     <!-- Custom JS -->
     <script src="./js/custom.js"></script>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
   </body>
 </html>

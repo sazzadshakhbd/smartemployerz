@@ -3703,4 +3703,90 @@ footer p {
   }
 }
 
+.job-templates .card {
+  margin-bottom: 1rem;
+  padding-bottom: 14px;
+}
+.job-templates .card .card-header {
+  background-color: transparent;
+  padding: 16px;
+}
+.job-templates .card .card-header h3 {
+  color: #101828;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  margin: 0;
+}
+.job-templates .card .card-header h3 span {
+  color: #667085;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 150%;
+}
+.job-templates .card .card-body h4 {
+  color: #101828;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%;
+  margin: 0;
+}
+@media (max-width: 575.98px) {
+  .job-templates .card .card-body h4 {
+    margin-bottom: 10px;
+  }
+}
+.job-templates .card .card-body ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+@media (max-width: 575.98px) {
+  .job-templates .card .card-body ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+.job-templates .card .card-body ul li {
+  color: #667085;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.job-templates .card .card-body ul li span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.job-templates .card .card-body ul li button,
+.job-templates .card .card-body ul li a {
+  padding: 6px 10px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #00756A;
+  background: #00756A;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 22px;
+}
+.job-templates .card .card-body ul li button:hover,
+.job-templates .card .card-body ul li a:hover {
+  background-color: #ffffff;
+  color: #00756A;
+  border-color: #00756A;
+}
+
 /*# sourceMappingURL=style.css.map */
