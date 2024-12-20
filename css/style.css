@@ -79,6 +79,8 @@ body ::-webkit-scrollbar-thumb:window-inactive {
 .login-wrapper {
   height: 100vh;
   gap: 80px;
+  align-items: center;
+  display: flex;
 }
 @media (max-width: 991.98px) {
   .login-wrapper {
@@ -162,9 +164,10 @@ body ::-webkit-scrollbar-thumb:window-inactive {
 .login-wrapper .login-image {
   flex-basis: 50%;
   flex-grow: 1;
-  background-image: url("../../img/auth/login-image.png");
+  background-image: url("/img/auth/login-image.png");
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100vh;
 }
 .login-wrapper .login-image.reg-image {
   background-image: url("../../img/auth/reg-image.png");

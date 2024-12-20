@@ -1,51 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link
-      rel="icon"
-      href="./img/logo/favicon.ico"
-      title="smartemployerz"
-      sizes="32x32"
-    />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="smartemployerz" />
+<?php include 'view/header.php'; ?>
 
-    <!-- Bootstrap 5.1.3  -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <!--  Font-Awesome 5.15.4 -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    <!-- Select2 4.0.4 -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css"
-    />
-    <!-- intlTelInput 17.0.13 -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css"
-    />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
-
-    <title>smartemployerz</title>
-  </head>
-
-  <body>
     <!-- Start Main Section -->
     <main>
       <div class="container-fluid">
@@ -55,7 +9,7 @@
               <!-- Registration Form -->
               <div class="card login-card border-0 bg-transparent">
                 <div class="card-header bg-transparent border-0 p-0">
-                  <a href="./index.html">
+                  <a href="./dashboard.php">
                     <img
                       src="./img/logo/logo.png"
                       alt="logo"
@@ -986,18 +940,12 @@
                   </form>
                   <p class="text-center form-footer">
                     If You Have Any Account, Click
-                    <a href="./login.html">Log In</a>
+                    <a href="./index.php">Log In</a>
                   </p>
                 </div>
               </div>
               <!-- Registration Image -->
-              <div class="login-image reg-image">
-                <!-- <img
-                  src="./img/auth/reg-image.png"
-                  class="img-fluid"
-                  alt="Registration Image"
-                /> -->
-              </div>
+              <div class="login-image reg-image" style="background-image: url('./img/auth/reg-image.png');"></div>
             </div>
           </div>
         </div>
@@ -1005,103 +953,6 @@
     </main>
     <!-- End Main Section -->
 
-    <!-- JQuery 3.7.1 -->
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <!-- Bootstrap 5.1.3 -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Select2 4.0.4 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
-    <!-- intlTelInput 17.0.13 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
-    <!-- Custom JS -->
-    <script src="./js/custom.js"></script>
-    <script>
-      // For Registration Stepper JS
-      var currentTab = 0; // Current tab is set to be the first tab (0)
-      showTab(currentTab); // Display the current tab
-
-      function showTab(n) {
-        // This function will display the specified tab of the form...
-        var x = document.getElementsByClassName("tab");
-        x[n].style.display = "block";
-        //... and fix the Previous/Next buttons:
-        if (n == 0) {
-          document.getElementById("prevBtn").style.display = "none";
-        } else {
-          document.getElementById("prevBtn").style.display = "none";
-        }
-        if (n == x.length - 1) {
-          document.getElementById("nextBtn").innerHTML = "Create Account";
-        } else {
-          document.getElementById("nextBtn").innerHTML = "Next Step";
-        }
-        //... and run a function that will display the correct step indicator:
-        fixStepIndicator(n);
-      }
-
-      function nextPrev(n) {
-        // This function will figure out which tab to display
-        var x = document.getElementsByClassName("tab");
-        // Exit the function if any field in the current tab is invalid:
-        if (n == 1 && !validateForm()) return false;
-        // Hide the current tab:
-        x[currentTab].style.display = "none";
-        // Increase or decrease the current tab by 1:
-        currentTab = currentTab + n;
-        // if you have reached the end of the form...
-        if (currentTab >= x.length) {
-          // ... the form gets submitted:
-          document.getElementById("regForm").submit();
-          return false;
-        }
-        // Otherwise, display the correct tab:
-        showTab(currentTab);
-      }
-
-      function validateForm() {
-        // This function deals with validation of the form fields
-        var x,
-          y,
-          i,
-          valid = true;
-        x = document.getElementsByClassName("tab");
-        y = x[currentTab].getElementsByTagName("input");
-        // A loop that checks every input field in the current tab:
-        for (i = 0; i < y.length; i++) {
-          // If a field is empty...
-          if (y[i].value == "") {
-            // add an "invalid" class to the field:
-            y[i].className += " invalid";
-            // and set the current valid status to false
-            valid = false;
-          }
-        }
-        // If the valid status is true, mark the step as finished and valid:
-        if (valid) {
-          document.getElementsByClassName("step")[currentTab].className +=
-            " finish";
-        }
-        return valid; // return the valid status
-      }
-
-      function fixStepIndicator(n) {
-        // This function removes the "active" class of all steps...
-        var i,
-          x = document.getElementsByClassName("step");
-        for (i = 0; i < x.length; i++) {
-          x[i].className = x[i].className.replace(" active", "");
-        }
-        //... and adds the "active" class on the current step:
-        x[n].className += " active";
-      }
-    </script>
-  </body>
-</html>
+    <?php include 'view/footer.php'; ?>
+    <script src="./js/register.js"></script>
+  

@@ -54,7 +54,7 @@
             <div class="login-wrapper d-flex">
               <div class="card login-card border-0 bg-transparent">
                 <div class="card-header bg-transparent border-0 p-0">
-                  <a href="./index.html">
+                  <a href="./dashboard.php">
                     <img
                       src="./img/logo/logo.png"
                       alt="logo"

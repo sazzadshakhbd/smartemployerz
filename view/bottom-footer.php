@@ -1,3 +1,5 @@
+
+
 <footer>
-  <p>All Right Reserved by @smartemployerz.com </p>
+    <p class="text-center">&copy; <?php echo date("Y"); ?> smartemployerz.com. All rights reserved.</p>
 </footer>
