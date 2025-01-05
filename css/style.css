@@ -2155,6 +2155,9 @@ footer p {
   vertical-align: middle;
   padding: 22px 10px;
 }
+.dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td a {
+  color: #667085;
+}
 .dashboard .all-plans .all-tabs .tab-content .tab-pane .table-responsive table tbody tr td .title {
   display: flex;
   align-items: center;
