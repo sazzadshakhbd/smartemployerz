@@ -1,4 +1,4 @@
-<!--  Heade -->
+<!--  Header -->
 <?php include 'view/header.php'; ?>
 <!-- Start Main Section -->
 <main>
@@ -113,8 +113,7 @@
                         <div class="form-floating">
                           <textarea
                             class="form-control"
-                            id="floatingTextarea">
-I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI design, brand strategy, and Webflow development.</textarea>
+                            id="floatingTextarea">I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI design, brand strategy, and Webflow development.</textarea>
                         </div>
                         <div class="form-text">275 characters left</div>
                       </div>
@@ -127,8 +126,7 @@ I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI desi
                         <div class="form-floating">
                           <textarea
                             class="form-control"
-                            id="floatingTextarea">
-I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI design, brand strategy, and Webflow development.
+                            id="floatingTextarea"> I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI design, brand strategy, and Webflow development.
                             </textarea>
                         </div>
                         <div class="form-text">275 characters left</div>
@@ -160,8 +158,7 @@ I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI desi
                         <div class="form-floating">
                           <textarea
                             class="form-control"
-                            id="floatingTextarea">
-I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI design, brand strategy, and Webflow development.
+                            id="floatingTextarea"> I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI design, brand strategy, and Webflow development.
                             </textarea>
                         </div>
                         <div class="form-text">275 characters left</div>
@@ -1124,8 +1121,7 @@ I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI desi
                   <div class="form-group me-md-4">
                     <label for="floatingTextarea" class="form-label">Additional Academic Requirement</label>
                     <div class="form-floating">
-                      <textarea class="form-control" id="floatingTextarea">
-I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI design, brand strategy, and Webflow development.
+                      <textarea class="form-control" id="floatingTextarea"> I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI design, brand strategy, and Webflow development.
                           </textarea>
                     </div>
                     <div class="form-text">275 characters left</div>
@@ -1246,6 +1242,7 @@ I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI desi
 <!-- End Main Section -->
 
 <?php include 'view/footer.php'; ?>
+
 <!-- Modal -->
 <div
   class="modal custom-modal fade"
@@ -1399,23 +1396,66 @@ I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI desi
   </div>
 </div>
 <!-- Modal -->
-<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+<div class="modal fade share-modal" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel2">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
       <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <div class="content">
+          <h1>Posted successfully. Now Share With</h1>
+          <p>Now, you have to share this job to get more applicants</p>
+        </div>
+        <ul>
+          <li><a href="#" target="_blank"><img src="./img/icons/facebook.png" class="img-fluid" alt="facebook"></a></li>
+          <li><a href="#" target="_blank"><img src="./img/icons/instagram.png" class="img-fluid" alt="Instagram"></a></li>
+          <li><a href="#" target="_blank"><img src="./img/icons/x.png" class="img-fluid" alt="X"></a></li>
+          <li><a href="#" target="_blank"><img src="./img/icons/whatsapp.png" class="img-fluid" alt="whatsapp"></a></li>
+          <li><a href="#" target="_blank"><img src="./img/icons/messenger.png" class="img-fluid" alt="messenger"></a></li>
+          <li><a href="#" target="_blank"><img src="./img/icons/linkedin.png" class="img-fluid" alt="linkedin"></a></li>
+        </ul>
+        <form action="#">
+          <input type="text" id="linkInput" placeholder="https://bikroy.com/en/ad/new-computer-core-i36gen-ntu...">
+          <div class="buttons">
+            <button type="button" id="copyButton">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                <g clip-path="url(#clip0_4020_16360)">
+                  <path d="M15.209 7.34375H18.209C18.8656 7.34375 19.5158 7.47308 20.1224 7.72435C20.729 7.97563 21.2802 8.34392 21.7445 8.80822C22.2088 9.27251 22.5771 9.82371 22.8284 10.4303C23.0797 11.037 23.209 11.6871 23.209 12.3438C23.209 13.0004 23.0797 13.6505 22.8284 14.2572C22.5771 14.8638 22.2088 15.415 21.7445 15.8793C21.2802 16.3436 20.729 16.7119 20.1224 16.9631C19.5158 17.2144 18.8656 17.3438 18.209 17.3438H15.209M9.20898 17.3438H6.20898C5.55238 17.3438 4.90219 17.2144 4.29557 16.9631C3.68894 16.7119 3.13774 16.3436 2.67345 15.8793C1.73577 14.9416 1.20898 13.6698 1.20898 12.3438C1.20898 11.0177 1.73577 9.7459 2.67345 8.80822C3.61113 7.87053 4.8829 7.34375 6.20898 7.34375H9.20898" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M8.20898 12.3438H16.209" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_4020_16360">
+                    <rect width="24" height="24" fill="white" transform="translate(0.208984 0.34375)" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span>Copy Link</span>
+            </button>
+            <a href="./apply-online.php" target="_blank">View Job</a>
+          </div>
+        </form>
       </div>
     </div>
   </div>
 </div>
+
+<script>
+  document.getElementById("copyButton").addEventListener("click", function() {
+    // Get the input field
+    const linkInput = document.getElementById("linkInput");
+
+    // Select the text
+    linkInput.select();
+    linkInput.setSelectionRange(0, 99999); // For mobile devices
+
+    // Copy the text to the clipboard
+    navigator.clipboard.writeText(linkInput.value)
+      .then(() => {
+        alert("Link copied to clipboard!");
+      })
+      .catch(err => {
+        console.error("Failed to copy text: ", err);
+      });
+  });
+</script>
 </body>
 
 </html>

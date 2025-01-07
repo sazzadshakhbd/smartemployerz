@@ -1056,6 +1056,114 @@ input:focus-visible {
   border-color: #00756A;
 }
 
+.share-modal .modal-dialog {
+  max-width: 616px;
+}
+.share-modal .modal-dialog .modal-content {
+  border-radius: 0;
+}
+.share-modal .modal-dialog .modal-content .modal-body {
+  position: relative;
+  max-width: 453px;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 85px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.share-modal .modal-dialog .modal-content .modal-body .content {
+  margin-bottom: 36px;
+}
+.share-modal .modal-dialog .modal-content .modal-body .content h1 {
+  margin: 0;
+  color: #030A16;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.48px;
+}
+.share-modal .modal-dialog .modal-content .modal-body .content p {
+  margin: 0;
+  color: #030A16;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.28px;
+  opacity: 0.5;
+}
+.share-modal .modal-dialog .modal-content .modal-body ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+@media (max-width: 575.98px) {
+  .share-modal .modal-dialog .modal-content .modal-body ul {
+    flex-wrap: wrap;
+  }
+}
+.share-modal .modal-dialog .modal-content .modal-body ul li {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 117, 106, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+.share-modal .modal-dialog .modal-content .modal-body form input {
+  width: 100%;
+  display: inline-flex;
+  height: 48px;
+  padding: 12px 15px 12px 15px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid rgba(129, 132, 139, 0.5);
+  background: #FFF;
+  margin-bottom: 12px;
+}
+.share-modal .modal-dialog .modal-content .modal-body form .buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+@media (max-width: 575.98px) {
+  .share-modal .modal-dialog .modal-content .modal-body form .buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.share-modal .modal-dialog .modal-content .modal-body form .buttons button {
+  border-radius: 10px;
+  background: #00756A;
+  display: inline-flex;
+  height: 48px;
+  padding: 12px 44px 12px 52px;
+  justify-content: flex-end;
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFF;
+  border: 0;
+  align-items: center;
+  gap: 10px;
+}
+.share-modal .modal-dialog .modal-content .modal-body form .buttons a {
+  display: inline-flex;
+  padding: 12px 70px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #81848A;
+  color: #81848A;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
+}
+
 .user-modal .modal-dialog {
   max-width: 683px;
 }
@@ -2646,6 +2754,7 @@ footer p {
   align-items: flex-end;
   gap: 1rem;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .job-schedule .card-body .top-header .brand-details {
   display: flex;
@@ -2759,6 +2868,26 @@ footer p {
   font-weight: 400;
   line-height: 24px;
 }
+.job-schedule .card-body .details section .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.job-schedule .card-body .details section .content-wrapper .qr-code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.job-schedule .card-body .details section .content-wrapper .qr-code span {
+  display: block;
+  margin-top: 8px;
+  color: #344054;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 18px;
+}
 .job-schedule .card-body .button-end {
   padding: 2rem;
   padding-right: 12px;
@@ -2846,6 +2975,19 @@ footer p {
   color: #00756A;
   border-color: #00756A;
 }
+.job-schedule .card-body .btn-online {
+  display: inline-flex;
+  padding: 12px 16px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background: #00756A;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  border: 0;
+}
 
 .job-schedule-modal .modal-dialog .modal-content .modal-header .modal-title {
   color: #030a16;
@@ -2879,7 +3021,8 @@ footer p {
   color: #344054;
   font-size: 14px;
   font-weight: 500;
-  line-height: 20px; /* 142.857% */
+  line-height: 20px;
+  /* 142.857% */
 }
 .job-schedule-modal .modal-dialog .modal-content .modal-body .active-date .form-group p {
   padding-bottom: 16px;
