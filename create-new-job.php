@@ -1274,7 +1274,7 @@
             </div>
           </div>
           <div class="action-btn">
-            <a class="text-decoration-none" type="button" href="#">Apply Now</a>
+            <a class="text-decoration-none" type="button" href="./apply.php">Apply Now</a>
           </div>
         </div>
         <div class="details">
@@ -1429,7 +1429,7 @@
               </svg>
               <span>Copy Link</span>
             </button>
-            <a href="./apply-online.php" target="_blank">View Job</a>
+            <a href="./view-job.php" target="_blank">View Job</a>
           </div>
         </form>
       </div>

@@ -432,6 +432,23 @@ form.apply-job-form .form-group textarea {
 form.apply-job-form .form-group button {
   gap: 8px;
 }
+form.apply-job-form .form-group button.btn-delete {
+  display: flex;
+  margin: 0;
+  padding: 8px 14px 8px 11.838px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4.162px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #D0D5DD;
+  background: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  color: #101828;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
 form.apply-job-form .title-bar {
   color: #101828;
   font-family: "Inter", sans-serif;
@@ -639,6 +656,65 @@ form .form-group.input-ai input {
   padding-left: 38px !important;
   padding-top: 11px !important;
 }
+form .form-group.search-chips {
+  position: relative;
+}
+form .form-group.search-chips input {
+  padding-left: 45px !important;
+}
+form .form-group.search-chips svg.search-icon {
+  position: absolute;
+  top: 45px;
+  left: 16px;
+}
+form .form-group.search-chips .chip-lists {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  gap: 8px;
+}
+form .form-group.search-chips .chip-lists .chip {
+  padding: 4px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 117, 106, 0.5);
+  background: rgba(0, 117, 106, 0.15);
+  position: relative;
+}
+form .form-group.search-chips .chip-lists .chip span {
+  color: #344054;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+form .form-group.search-chips .chip-lists .chip button {
+  border: 0;
+  opacity: 1;
+  padding: 0;
+  margin: 0;
+  background-image: none;
+  background-color: #fff;
+  color: #C53642;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  position: absolute;
+  top: -9px;
+  right: 0;
+}
+form .form-group.search-chips .chip-lists .chip button i {
+  font-size: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  line-height: 16px;
+}
+form .form-group.search-chips .chip-lists .chip button:hover {
+  background-color: transparent;
+}
 form .form-group .form-check label {
   margin-bottom: 0;
   color: #344054;
@@ -671,6 +747,8 @@ form .form-group input[type=text],
 form .form-group input[type=email],
 form .form-group input[type=number],
 form .form-group input[type=password],
+form .form-group input[type=date],
+form .form-group input[type=search],
 form .form-group textarea {
   background: #ffffff;
   padding: 1rem;
@@ -685,6 +763,8 @@ form .form-group input[type=text]:focus,
 form .form-group input[type=email]:focus,
 form .form-group input[type=number]:focus,
 form .form-group input[type=password]:focus,
+form .form-group input[type=date]:focus,
+form .form-group input[type=search]:focus,
 form .form-group textarea:focus {
   border-color: #00756A;
 }

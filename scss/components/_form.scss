@@ -201,6 +201,28 @@ form {
 
       button {
         gap: 8px;
+
+        &.btn-delete {
+          display: flex;
+         margin: 0;
+          padding: 8px 14px 8px 11.838px;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 4.162px;
+          flex-shrink: 0;
+          border-radius: 4px;
+          border: 1px solid #D0D5DD;
+          background: #FFF;
+          box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+          color: #101828;
+
+
+
+          font-size: 14px;
+
+          font-weight: 600;
+          line-height: 20px;
+        }
       }
     }
 
@@ -429,6 +451,78 @@ form {
       }
     }
 
+    &.search-chips {
+      position: relative;
+
+      input {
+        padding-left: 45px !important;
+      }
+
+      svg {
+        &.search-icon {
+          position: absolute;
+          top: 45px;
+          left: 16px;
+        }
+
+      }
+
+      .chip-lists {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        gap: 8px;
+
+        .chip {
+          padding: 4px 16px;
+          border-radius: 12px;
+          border: 1px solid rgba(0, 117, 106, 0.50);
+          background: rgba(0, 117, 106, 0.15);
+          position: relative;
+
+
+          span {
+            color: #344054;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 18px;
+            display: inline-block;
+            text-transform: capitalize;
+          }
+
+          button {
+            border: 0;
+            opacity: 1;
+            padding: 0;
+            margin: 0;
+            background-image: none;
+            background-color: #fff;
+            color: #C53642;
+            width: 16px;
+            height: 16px;
+            border-radius: 8px;
+            position: absolute;
+            top: -9px;
+            right: 0;
+
+            i {
+              font-size: 10px;
+              position: absolute;
+              top: 0;
+              right: 0;
+              left: 0;
+              height: 100%;
+              line-height: 16px;
+            }
+
+            &:hover {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+
     .form-check {
       label {
         margin-bottom: 0;
@@ -470,6 +564,8 @@ form {
     input[type="email"],
     input[type="number"],
     input[type="password"],
+    input[type="date"],
+    input[type="search"],
     textarea {
       background: variables.$white;
       padding: 1rem;
@@ -528,6 +624,8 @@ form {
         background: #f2f2f2;
         color: #00756a;
       }
+
+
     }
 
     fieldset {
@@ -919,6 +1017,7 @@ input:focus-visible {
           justify-content: center;
           gap: 16px;
           margin-bottom: 14px;
+
           @media(max-width: 575.98px) {
             flex-wrap: wrap;
           }
