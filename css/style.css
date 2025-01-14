@@ -1244,6 +1244,155 @@ input:focus-visible {
   text-decoration: none;
 }
 
+.next-step-modal .modal-dialog {
+  max-width: 550px;
+}
+.next-step-modal .modal-dialog .modal-content {
+  border-radius: 0;
+}
+.next-step-modal .modal-dialog .modal-content .modal-body {
+  position: relative;
+  padding: 3rem 2rem;
+  margin: 0 auto;
+}
+.next-step-modal .modal-dialog .modal-content .modal-body .apply-job-form h2 {
+  font-weight: 700;
+}
+.next-step-modal .modal-dialog .modal-content .modal-body .apply-job-form h3 {
+  margin: 0;
+  color: #101828;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.next-step-modal .modal-dialog .modal-content .modal-body .apply-job-form .buttons-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: end;
+}
+.next-step-modal .modal-dialog .modal-content .modal-body .apply-job-form .buttons-link .btn-preview {
+  display: flex;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid #D0D5DD;
+  background: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  color: #344054;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.next-step-modal .modal-dialog .modal-content .modal-body .apply-job-form .buttons-link .btn-submit {
+  display: flex;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid #00756A;
+  background: #00756A;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.next-step-modal .modal-dialog .modal-content .modal-body .content {
+  margin-bottom: 36px;
+}
+.next-step-modal .modal-dialog .modal-content .modal-body .content h1 {
+  margin: 0;
+  color: #030A16;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.48px;
+}
+.next-step-modal .modal-dialog .modal-content .modal-body .content p {
+  margin: 0;
+  color: #030A16;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.28px;
+}
+.next-step-modal .modal-dialog .modal-content .modal-body ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+@media (max-width: 575.98px) {
+  .next-step-modal .modal-dialog .modal-content .modal-body ul {
+    flex-wrap: wrap;
+  }
+}
+.next-step-modal .modal-dialog .modal-content .modal-body ul li {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 117, 106, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+.next-step-modal .modal-dialog .modal-content .modal-body form input {
+  width: 100%;
+  display: inline-flex;
+  height: 48px;
+  padding: 12px 15px 12px 15px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid rgba(129, 132, 139, 0.5);
+  background: #FFF;
+  margin-bottom: 12px;
+}
+.next-step-modal .modal-dialog .modal-content .modal-body form .buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+@media (max-width: 575.98px) {
+  .next-step-modal .modal-dialog .modal-content .modal-body form .buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.next-step-modal .modal-dialog .modal-content .modal-body form .buttons button {
+  border-radius: 10px;
+  background: #00756A;
+  display: inline-flex;
+  height: 48px;
+  padding: 12px 44px 12px 52px;
+  justify-content: flex-end;
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFF;
+  border: 0;
+  align-items: center;
+  gap: 10px;
+}
+.next-step-modal .modal-dialog .modal-content .modal-body form .buttons a {
+  display: inline-flex;
+  padding: 12px 70px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #81848A;
+  color: #81848A;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
+}
+
 .user-modal .modal-dialog {
   max-width: 683px;
 }
@@ -1337,6 +1486,113 @@ input:focus-visible {
   display: none;
 }
 
+.submit-modal .modal-dialog {
+  max-width: 652px;
+}
+.submit-modal .modal-dialog .modal-content {
+  border-radius: 0;
+}
+.submit-modal .modal-dialog .modal-content .modal-body {
+  position: relative;
+  margin: 0 auto;
+  padding: 40px;
+}
+.submit-modal .modal-dialog .modal-content .modal-body .form-title {
+  margin-bottom: 70px;
+}
+.submit-modal .modal-dialog .modal-content .modal-body .form-title h2 {
+  color: #030A16;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.48px;
+  margin: 0;
+}
+.submit-modal .modal-dialog .modal-content .modal-body .applicants-info .applicants-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.submit-modal .modal-dialog .modal-content .modal-body .applicants-info .applicants-bar h3 {
+  color: #030A16;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+.submit-modal .modal-dialog .modal-content .modal-body .applicants-info .applicants-bar a {
+  color: #00756A;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration-line: underline;
+}
+.submit-modal .modal-dialog .modal-content .modal-body .applicants-info .job-templates .card {
+  margin-bottom: 1rem;
+  padding-bottom: 14px;
+}
+.submit-modal .modal-dialog .modal-content .modal-body .applicants-info .job-templates .card .card-header {
+  background-color: transparent;
+  padding: 16px;
+}
+.submit-modal .modal-dialog .modal-content .modal-body .applicants-info .job-templates .card .card-header h3 {
+  color: #101828;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  margin: 0;
+}
+.submit-modal .modal-dialog .modal-content .modal-body .applicants-info .job-templates .card .card-header h3 span {
+  color: #667085;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 150%;
+}
+.submit-modal .modal-dialog .modal-content .modal-body .applicants-info .job-templates .card .card-body .social-address {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+.submit-modal .modal-dialog .modal-content .modal-body .applicants-info .job-templates .card .card-body .social-address h4 {
+  color: #101828;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%;
+  margin: 0;
+}
+@media (max-width: 575.98px) {
+  .submit-modal .modal-dialog .modal-content .modal-body .applicants-info .job-templates .card .card-body .social-address h4 {
+    margin-bottom: 10px;
+  }
+}
+.submit-modal .modal-dialog .modal-content .modal-body .applicants-info .job-templates .card .card-body ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+@media (max-width: 575.98px) {
+  .submit-modal .modal-dialog .modal-content .modal-body .applicants-info .job-templates .card .card-body ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+.submit-modal .modal-dialog .modal-content .modal-body .applicants-info .job-templates .card .card-body ul li {
+  color: #667085;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.submit-modal .modal-dialog .modal-content .modal-body .applicants-info .job-templates .card .card-body ul li span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 .sidenav {
   border-right: 1px solid #d6d8dc;
   background: #001815;
@@ -2595,6 +2851,171 @@ footer p {
   box-shadow: none;
 }
 
+.participant-modal.apply-modal .modal-dialog .modal-content .modal-header {
+  background-color: transparent;
+  border-bottom: 1px solid #E1E1E1;
+}
+.participant-modal.apply-modal .modal-dialog .modal-content .modal-header .image-box .user-details h3 {
+  color: #040404;
+}
+.participant-modal.apply-modal .modal-dialog .modal-content .modal-header .image-box .user-details h4 {
+  color: #323B4C;
+}
+.participant-modal.apply-modal .modal-dialog .modal-content .modal-header .image-box .user-details p {
+  color: #323B4C;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.participant-modal.apply-modal .modal-dialog .modal-content .modal-header .social-links a {
+  color: #004ED0;
+}
+.participant-modal.apply-modal .modal-dialog .modal-content .modal-header .applicant-progress-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.participant-modal.apply-modal .modal-dialog .modal-content .modal-header .applicant-progress-wrapper .applicant-progress {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.participant-modal.apply-modal .modal-dialog .modal-content .modal-header .applicant-progress-wrapper .applicant-progress h3 {
+  color: #323B4C;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+}
+@media (max-width: 767.98px) {
+  .participant-modal.apply-modal .modal-dialog .modal-content .modal-header .applicant-progress-wrapper .applicant-progress {
+    margin: 1rem 0;
+  }
+}
+.participant-modal.apply-modal .modal-dialog .modal-content .modal-header .applicant-progress-wrapper .applicant-progress .chips {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: end;
+  gap: 8px;
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .participant-modal.apply-modal .modal-dialog .modal-content .modal-header .applicant-progress-wrapper .applicant-progress .chips {
+    gap: 10px;
+  }
+}
+@media (max-width: 991.98px) {
+  .participant-modal.apply-modal .modal-dialog .modal-content .modal-header .applicant-progress-wrapper .applicant-progress .chips {
+    justify-content: flex-start;
+  }
+}
+.participant-modal.apply-modal .modal-dialog .modal-content .modal-header .applicant-progress-wrapper .applicant-progress .chips span {
+  display: inline-block;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 117, 106, 0.5);
+  background: rgba(0, 117, 106, 0.15);
+  display: flex;
+  align-items: center;
+  padding: 5px 12px;
+  gap: 8px;
+  font-size: 14px;
+  color: #344054;
+  font-weight: 500;
+  line-height: 18px;
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .participant-modal.apply-modal .modal-dialog .modal-content .modal-header .applicant-progress-wrapper .applicant-progress .chips span {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+}
+.participant-modal.apply-modal .modal-dialog .modal-content .modal-header button.btn-edit,
+.participant-modal.apply-modal .modal-dialog .modal-content .modal-header a.btn-edit {
+  border-radius: 10px;
+  background: #00756a;
+  display: inline-flex;
+  padding: 12px 16px;
+  flex-direction: column;
+  align-items: center;
+  border: 0;
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  float: right;
+}
+@media (max-width: 1199.98px) {
+  .participant-modal.apply-modal .modal-dialog .modal-content .modal-header button.btn-edit,
+  .participant-modal.apply-modal .modal-dialog .modal-content .modal-header a.btn-edit {
+    font-size: 13px;
+  }
+}
+@media (max-width: 575.98px) {
+  .participant-modal.apply-modal .modal-dialog .modal-content .modal-header button.btn-edit,
+  .participant-modal.apply-modal .modal-dialog .modal-content .modal-header a.btn-edit {
+    float: left;
+  }
+}
+@media (max-width: 480px) {
+  .participant-modal.apply-modal .modal-dialog .modal-content .modal-header button.btn-edit,
+  .participant-modal.apply-modal .modal-dialog .modal-content .modal-header a.btn-edit {
+    float: inherit;
+    margin: 0 auto;
+    display: flex;
+  }
+}
+.participant-modal.apply-modal .modal-dialog .modal-content .modal-body {
+  padding: 45px;
+}
+@media (max-width: 575.98px) {
+  .participant-modal.apply-modal .modal-dialog .modal-content .modal-body {
+    padding: 2rem 1rem;
+  }
+}
+.participant-modal.apply-modal .modal-dialog .modal-content .modal-body .details h3 {
+  margin-top: 0;
+  margin-bottom: 27px;
+  color: #344054;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 18px;
+}
+.participant-modal.apply-modal .modal-dialog .modal-content .modal-body .details section {
+  border-bottom: 2px solid #e1e1e1;
+  padding-bottom: 24px;
+  margin-bottom: 48px;
+}
+.participant-modal.apply-modal .modal-dialog .modal-content .modal-body .details section dl dt {
+  font-size: 18px;
+  font-weight: 600;
+  color: #344054;
+  font-family: "Work Sans", sans-serif;
+  line-height: 22px;
+  margin-bottom: 5px;
+}
+.participant-modal.apply-modal .modal-dialog .modal-content .modal-body .details section dl dt span {
+  display: block;
+  float: right;
+}
+@media (max-width: 575.98px) {
+  .participant-modal.apply-modal .modal-dialog .modal-content .modal-body .details section dl dt span {
+    display: contents;
+  }
+}
+.participant-modal.apply-modal .modal-dialog .modal-content .modal-body .details section dl dd {
+  font-size: 16px;
+  font-weight: 400;
+  color: #344054;
+  font-family: "Work Sans", sans-serif;
+  line-height: 22px;
+  margin-bottom: 0;
+}
 .participant-modal .modal-dialog {
   max-width: 1170px;
 }

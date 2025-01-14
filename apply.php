@@ -737,68 +737,68 @@
             <!-- Add Training & Certificates -->
             <div id="showSkills" style="display: none">
               <div class="row">
-              <div class="col-xl-6 col-lg-6 col-md-6">
-              <div class="form-group">
-                <label class="form-label" for="TopicView">Topic</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="TopicView"
-                  aria-describedby="TopicView"
-                  value="English Speaking" />
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6">
-              <div class="form-group">
-                <label class="form-label" for="InstituteView">Institute</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="InstituteView"
-                  aria-describedby="InstituteView"
-                  value="BD jobs" />
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6">
-              <div class="form-group">
-                <label class="form-label" for="DateAttend">Date Attended</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="DateAttend"
-                  aria-describedby="DateAttend" />
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6">
-              <div class="form-group">
-                <label class="form-label" for="ExpiryDate">Expiry Date</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="ExpiryDate"
-                  aria-describedby="ExpiryDate" />
-              </div>
-            </div>
-            <div class="col-xl-12">
-              <div class="form-group mb-5">
-                <button class="btn-delete ms-auto">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
-                    <g clip-path="url(#clip0_4020_16964)">
-                      <path d="M2.83789 4.96875H4.17122H14.8379" stroke="#858585" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M13.5052 4.97135V14.3047C13.5052 14.6583 13.3647 14.9974 13.1147 15.2475C12.8646 15.4975 12.5255 15.638 12.1719 15.638H5.50521C5.15159 15.638 4.81245 15.4975 4.5624 15.2475C4.31235 14.9974 4.17188 14.6583 4.17188 14.3047V4.97135M6.17187 4.97135V3.63802C6.17187 3.2844 6.31235 2.94526 6.5624 2.69521C6.81245 2.44516 7.15159 2.30469 7.50521 2.30469H10.1719C10.5255 2.30469 10.8646 2.44516 11.1147 2.69521C11.3647 2.94526 11.5052 3.2844 11.5052 3.63802V4.97135" stroke="#858585" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M7.50391 8.30469V12.3047" stroke="#858585" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M10.1719 8.30469V12.3047" stroke="#858585" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_4020_16964">
-                        <rect width="16" height="16" fill="white" transform="translate(0.837891 0.96875)" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  Delete
-                </button>
-              </div>
-            </div>
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                  <div class="form-group">
+                    <label class="form-label" for="TopicView">Topic</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="TopicView"
+                      aria-describedby="TopicView"
+                      value="English Speaking" />
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                  <div class="form-group">
+                    <label class="form-label" for="InstituteView">Institute</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="InstituteView"
+                      aria-describedby="InstituteView"
+                      value="BD jobs" />
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                  <div class="form-group">
+                    <label class="form-label" for="DateAttend">Date Attended</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="DateAttend"
+                      aria-describedby="DateAttend" />
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                  <div class="form-group">
+                    <label class="form-label" for="ExpiryDate">Expiry Date</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="ExpiryDate"
+                      aria-describedby="ExpiryDate" />
+                  </div>
+                </div>
+                <div class="col-xl-12">
+                  <div class="form-group mb-5">
+                    <button class="btn-delete ms-auto">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                        <g clip-path="url(#clip0_4020_16964)">
+                          <path d="M2.83789 4.96875H4.17122H14.8379" stroke="#858585" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M13.5052 4.97135V14.3047C13.5052 14.6583 13.3647 14.9974 13.1147 15.2475C12.8646 15.4975 12.5255 15.638 12.1719 15.638H5.50521C5.15159 15.638 4.81245 15.4975 4.5624 15.2475C4.31235 14.9974 4.17188 14.6583 4.17188 14.3047V4.97135M6.17187 4.97135V3.63802C6.17187 3.2844 6.31235 2.94526 6.5624 2.69521C6.81245 2.44516 7.15159 2.30469 7.50521 2.30469H10.1719C10.5255 2.30469 10.8646 2.44516 11.1147 2.69521C11.3647 2.94526 11.5052 3.2844 11.5052 3.63802V4.97135" stroke="#858585" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M7.50391 8.30469V12.3047" stroke="#858585" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M10.1719 8.30469V12.3047" stroke="#858585" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_4020_16964">
+                            <rect width="16" height="16" fill="white" transform="translate(0.837891 0.96875)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      Delete
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -850,7 +850,7 @@
                     type="button"
                     class="btn-form btn-form-continue me-0"
                     data-bs-toggle="modal"
-                    data-bs-target="#participant">
+                    data-bs-target="#nextForm">
                     Next
                   </button>
                   <button type="button" class="btn-form btn-default">
@@ -868,9 +868,244 @@
   </div>
 
 
-  <!-- Modal -->
+  <!-- Next Step Modal -->
+  <div class="modal fade next-step-modal" id="nextForm" tabindex="-1" aria-labelledby="NextFormLabel2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+
+          <form class="apply-job-form">
+            <div class="logo pb-5">
+              <a href="./index.html">
+                <img src="./img/logo/logo.png" alt="Logo" class="img-fluid" />
+              </a>
+            </div>
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="form-group mb-3">
+                  <div class="form-title">
+                    <h2 class="text-capitalize">Apply Job</h2>
+                    <p class="mb-0">
+                      You Are Applying As
+                      <a href="#">HR & Admin Officer</a> At
+                      <a href="#">Yellow</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="form-group mb-3">
+                  <div class="form-title custom-border-bottom">
+                    <h3 class="text-capitalize">
+                      Recruiter Recommended to Answer This Questions
+                    </h3>
+                    <p class="mb-0">
+                      Update your photo and personal details here.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-12">
+                <div class="form-group mb-0">
+                  <div class="form-title">
+
+                    <p class="mb-0 text-black">
+                      1. How Much Do you get in your current job?
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label class="form-label" for="firstName">Write Answer</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    aria-describedby="firstName" />
+                </div>
+              </div>
+              <div class="col-xl-12">
+                <div class="form-group mb-0">
+                  <div class="form-title">
+                    <p class="mb-0 text-black">
+                      2. How Much Do you get in your current job?
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label class="form-label" for="firstName">Write Answer</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    aria-describedby="firstName" />
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="buttons-link">
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#participant" class="btn-preview">Preview CV</button>
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#SubmitModal" class="btn-submit">Submit</button>
+                </div>
+              </div>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Submit Modal -->
+  <div class="modal fade submit-modal" id="SubmitModal" tabindex="-1" aria-labelledby="SubmitModalLabel2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="form-group mb-3">
+                <div class="form-title text-center">
+                  <img src="./img/icon-check.png" class="mb-3" alt="Icon Check">
+                  <h2 class="text-capitalize">Application submit successful</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="applicants-info">
+            <div class="row no-gutters">
+              <div class="col-md-12">
+                <div class="applicants-bar">
+                  <h3>Match With Your Profile</h3>
+                  <a href="#">See All</a>
+                </div>
+                <div class="job-templates">
+                  <div class="row">
+                    <div class="col-xl-6">
+                      <div class="card">
+                        <div class="card-header">
+                          <h3>PHP Developer <span>Mid Level </span></h3>
+                        </div>
+                        <div class="card-body">
+                          <div class="social-address">
+                            <img src="./img/icons/facebook.png" width="16" alt="Facebook Icon">
+                            <h4>Information Technology</h4>
+                          </div>
+                          <ul>
+                            <li>
+                              <span>
+                                <i class="fas fa-map-marker-alt"></i>
+                                Dhaka, Bangladesh
+                              </span>
+                              <span>
+                                <i class="fas fa-briefcase"></i>
+                                $1,000
+                              </span>
+                            </li>
+
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6">
+                      <div class="card">
+                        <div class="card-header">
+                          <h3>PHP Developer <span>Mid Level </span></h3>
+                        </div>
+                        <div class="card-body">
+                          <div class="social-address">
+                            <img src="./img/icons/facebook.png" width="16" alt="Facebook Icon">
+                            <h4>Information Technology</h4>
+                          </div>
+                          <ul>
+                            <li>
+                              <span>
+                                <i class="fas fa-map-marker-alt"></i>
+                                Dhaka, Bangladesh
+                              </span>
+                              <span>
+                                <i class="fas fa-briefcase"></i>
+                                $1,000
+                              </span>
+                            </li>
+
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6">
+                      <div class="card">
+                        <div class="card-header">
+                          <h3>PHP Developer <span>Mid Level </span></h3>
+                        </div>
+                        <div class="card-body">
+                          <div class="social-address">
+                            <img src="./img/icons/facebook.png" width="16" alt="Facebook Icon">
+                            <h4>Information Technology</h4>
+                          </div>
+                          <ul>
+                            <li>
+                              <span>
+                                <i class="fas fa-map-marker-alt"></i>
+                                Dhaka, Bangladesh
+                              </span>
+                              <span>
+                                <i class="fas fa-briefcase"></i>
+                                $1,000
+                              </span>
+                            </li>
+
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6">
+                      <div class="card">
+                        <div class="card-header">
+                          <h3>PHP Developer <span>Mid Level </span></h3>
+                        </div>
+                        <div class="card-body">
+                          <div class="social-address">
+                            <img src="./img/icons/facebook.png" width="16" alt="Facebook Icon">
+                            <h4>Information Technology</h4>
+                          </div>
+                          <ul>
+                            <li>
+                              <span>
+                                <i class="fas fa-map-marker-alt"></i>
+                                Dhaka, Bangladesh
+                              </span>
+                              <span>
+                                <i class="fas fa-briefcase"></i>
+                                $1,000
+                              </span>
+                            </li>
+
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Edit Modal -->
   <div
-    class="modal fade participant-modal"
+    class="modal fade participant-modal apply-modal"
     id="participant"
     tabindex="-1"
     aria-labelledby="participantLabel"
@@ -887,8 +1122,19 @@
                 <div class="user-details">
                   <h3>Mithun Das</h3>
                   <h4>UI/UX Designer</h4>
-                  <p>bappy.mithun@gmail.com</p>
-                  <p>01825932574</p>
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path d="M3.33464 3.33594H16.668C17.5846 3.33594 18.3346 4.08594 18.3346 5.0026V15.0026C18.3346 15.9193 17.5846 16.6693 16.668 16.6693H3.33464C2.41797 16.6693 1.66797 15.9193 1.66797 15.0026V5.0026C1.66797 4.08594 2.41797 3.33594 3.33464 3.33594Z" stroke="#323B4C" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M18.3346 5L10.0013 10.8333L1.66797 5" stroke="#323B4C" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    bappy.mithun@gmail.com
+                  </p>
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path d="M18.3332 14.0975V16.5975C18.3341 16.8296 18.2866 17.0593 18.1936 17.2719C18.1006 17.4846 17.9643 17.6755 17.7933 17.8324C17.6222 17.9893 17.4203 18.1087 17.2005 18.1831C16.9806 18.2574 16.7477 18.285 16.5165 18.2641C13.9522 17.9855 11.489 17.1093 9.32486 15.7058C7.31139 14.4264 5.60431 12.7193 4.32486 10.7058C2.91651 8.53181 2.04007 6.05664 1.76653 3.48081C1.7457 3.25037 1.77309 3.01811 1.84695 2.79883C1.9208 2.57955 2.03951 2.37805 2.1955 2.20716C2.3515 2.03627 2.54137 1.89973 2.75302 1.80624C2.96468 1.71276 3.19348 1.66436 3.42486 1.66414H5.92486C6.32928 1.66016 6.72136 1.80338 7.028 2.06709C7.33464 2.3308 7.53493 2.69702 7.59153 3.09748C7.69705 3.89753 7.89274 4.68308 8.17486 5.43914C8.28698 5.73741 8.31125 6.06157 8.24478 6.37321C8.17832 6.68485 8.02392 6.9709 7.79986 7.19748L6.74153 8.25581C7.92783 10.3421 9.65524 12.0695 11.7415 13.2558L12.7999 12.1975C13.0264 11.9734 13.3125 11.819 13.6241 11.7526C13.9358 11.6861 14.2599 11.7104 14.5582 11.8225C15.3143 12.1046 16.0998 12.3003 16.8999 12.4058C17.3047 12.4629 17.6744 12.6668 17.9386 12.9787C18.2029 13.2906 18.3433 13.6888 18.3332 14.0975Z" stroke="#323B4C" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    01825932574
+                  </p>
                 </div>
               </div>
             </div>
@@ -899,29 +1145,45 @@
               </div>
             </div>
             <div class="col-lg-2 col-md-6 col-sm-6 col-12">
-              <a class="text-decoration-none pdf-download" type="button" href="./apply.php">Edit</a>
+              <a class="text-decoration-none btn-edit" type="button" href="./apply.php">Edit</a>
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-8">
-              <p class="para">
-                Lorem ipsum dolor sit amet consectetur. Praesent morbi arcu
-                nisi nec. Turpis turpis neque scelerisque platea sed rhoncus
-                fames turpis pharetra. Amet amet sit duis amet eu iaculis
-                donec. Curabitur bibendum mollis dignissim mus habitant
-                facilisis ac felis.
-              </p>
-            </div>
-            <div class="col-lg-4">
-              <div class="applicant-progress">
-                <div class="chips">
-                  <span class="active-shortlist"><i class="fas fa-check"></i>Shortlist</span>
-                  <span><i class="fas fa-file-invoice"></i>Assessment</span>
-                  <span><i class="fas fa-check"></i>Interview</span>
-                  <span><i class="fas fa-check"></i>Final Selection</span>
-                  <span><i class="fas fa-check"></i>Offer</span>
-                  <span><i class="fas fa-check"></i>Hire</span>
-                  <span><i class="far fa-trash-alt text-danger"></i> Reject</span>
+
+            <div class="col-xl-8">
+              <div class="applicant-progress-wrapper">
+                <div class="applicant-progress">
+                  <h3>Preferred Job :</h3>
+                  <div class="chips">
+                    <span>Sales</span>
+                    <span>Marketing</span>
+                    <span>Digital Marketer</span>
+                  </div>
+                </div>
+                <div class="applicant-progress">
+                  <h3>Age :</h3>
+                  <div class="chips">
+                    <span>32 Years</span>
+                    
+                  </div>
+                </div>
+                <div class="applicant-progress">
+                  <h3>Expected Salery :</h3>
+                  <div class="chips">
+                    <span>$1200</span>
+                  </div>
+                </div>
+                <div class="applicant-progress">
+                  <h3>Total Experience :</h3>
+                  <div class="chips">
+                    <span>7 Years</span>
+                  </div>
+                </div>
+                <div class="applicant-progress">
+                  <h3>Nationality :</h3>
+                  <div class="chips">
+                    <span>Bangaldeshi</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -936,29 +1198,31 @@
         </div>
         <div class="modal-body">
           <div class="details">
-            <h3>Experience 1 :</h3>
+            <h1>Employment History</h1>
+            <h3>1. Senior Executive - Content Development <span>( Dec 2022 - Jan 2023 )</span></h3>
             <section>
+              <h4>BD JOBS Limited</h4>
               <dl class="row no-gutters">
                 <dt class="col-lg-2 col-md-3 col-sm-4">
-                  Company <span>:</span>
+                Location <span>:</span>
                 </dt>
-                <dd class="col-lg-10 col-md-9 col-sm-8">Netcoden .inc</dd>
+                <dd class="col-lg-10 col-md-9 col-sm-8">Dhaka</dd>
               </dl>
               <dl class="row no-gutters">
                 <dt class="col-lg-2 col-md-3 col-sm-4">
-                  Designation <span>:</span>
+                Industry   <span>:</span>
                 </dt>
-                <dd class="col-lg-10 col-md-9 col-sm-8">Ui/Ux Designer</dd>
+                <dd class="col-lg-10 col-md-9 col-sm-8">Head Hunting</dd>
               </dl>
               <dl class="row no-gutters">
                 <dt class="col-lg-2 col-md-3 col-sm-4">
-                  Timeframe <span>:</span>
+                Aria of Experience  <span>:</span>
                 </dt>
-                <dd class="col-lg-10 col-md-9 col-sm-8">Jan 2022 - Now</dd>
+                <dd class="col-lg-10 col-md-9 col-sm-8">Marketing </dd>
               </dl>
               <dl class="row no-gutters">
                 <dt class="col-lg-2 col-md-3 col-sm-4">
-                  Detail <span>:</span>
+                Responsibilities : <span>:</span>
                 </dt>
                 <dd class="col-lg-10 col-md-9 col-sm-8">
                   As a UI/UX designer i have collaborated with the
@@ -968,124 +1232,13 @@
               </dl>
             </section>
           </div>
-          <div class="details">
-            <h3>Experience 2 :</h3>
-            <section>
-              <dl class="row no-gutters">
-                <dt class="col-lg-2 col-md-3 col-sm-4">
-                  Company <span>:</span>
-                </dt>
-                <dd class="col-lg-10 col-md-9 col-sm-8">Netcoden .inc</dd>
-              </dl>
-              <dl class="row no-gutters">
-                <dt class="col-lg-2 col-md-3 col-sm-4">
-                  Designation <span>:</span>
-                </dt>
-                <dd class="col-lg-10 col-md-9 col-sm-8">Ui/Ux Designer</dd>
-              </dl>
-              <dl class="row no-gutters">
-                <dt class="col-lg-2 col-md-3 col-sm-4">
-                  Timeframe <span>:</span>
-                </dt>
-                <dd class="col-lg-10 col-md-9 col-sm-8">Jan 2022 - Now</dd>
-              </dl>
-              <dl class="row no-gutters">
-                <dt class="col-lg-2 col-md-3 col-sm-4">
-                  Detail <span>:</span>
-                </dt>
-                <dd class="col-lg-10 col-md-9 col-sm-8">
-                  As a UI/UX designer i have collaborated with the
-                  stakeholders & development teams on core projects to make
-                  product interfaces and experiences.
-                </dd>
-              </dl>
-            </section>
-          </div>
-          <div class="details">
-            <h3>Experience 3 :</h3>
-            <section>
-              <dl class="row no-gutters">
-                <dt class="col-lg-2 col-md-3 col-sm-4">
-                  Company <span>:</span>
-                </dt>
-                <dd class="col-lg-10 col-md-9 col-sm-8">Netcoden .inc</dd>
-              </dl>
-              <dl class="row no-gutters">
-                <dt class="col-lg-2 col-md-3 col-sm-4">
-                  Designation <span>:</span>
-                </dt>
-                <dd class="col-lg-10 col-md-9 col-sm-8">Ui/Ux Designer</dd>
-              </dl>
-              <dl class="row no-gutters">
-                <dt class="col-lg-2 col-md-3 col-sm-4">
-                  Timeframe <span>:</span>
-                </dt>
-                <dd class="col-lg-10 col-md-9 col-sm-8">Jan 2022 - Now</dd>
-              </dl>
-              <dl class="row no-gutters">
-                <dt class="col-lg-2 col-md-3 col-sm-4">
-                  Detail <span>:</span>
-                </dt>
-                <dd class="col-lg-10 col-md-9 col-sm-8">
-                  As a UI/UX designer i have collaborated with the
-                  stakeholders & development teams on core projects to make
-                  product interfaces and experiences.
-                </dd>
-              </dl>
-            </section>
-          </div>
-          <div class="details">
-            <h3>Skills :</h3>
-            <section>
-              <dl class="row no-gutters">
-                <dt class="col-lg-2 col-md-3 col-sm-4">
-                  Skill 1 <span>:</span>
-                </dt>
-                <dd class="col-lg-10 col-md-9 col-sm-8">Ui Design</dd>
-              </dl>
-              <dl class="row no-gutters">
-                <dt class="col-lg-2 col-md-3 col-sm-4">
-                  Skill 2 <span>:</span>
-                </dt>
-                <dd class="col-lg-10 col-md-9 col-sm-8">Ux Design</dd>
-              </dl>
-              <dl class="row no-gutters">
-                <dt class="col-lg-2 col-md-3 col-sm-4">
-                  Skill 3 <span>:</span>
-                </dt>
-                <dd class="col-lg-10 col-md-9 col-sm-8">Web Design</dd>
-              </dl>
-            </section>
-          </div>
-          <div class="details">
-            <h3>Education :</h3>
-            <section class="mb-0 border-0 pb-0">
-              <dl class="row no-gutters">
-                <dt class="col-lg-2 col-md-3 col-sm-4">SSC <span>:</span></dt>
-                <dd class="col-lg-10 col-md-9 col-sm-8">
-                  <span>Science</span>
-                  <span>(4.50)</span>
-                  <span>2008</span>
-                </dd>
-              </dl>
-              <dl class="row no-gutters">
-                <dt class="col-lg-2 col-md-3 col-sm-4">HSC <span>:</span></dt>
-                <dd class="col-lg-10 col-md-9 col-sm-8">
-                  <span>Science</span>
-                  <span>(4.24)</span>
-                  <span>2010</span>
-                </dd>
-              </dl>
-              <dl class="row no-gutters">
-                <dt class="col-lg-2 col-md-3 col-sm-4">BSC <span>:</span></dt>
-                <dd class="col-lg-10 col-md-9 col-sm-8">
-                  <span>Mechatronics Engineering</span>
-                  <span> (3.50)</span>
-                  <span>2015</span>
-                </dd>
-              </dl>
-            </section>
-          </div>
+          
+          <div class="text-center mb-5 mt-5">
+                
+                <button type="button" class="btn-default">
+                Submit
+                </button>
+              </div>
         </div>
       </div>
     </div>
