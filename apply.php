@@ -1164,7 +1164,7 @@
                   <h3>Age :</h3>
                   <div class="chips">
                     <span>32 Years</span>
-                    
+
                   </div>
                 </div>
                 <div class="applicant-progress">
@@ -1199,46 +1199,80 @@
         <div class="modal-body">
           <div class="details">
             <h1>Employment History</h1>
-            <h3>1. Senior Executive - Content Development <span>( Dec 2022 - Jan 2023 )</span></h3>
             <section>
-              <h4>BD JOBS Limited</h4>
-              <dl class="row no-gutters">
-                <dt class="col-lg-2 col-md-3 col-sm-4">
-                Location <span>:</span>
-                </dt>
-                <dd class="col-lg-10 col-md-9 col-sm-8">Dhaka</dd>
-              </dl>
-              <dl class="row no-gutters">
-                <dt class="col-lg-2 col-md-3 col-sm-4">
-                Industry   <span>:</span>
-                </dt>
-                <dd class="col-lg-10 col-md-9 col-sm-8">Head Hunting</dd>
-              </dl>
-              <dl class="row no-gutters">
-                <dt class="col-lg-2 col-md-3 col-sm-4">
-                Aria of Experience  <span>:</span>
-                </dt>
-                <dd class="col-lg-10 col-md-9 col-sm-8">Marketing </dd>
-              </dl>
-              <dl class="row no-gutters">
-                <dt class="col-lg-2 col-md-3 col-sm-4">
-                Responsibilities : <span>:</span>
-                </dt>
-                <dd class="col-lg-10 col-md-9 col-sm-8">
-                  As a UI/UX designer i have collaborated with the
-                  stakeholders & development teams on core projects to make
-                  product interfaces and experiences.
-                </dd>
-              </dl>
+              <h3>1. Senior Executive - Content Development <span>( Dec 2022 - Jan 2023 )</span></h3>
+              <div class="mb-5">
+                <div class="mb-4">
+                  <h4 class="mb-3">BD JOBS Limited</h4>
+                  <p>Location : Dhaka</p>
+                  <p>Industry : Head Hunting</p>
+                  <p>Aria of Experience : Marketing</p>
+                </div>
+
+                <div class="mb-4">
+                  <h4 class="mb-3">Responsibilities :</h4>
+                  <p>As a UI/UX designer i have collaborated with the stakeholders & development teams on core <br></br>
+                    projects to make product interfaces and experiences.</p>
+                </div>
+              </div>
+              <h3>2. Assistant Manager - Content Development <span>( Dec 2022 - Jan 2023 )</span></h3>
+              <div class="mb-5">
+                <div class="mb-4">
+                  <h4 class="mb-3">BD JOBS Limited</h4>
+                  <p>Location : Dhaka</p>
+                  <p>Industry : Head Hunting</p>
+                  <p>Aria of Experience : Marketing</p>
+                </div>
+
+                <div class="mb-4">
+                  <h4 class="mb-3">Responsibilities :</h4>
+                  <p>As a UI/UX designer i have collaborated with the stakeholders & development teams on core <br></br>
+                    projects to make product interfaces and experiences.</p>
+                </div>
+              </div>
             </section>
           </div>
-          
-          <div class="text-center mb-5 mt-5">
-                
-                <button type="button" class="btn-default">
-                Submit
-                </button>
+          <div class="details">
+            <h1>Academic Qualification</h1>
+            <section>
+              <div class="mb-5 ps-3">
+                <h3 class="mb-3">Masters of Arts (MA) in International Relations</h3>
+                <h3 class="mb-3">Jahangirnagar University - 2011 (1 Year)</h3>
+                <p>CGPA : 3.09 (Out of 4)</p>
               </div>
+
+              <div class="mb-5 ps-3">
+                <h3 class="mb-3">Masters of Arts (MA) in International Relations</h3>
+                <h3 class="mb-3">Jahangirnagar University - 2011 (1 Year)</h3>
+                <p>CGPA : 3.09 (Out of 4)</p>
+              </div>
+            </section>
+          </div>
+          <div class="details">
+            <h1>Certification</h1>
+            <section>
+              <div class="mb-5 ps-3">
+                <h3 class="mb-3">Computer Fundamental & Windows Operation System <span class="ms-3">Duration : 3 Months</span></h3>
+                <h3 class="mb-4">Institute Of Information Technology JU <span class="ms-3">Year : 2015</span></h3>
+                <h3 class="mb-3">Training Detail :</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. Varius rhoncus nisl condimentum erat at eu id. At aliquam ultricies a ut augue. Duis mi fringilla nisl aliquam venenatis. Rhoncus enim nunc pretium gravida non augue a phasellus gravida.</p>
+              </div>
+            </section>
+          </div>
+          <div class="details">
+            <h1>Skills</h1>
+            <section class="border-bottom-0">
+              <ul>
+                <li>Sales</li>
+                <li>Marketing</li>
+                <li>Digital Marketer</li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="mb-5 mt-5">
+            <button type="button" class="btn-submit"> Submit </button>
+          </div>
         </div>
       </div>
     </div>

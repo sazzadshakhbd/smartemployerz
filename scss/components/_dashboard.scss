@@ -978,6 +978,7 @@
             align-items: center;
             flex-wrap: wrap;
             gap: 15px;
+
             .applicant-progress {
               display: flex;
               gap: 5px;
@@ -1015,7 +1016,8 @@
                 span {
                   display: inline-block;
                   border-radius: 12px;
-                  border: 1px solid rgba(0, 117, 106, 0.50);                  ;
+                  border: 1px solid rgba(0, 117, 106, 0.50);
+                  ;
                   background: rgba(0, 117, 106, 0.15);
                   display: flex;
                   align-items: center;
@@ -1025,12 +1027,13 @@
                   color: #344054;
                   font-weight: 500;
                   line-height: 18px;
+
                   @media (min-width: 1200px) and (max-width: 1400px) {
                     font-size: 10px;
                     padding: 5px 8px;
                   }
 
-                  
+
                 }
               }
 
@@ -1074,56 +1077,102 @@
         }
 
         .modal-body {
-          padding: 45px;
+          padding: 32px;
 
           @media (max-width: 575.98px) {
             padding: 2rem 1rem;
           }
 
+          button {
+            &.btn-submit {
+              border-radius: 10px;
+              background: #00756A;
+              display: flex;
+              width: 158px;
+              padding: 12px 16px;
+              flex-direction: column;
+              align-items: center;
+              color: #FFF;
+              font-family: "Work Sans";
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 24px;
+              border: 0;
+            }
+          }
+
           .details {
-            h3 {
-              margin-top: 0;
-              margin-bottom: 27px;
+            h1 {
+              margin: 0;
               color: #344054;
-              font-family: variables.$workSans;
               font-size: 24px;
               font-weight: 600;
               line-height: 18px;
+              margin-bottom: 37px;
             }
+
+            h3 {
+              margin-top: 0;
+              margin-bottom: 24px;
+              color: #344054;
+              font-family: variables.$workSans;
+              font-size: 18px;
+              font-weight: 600;
+              line-height: 18px;
+
+              span {
+                font-size: 16px;
+                font-weight: 400;
+              }
+            }
+
+
 
             section {
               border-bottom: 2px solid #e1e1e1;
-              padding-bottom: 24px;
-              margin-bottom: 48px;
+              padding-bottom: 0;
+              margin-bottom: 40px;
 
-              dl {
-                dt {
-                  font-size: 18px;
-                  font-weight: 600;
+              h4 {
+                margin-top: 0;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 18px;
+
+              }
+
+              p {
+                color: #344054;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 18px;
+              }
+
+              ul {
+                display: flex;
+                gap: 8px;
+                flex-wrap: wrap;
+                align-items: center;
+
+                li {
+                  display: inline-flex;
+                  padding: 4px 16px;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 10px;
+                  border-radius: 12px;
+                  border: 1px solid rgba(0, 117, 106, 0.50);
+                  background: rgba(0, 117, 106, 0.15);
                   color: #344054;
-                  font-family: variables.$workSans;
-                  line-height: 22px;
-                  margin-bottom: 5px;
-
-                  span {
-                    display: block;
-                    float: right;
-
-                    @media (max-width: 575.98px) {
-                      display: contents;
-                    }
-                  }
-                }
-
-                dd {
-                  font-size: 16px;
-                  font-weight: 400;
-                  color: #344054;
-                  font-family: variables.$workSans;
-                  line-height: 22px;
-                  margin-bottom: 0;
+                  font-family: "Work Sans";
+                  font-size: 14px;
+                  font-weight: 500;
+                  line-height: 18px;
                 }
               }
+
+
+
             }
           }
         }

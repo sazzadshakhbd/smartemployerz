@@ -2970,51 +2970,86 @@ footer p {
   }
 }
 .participant-modal.apply-modal .modal-dialog .modal-content .modal-body {
-  padding: 45px;
+  padding: 32px;
 }
 @media (max-width: 575.98px) {
   .participant-modal.apply-modal .modal-dialog .modal-content .modal-body {
     padding: 2rem 1rem;
   }
 }
-.participant-modal.apply-modal .modal-dialog .modal-content .modal-body .details h3 {
-  margin-top: 0;
-  margin-bottom: 27px;
+.participant-modal.apply-modal .modal-dialog .modal-content .modal-body button.btn-submit {
+  border-radius: 10px;
+  background: #00756A;
+  display: flex;
+  width: 158px;
+  padding: 12px 16px;
+  flex-direction: column;
+  align-items: center;
+  color: #FFF;
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  border: 0;
+}
+.participant-modal.apply-modal .modal-dialog .modal-content .modal-body .details h1 {
+  margin: 0;
   color: #344054;
-  font-family: "Work Sans", sans-serif;
   font-size: 24px;
   font-weight: 600;
   line-height: 18px;
+  margin-bottom: 37px;
+}
+.participant-modal.apply-modal .modal-dialog .modal-content .modal-body .details h3 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #344054;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+}
+.participant-modal.apply-modal .modal-dialog .modal-content .modal-body .details h3 span {
+  font-size: 16px;
+  font-weight: 400;
 }
 .participant-modal.apply-modal .modal-dialog .modal-content .modal-body .details section {
   border-bottom: 2px solid #e1e1e1;
-  padding-bottom: 24px;
-  margin-bottom: 48px;
+  padding-bottom: 0;
+  margin-bottom: 40px;
 }
-.participant-modal.apply-modal .modal-dialog .modal-content .modal-body .details section dl dt {
-  font-size: 18px;
+.participant-modal.apply-modal .modal-dialog .modal-content .modal-body .details section h4 {
+  margin-top: 0;
+  font-size: 16px;
   font-weight: 600;
+  line-height: 18px;
+}
+.participant-modal.apply-modal .modal-dialog .modal-content .modal-body .details section p {
   color: #344054;
-  font-family: "Work Sans", sans-serif;
-  line-height: 22px;
-  margin-bottom: 5px;
-}
-.participant-modal.apply-modal .modal-dialog .modal-content .modal-body .details section dl dt span {
-  display: block;
-  float: right;
-}
-@media (max-width: 575.98px) {
-  .participant-modal.apply-modal .modal-dialog .modal-content .modal-body .details section dl dt span {
-    display: contents;
-  }
-}
-.participant-modal.apply-modal .modal-dialog .modal-content .modal-body .details section dl dd {
   font-size: 16px;
   font-weight: 400;
+  line-height: 18px;
+}
+.participant-modal.apply-modal .modal-dialog .modal-content .modal-body .details section ul {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.participant-modal.apply-modal .modal-dialog .modal-content .modal-body .details section ul li {
+  display: inline-flex;
+  padding: 4px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 117, 106, 0.5);
+  background: rgba(0, 117, 106, 0.15);
   color: #344054;
-  font-family: "Work Sans", sans-serif;
-  line-height: 22px;
-  margin-bottom: 0;
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
 }
 .participant-modal .modal-dialog {
   max-width: 1170px;
