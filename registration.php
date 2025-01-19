@@ -14,6 +14,7 @@
                       src="./img/logo/logo.png"
                       alt="logo"
                       class="img-fluid"
+                      width="250"
                     />
                   </a>
                 </div>

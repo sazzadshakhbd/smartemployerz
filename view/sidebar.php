@@ -4,7 +4,7 @@
   <div class="sidebar-wrapper">
     <div class="logo">
       <a href="dashboard.php">
-        <img src="./img/logo/logo.png" alt="Logo" class="img-fluid" width="189" height="38" />
+        <img src="./img/logo/logo.png" alt="Logo" class="img-fluid" width="250" />
       </a>
     </div>
     <div class="company-name">

@@ -11,7 +11,7 @@
         <form class="apply-job-form" id="formId">
           <div class="logo py-5">
             <a href="./index.html">
-              <img src="./img/logo/logo.png" alt="Logo" class="img-fluid" />
+              <img src="./img/logo/logo.png" width="250" alt="Logo" class="img-fluid" />
             </a>
           </div>
           <div class="row">
@@ -877,7 +877,7 @@
           <form class="apply-job-form">
             <div class="logo pb-5">
               <a href="./index.html">
-                <img src="./img/logo/logo.png" alt="Logo" class="img-fluid" />
+                <img src="./img/logo/logo.png" width="250" alt="Logo" class="img-fluid" />
               </a>
             </div>
             <div class="row">

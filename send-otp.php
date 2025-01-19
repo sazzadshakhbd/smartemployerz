@@ -10,7 +10,7 @@
                     <div class="card login-card border-0 bg-transparent">
                         <div class="card-header bg-transparent border-0 p-0">
                             <a href="./dashboard.php">
-                                <img src="./img/logo/logo.png" alt="logo" class="img-fluid" />
+                                <img width="250" src="./img/logo/logo.png" alt="logo" class="img-fluid" />
                             </a>
                         </div>
                         <div class="card-body p-0 h-100 ">
